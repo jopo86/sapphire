@@ -1,2 +1,2 @@
-# jopo-utils-cpp
+# Sapphire
 An extensive utilities library for C++
