@@ -1,16 +1,16 @@
 compile-run:
-	g++ -std=c++20 -o juc.exe ../src/*.cpp
-	winpty ./juc.exe
+	g++ -std=c++20 -o sapphire.exe ../src/*.cpp
+	./sapphire.exe
 
 compile:
-	g++ -std=c++20 -o juc.exe ../src/*.cpp
+	g++ -std=c++20 -o sapphire.exe ../src/*.cpp
 
 run:
-	winpty ./juc.exe
+	./sapphire.exe
 
 lib:
 	g++ -std=c++20 -c ../src/*.cpp
-	ar rvs libjuc.a *.o
+	ar rvs libsapphire.a *.o
 	rm *.o
 
 clean:

@@ -30,6 +30,7 @@
 #include <string>
 #include <vector>
 #include <fstream>
+#include <filesystem>
 
 namespace Sapphire {
 
@@ -37,10 +38,11 @@ namespace Sapphire {
 
     class ErrorHandler {
     public:
-        friend class FileSystem::File;
 
         ErrorHandler();
         ErrorHandler(bool throws, bool logs);
+        
+        void err(const std::string& message);
 
         void setThrows(bool value);
         void setLogs(bool value);
@@ -56,37 +58,63 @@ namespace Sapphire {
         bool logs;
         std::vector<std::string> errors;
 
-        void err(const std::string& message);
     };
     
     void SetErrorHandler(ErrorHandler& handler);
+    ErrorHandler& GetErrorHandler();
+
+    namespace System {
+
+        // TODO: functions for getting system information
+        // OS, architecture, hardware, etc.
+
+    }
 
     namespace Console {
 
         namespace Colors {
 
-            extern const int WHITE;
-            extern const int RED;
-            extern const int YELLOW;
-            extern const int GREEN;
-            extern const int CYAN;
-            extern const int BLUE;
-            extern const int MAGENTA;
-            extern const int NO_COLOR;
+            #ifdef OS_WINDOWS
+                static int WHITE = 7;
+                static int RED = 12;
+                static int YELLOW = 6;
+                static int GREEN = 10;
+                static int CYAN = 11;
+                static int BLUE = 3;
+                static int MAGENTA = 13;
+            #else
+                static int WHITE = 37;
+                static int RED = 31;
+                static int YELLOW = 33;
+                static int GREEN = 32;
+                static int CYAN = 36;
+                static int BLUE = 34;
+                static int MAGENTA = 35;
+            #endif
+
+            static int NO_COLOR = -1;
         }
 
         void Clear();
         void SetTextColor(int color);
-
+        int GetTextColor();
+        void SetItalic();
+        void SetUnderline();
+        void ResetStyle();
     }
 
     namespace FileSystem {
 
         class File {
         public:
-            File(const std::string& path, bool dynamic = false);
+            File(const std::string& path);
 
             void refresh();
+            void write(const std::string& contents);
+            void writeAppend(const std::string& contents);
+            void remove();
+            void move(const std::string& to);
+            void copy(const std::string& to);
 
             std::string getContents();
             std::vector<std::string> getLines();
@@ -95,9 +123,45 @@ namespace Sapphire {
             std::string getFilename();
             int getSize();
             int getLineCount();
+
+
+
+        private:
+            std::ifstream istream;
+            std::ofstream ostream;
+
+            std::string path;
+            std::string contents;
+            std::vector<std::string> lines;
+            std::string extension;
+            std::string filename;
+            int size;
+            int lineCount;
         };
 
+        bool Exists(const std::string& path);
+        bool IsDir(const std::string& path);
+        std::string GetExtension(const std::string& path);
+        std::string GetFilename(const std::string& path);
+        void CreateDir(const std::string& path);
+        void RemoveFile(const std::string& path);
+        void RemoveDir(const std::string& path);
+        void Move(const std::string& from, const std::string& to);
+        void CopyFile(const std::string& from, const std::string& to);
+        void CopyDir(const std::string& from, const std::string& to);
+
+        std::vector<std::string> GetFilesAndDirsInDir(const std::string& path);
+        std::vector<std::string> GetFilesInDir(const std::string& path);
+        std::vector<std::string> GetDirsInDir(const std::string& path);
+        std::vector<std::string> GetFilesAndDirsInDirRecursive(const std::string& path);
+        std::vector<std::string> GetFilesInDirRecursive(const std::string& path);
+        std::vector<std::string> GetDirsInDirRecursive(const std::string& path);
+
         File Write(const std::string& path, const std::string& contents);
+        File WriteAppend(const std::string& path, const std::string& contents);
+
+        int CountLines(const std::string& path);
+        int CountLinesNoEmpty(const std::string& path);
 
         std::string Read(const std::string& path);
         std::vector<std::string> ReadLines(const std::string& path);
