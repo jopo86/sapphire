@@ -1,6 +1,8 @@
 #ifndef _SAPPHIRE_H
 #define _SAPPHIRE_H
 
+#define SAPPHIRE_VERSION "0.0.0-dev"
+
 #if defined(__LP64__) || defined(_LP64) || defined(__amd64__) || defined(__x86_64__) || defined(_M_X64) || defined(_WIN64) || defined(__ia64__) || defined(_M_IA64) || defined(__aarch64__) || defined(__powerpc64__) || defined(__ppc64__) || defined(__PPC64__) || defined(__mips64__) || defined(__mips64) || defined(__mips64) || defined(__sparc64__) || defined(__arch64__)
 	#define ARCH_64
     #define ARCH_X64
@@ -24,6 +26,7 @@
 #ifdef OS_WINDOWS
     #define WIN32_LEAN_AND_MEAN
     #include <windows.h>
+    #undef CopyFile
 #endif
 
 #include <iostream>
@@ -35,27 +38,28 @@
 namespace Sapphire {
 
     void Init();
+    std::string Version();
 
     class ErrorHandler {
     public:
 
         ErrorHandler();
-        ErrorHandler(bool throws, bool logs);
+        ErrorHandler(bool logs, bool throws);
         
         void err(const std::string& message);
 
-        void setThrows(bool value);
         void setLogs(bool value);
+        void setThrows(bool value);
 
-        bool throwsErrors();
         bool logsErrors();
+        bool throwsErrors();
 
         std::vector<std::string> getErrors();
         std::string getLastError();
 
     private:
-        bool throws;
         bool logs;
+        bool throws;
         std::vector<std::string> errors;
 
     };
@@ -107,13 +111,13 @@ namespace Sapphire {
 
         class File {
         public:
+            File();
             File(const std::string& path);
 
             void refresh();
             void write(const std::string& contents);
             void writeAppend(const std::string& contents);
             void remove();
-            void move(const std::string& to);
             void copy(const std::string& to);
 
             std::string getContents();
@@ -123,7 +127,6 @@ namespace Sapphire {
             std::string getFilename();
             int getSize();
             int getLineCount();
-
 
 
         private:
@@ -143,18 +146,22 @@ namespace Sapphire {
         bool IsDir(const std::string& path);
         std::string GetExtension(const std::string& path);
         std::string GetFilename(const std::string& path);
+        std::string GetDir(const std::string& path);
         void CreateDir(const std::string& path);
         void RemoveFile(const std::string& path);
         void RemoveDir(const std::string& path);
-        void Move(const std::string& from, const std::string& to);
         void CopyFile(const std::string& from, const std::string& to);
         void CopyDir(const std::string& from, const std::string& to);
 
         std::vector<std::string> GetFilesAndDirsInDir(const std::string& path);
+        std::vector<std::string> GetFilesAndDirsInDir(const std::string& path, std::vector<std::string> extensionFilter);
         std::vector<std::string> GetFilesInDir(const std::string& path);
+        std::vector<std::string> GetFilesInDir(const std::string& path, std::vector<std::string> extensionFilter);
         std::vector<std::string> GetDirsInDir(const std::string& path);
         std::vector<std::string> GetFilesAndDirsInDirRecursive(const std::string& path);
+        std::vector<std::string> GetFilesAndDirsInDirRecursive(const std::string& path, std::vector<std::string> extensionFilter);
         std::vector<std::string> GetFilesInDirRecursive(const std::string& path);
+        std::vector<std::string> GetFilesInDirRecursive(const std::string& path, std::vector<std::string> extensionFilter);
         std::vector<std::string> GetDirsInDirRecursive(const std::string& path);
 
         File Write(const std::string& path, const std::string& contents);
