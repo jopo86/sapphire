@@ -34,43 +34,288 @@
 #include <vector>
 #include <fstream>
 #include <filesystem>
+#include <chrono>
+
+typedef unsigned int uint;
+typedef char byte;
+typedef unsigned char ubyte;
+typedef unsigned short ushort;
+typedef unsigned long ulong;
+typedef unsigned long long ulonglong;
 
 namespace Sapphire {
 
     void Init();
     std::string Version();
 
-    class ErrorHandler {
+    class Logger {
     public:
 
-        ErrorHandler();
-        ErrorHandler(bool logs, bool throws);
+        Logger();
+        Logger(bool logsEnabled, bool warningsEnabled, bool errorsEnabled, bool throwsEnabled);
         
+        void log(const std::string& message);
+        void warn(const std::string& message);
         void err(const std::string& message);
 
-        void setLogs(bool value);
-        void setThrows(bool value);
+        bool isLogsEnabled();
+        bool isWarningsEnabled();
+        bool isErrorsEnabled();
+        bool isThrowsEnabled();
 
-        bool logsErrors();
-        bool throwsErrors();
-
+        std::vector<std::string> getLogs();
+        std::vector<std::string> getWarnings();
         std::vector<std::string> getErrors();
-        std::string getLastError();
+        std::vector<std::string> getAllMessages();
+
+        void setLogsEnabled(bool value);
+        void setWarningsEnabled(bool value);
+        void setErrorsEnabled(bool value);
+        void setThrowsEnabled(bool value);
 
     private:
-        bool logs;
-        bool throws;
+        bool logsEnabled;
+        bool warningsEnabled;
+        bool errorsEnabled;
+        bool throwsEnabled;
+        std::vector<std::string> logs;
+        std::vector<std::string> warnings;
         std::vector<std::string> errors;
-
+        std::vector<std::string> all;
     };
     
-    void SetErrorHandler(ErrorHandler& handler);
-    ErrorHandler& GetErrorHandler();
+    void Init(Logger& logger);
+    void SetLogger(Logger& logger);
+    Logger& GetLogger();
+
 
     namespace System {
 
-        // TODO: functions for getting system information
-        // OS, architecture, hardware, etc.
+        enum class OS 
+        {
+            WINDOWS,
+            LINUX,
+            MAC,
+            UNKNOWN
+        };
+
+        enum class ARCH 
+        {
+            X86,
+            X64,
+            UNKNOWN
+        };
+
+        class DisplayDevice
+        {
+        public:
+            DisplayDevice();
+            DisplayDevice(const std::string& cardName, const std::string& manufacturer, const std::string& chipType, int memory);
+
+            std::string getCardName();
+            std::string getManufacturer();
+            std::string getChipType();
+            int getMemory();
+
+            void setCardName(const std::string& value);
+            void setManufacturer(const std::string& value);
+            void setChipType(const std::string& value);
+            void setMemory(int value);
+
+        private:
+            std::string cardName;
+            std::string manufacturer;
+            std::string chipType;
+            int memory;
+        };
+
+        class SoundPlaybackDevice
+        {
+        public:
+            SoundPlaybackDevice();
+            SoundPlaybackDevice(const std::string& name, bool _default, const std::string& hardwareID);
+
+            std::string getName();
+            bool isDefault();
+            std::string getHardwareID();
+
+            void setName(const std::string& value);
+            void setDefault(bool value);
+            void setHardwareID(const std::string& value);
+
+        private:
+            std::string name;
+            bool _default;
+            std::string hardwareID;
+        };
+
+        class SoundCaptureDevice
+        {
+        public:
+            SoundCaptureDevice();
+            SoundCaptureDevice(const std::string& name, bool _default);
+
+            std::string getName();
+            bool isDefault();
+
+            void setName(const std::string& value);
+            void setDefault(bool value);
+
+        private:
+            std::string name;
+            bool _default;
+        };
+
+        class VideoCaptureDevice
+        {
+        public:
+            VideoCaptureDevice();
+            VideoCaptureDevice(const std::string& name, const std::string& manufacturer, const std::string& hardwareID);
+
+            std::string getName();
+            std::string getManufacturer();
+            std::string getHardwareID();
+
+            void setName(const std::string& value);
+            void setManufacturer(const std::string& value);
+            void setHardwareID(const std::string& value);
+
+        private:
+            std::string name;
+            std::string manufacturer;
+            std::string hardwareID;
+        };
+
+        class DirectInputDevice
+        {
+        public:
+            DirectInputDevice();
+            DirectInputDevice(const std::string& name, int numAttached);
+
+            std::string getName();
+            int getNumAttached();
+
+            void setName(const std::string& value);
+            void setNumAttached(int value);
+
+        private:
+            std::string name;
+            int numAttached;
+        };
+
+        class Drive
+        {
+        public:
+            Drive();
+            Drive(const std::string& name, int freeSpace, int totalSpace, const std::string& fileSystem);
+
+            std::string getName();
+            int getFreeSpace();
+            int getTotalSpace();
+            std::string getFileSystem();
+
+            void setName(const std::string& value);
+            void setFreeSpace(int value);
+            void setTotalSpace(int value);
+            void setFileSystem(const std::string& value);
+
+        private:
+            std::string name;
+            int freeSpace;
+            int totalSpace;
+            std::string fileSystem;
+        };
+
+        class SystemInfo
+        {
+        public:
+            SystemInfo();
+            SystemInfo(const std::string& machineName, const std::string& machineID, OS os, ARCH arch, const std::string& osString, const std::string& language, const std::string& manufacturer, const std::string& model, const std::string& bios, const std::string& processor, int memory, int availableMemory, std::vector<DisplayDevice> displayDevices, std::vector<SoundPlaybackDevice> soundPlaybackDevices, std::vector<SoundCaptureDevice> soundCaptureDevices, std::vector<VideoCaptureDevice> videoCaptureDevices, std::vector<DirectInputDevice> directInputDevices, std::vector<Drive> drives);
+
+            std::string getMachineName();
+            std::string getMachineID();
+            OS getOS();
+            ARCH getARCH();
+            std::string getOSString();
+            std::string getLanguage();
+            std::string getManufacturer();
+            std::string getModel();
+            std::string getBIOS();
+            std::string getProcessor();
+            int getMemory();
+            int getAvailableMemory();
+            std::vector<DisplayDevice> getDisplayDevices();
+            std::vector<SoundPlaybackDevice> getSoundPlaybackDevices();
+            std::vector<SoundCaptureDevice> getSoundCaptureDevices();
+            std::vector<VideoCaptureDevice> getVideoCaptureDevices();
+            std::vector<DirectInputDevice> getDirectInputDevices();
+            std::vector<Drive> getDrives();
+
+            void setMachineName(const std::string& value);
+            void setMachineID(const std::string& value);
+            void setOS(OS value);
+            void setARCH(ARCH value);
+            void setOSString(const std::string& value);
+            void setLanguage(const std::string& value);
+            void setManufacturer(const std::string& value);
+            void setModel(const std::string& value);
+            void setBIOS(const std::string& value);
+            void setProcessor(const std::string& value);
+            void setMemory(int value);
+            void setAvailableMemory(int value);
+            void setDisplayDevices(const std::vector<DisplayDevice>& value);
+            void addDisplayDevice(const DisplayDevice& value);
+            void setSoundPlaybackDevices(const std::vector<SoundPlaybackDevice>& value);
+            void addSoundPlaybackDevice(const SoundPlaybackDevice& value);
+            void setSoundCaptureDevices(const std::vector<SoundCaptureDevice>& value);
+            void addSoundCaptureDevice(const SoundCaptureDevice& value);
+            void setVideoCaptureDevices(const std::vector<VideoCaptureDevice>& value);
+            void addVideoCaptureDevice(const VideoCaptureDevice& value);
+            void setDirectInputDevices(const std::vector<DirectInputDevice>& value);
+            void addDirectInputDevice(const DirectInputDevice& value);
+            void setDrives(const std::vector<Drive>& value);
+            void addDrive(const Drive& value);
+
+        private:
+            std::string machineName;
+            std::string machineID;
+            OS os;
+            ARCH arch;
+            std::string osString;
+            std::string language;
+            std::string manufacturer;
+            std::string model;
+            std::string bios;
+            std::string processor;
+            int memory;
+            int availableMemory;
+            std::vector<DisplayDevice> displayDevices;
+            std::vector<SoundPlaybackDevice> soundPlaybackDevices;
+            std::vector<SoundCaptureDevice> soundCaptureDevices;
+            std::vector<VideoCaptureDevice> videoCaptureDevices;
+            std::vector<DirectInputDevice> directInputDevices;
+            std::vector<Drive> drives;
+        };
+
+        SystemInfo GetSystemInfo();
+        std::string GetMachineName();
+        std::string GetMachineID();
+        OS GetOS();
+        ARCH GetARCH();
+        std::string GetOSString();
+        std::string GetLanguage();
+        std::string GetManufacturer();
+        std::string GetModel();
+        std::string GetBIOS();
+        std::string GetProcessor();
+        int GetMemory();
+        int GetAvailableMemory();
+        std::vector<DisplayDevice> GetDisplayDevices();
+        std::vector<SoundPlaybackDevice> GetSoundPlaybackDevices();
+        std::vector<SoundCaptureDevice> GetSoundCaptureDevices();
+        std::vector<VideoCaptureDevice> GetVideoCaptureDevices();
+        std::vector<DirectInputDevice> GetDirectInputDevices();
+        std::vector<Drive> GetDrives();
 
     }
 
