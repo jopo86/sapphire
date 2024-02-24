@@ -1,25 +1,25 @@
 ------------------
 System Information
 ------------------
-      Time of this report: 2/19/2024, 11:02:50
-             Machine name: JOSH-NEW-PC
-               Machine Id: {52892837-0673-47C5-AEFD-C51C9D08EFAA}
-         Operating System: Windows 11 Pro 64-bit (10.0, Build 22621) (22621.ni_release.220506-1250)
+      Time of this report: 2/23/2024, 08:07:03
+             Machine name: JOSH-LAPTOP
+               Machine Id: {1B736A85-E2B7-44BD-8D96-A80812E8AFFC}
+         Operating System: Windows 11 Home 64-bit (10.0, Build 22631) (22621.ni_release.220506-1250)
                  Language: English (Regional Setting: English)
-      System Manufacturer: ASUS
-             System Model: System Product Name
-                     BIOS: 1007 (type: UEFI)
-                Processor: 11th Gen Intel(R) Core(TM) i7-11700K @ 3.60GHz (16 CPUs), ~3.6GHz
-                   Memory: 32768MB RAM
-      Available OS Memory: 32596MB RAM
-                Page File: 9997MB used, 27462MB available
+      System Manufacturer: ASUSTeK COMPUTER INC.
+             System Model: ROG Flow X13 GV301QE_GV301QE
+                     BIOS: GV301QE.412 (type: UEFI)
+                Processor: AMD Ryzen 9 5900HS with Radeon Graphics         (16 CPUs), ~3.3GHz
+                   Memory: 16384MB RAM
+      Available OS Memory: 15776MB RAM
+                Page File: 10330MB used, 6469MB available
               Windows Dir: C:\WINDOWS
           DirectX Version: DirectX 12
       DX Setup Parameters: Not found
-         User DPI Setting: 96 DPI (100 percent)
-       System DPI Setting: 96 DPI (100 percent)
-          DWM DPI Scaling: Disabled
-                 Miracast: Available, no HDCP
+         User DPI Setting: 120 DPI (125 percent)
+       System DPI Setting: 144 DPI (150 percent)
+          DWM DPI Scaling: Enabled
+                 Miracast: Available, with HDCP
 Microsoft Graphics Hybrid: Not Supported
  DirectX Database Version: 1.4.9
            DxDiag Version: 10.00.22621.0001 64bit Unicode
@@ -30,9 +30,6 @@ DxDiag Notes
       Display Tab 1: No problems found.
         Sound Tab 1: No problems found.
         Sound Tab 2: No problems found.
-        Sound Tab 3: No problems found.
-        Sound Tab 4: No problems found.
-        Sound Tab 5: No problems found.
           Input Tab: No problems found.
 
 --------------------
@@ -49,232 +46,130 @@ DirectShow:  0/6 (retail)
 ---------------
 Display Devices
 ---------------
-           Card name: NVIDIA GeForce RTX 3070 Ti
-        Manufacturer: NVIDIA
-           Chip type: NVIDIA GeForce RTX 3070 Ti
-            DAC type: Integrated RAMDAC
+           Card name: AMD Radeon(TM) Graphics
+        Manufacturer: Advanced Micro Devices, Inc.
+           Chip type: AMD Radeon Graphics Processor (0x1638)
+            DAC type: Internal DAC(400MHz)
          Device Type: Full Device (POST)
-          Device Key: Enum\PCI\VEN_10DE&DEV_2482&SUBSYS_880E1043&REV_A1
+          Device Key: Enum\PCI\VEN_1002&DEV_1638&SUBSYS_148C1043&REV_C4
        Device Status: 0180200A [DN_DRIVER_LOADED|DN_STARTED|DN_DISABLEABLE|DN_NT_ENUMERATOR|DN_NT_DRIVER] 
  Device Problem Code: No Problem
  Driver Problem Code: Unknown
-      Display Memory: 24330 MB
-    Dedicated Memory: 8032 MB
-       Shared Memory: 16298 MB
-        Current Mode: 2560 x 1440 (32 bit) (165Hz)
+      Display Memory: 8384 MB
+    Dedicated Memory: 496 MB
+       Shared Memory: 7888 MB
+        Current Mode: 1920 x 1200 (32 bit) (120Hz)
          HDR Support: Not Supported
     Display Topology: Internal
  Display Color Space: DXGI_COLOR_SPACE_RGB_FULL_G22_NONE_P709
-     Color Primaries: Red(0.679688,0.309570), Green(0.293945,0.652344), Blue(0.147461,0.053711), White Point(0.313477,0.329102)
+     Color Primaries: Red(0.639648,0.329102), Green(0.299805,0.599609), Blue(0.149414,0.059570), White Point(0.312500,0.328125)
    Display Luminance: Min Luminance = 0.500000, Max Luminance = 270.000000, MaxFullFrameLuminance = 270.000000
         Monitor Name: Generic PnP Monitor
-       Monitor Model: Pixio PX277P
-          Monitor Id: PNS0277
-         Native Mode: 2560 x 1440(p) (60.000Hz)
-         Output Type: Displayport External
+       Monitor Model: LQ134N1JW52
+          Monitor Id: SHP151E
+         Native Mode: 1920 x 1200(p) (120.003Hz)
+         Output Type: Internal
 Monitor Capabilities: HDR Not Supported
 Display Pixel Format: DISPLAYCONFIG_PIXELFORMAT_32BPP
       Advanced Color: Not Supported
-         Driver Name: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvldumdx.dll,C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvldumdx.dll,C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvldumdx.dll,C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvldumdx.dll
- Driver File Version: 31.00.0015.4665 (English)
-      Driver Version: 31.0.15.4665
+         Driver Name: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\aticfx64.dll,C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\aticfx64.dll,C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\aticfx64.dll,C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amdxc64.dll
+ Driver File Version: 30.00.14018.15002 (English)
+      Driver Version: 30.0.14018.15002
          DDI Version: 12
-      Feature Levels: 12_2,12_1,12_0,11_1,11_0,10_1,10_0,9_3,9_2,9_1
-        Driver Model: WDDM 3.1
- Hardware Scheduling: DriverSupportState:Stable Enabled:True 
-         Displayable: Supported 
- Graphics Preemption: Pixel
-  Compute Preemption: Dispatch
+      Feature Levels: 12_1,12_0,11_1,11_0,10_1,10_0,9_3,9_2,9_1
+        Driver Model: WDDM 3.0
+ Hardware Scheduling: DriverSupportState:AlwaysOff Enabled:False 
+         Displayable: Not Supported 
+ Graphics Preemption: DMA
+  Compute Preemption: DMA
             Miracast: Not Supported by Graphics driver
       Detachable GPU: No
- Hybrid Graphics GPU: Discrete
+ Hybrid Graphics GPU: Integrated
       Power P-states: Not Supported
       Virtualization: Paravirtualization 
-          Block List: No Blocks
+          Block List: DISABLE_HWSCH
   Catalog Attributes: Universal:False Declarative:True 
    Driver Attributes: Final Retail
-    Driver Date/Size: 1/11/2024 7:00:00 PM, 774256 bytes
+    Driver Date/Size: 3/17/2022 7:00:00 PM, 1844624 bytes
          WHQL Logo'd: Yes
      WHQL Date Stamp: Unknown
-   Device Identifier: {D7B71E3E-67C2-11CF-CA61-01A80EC2D235}
-           Vendor ID: 0x10DE
-           Device ID: 0x2482
-           SubSys ID: 0x880E1043
-         Revision ID: 0x00A1
-  Driver Strong Name: oem4.inf:0f066de31a145f91:Section071:31.0.15.4665:pci\ven_10de&dev_2482
-      Rank Of Driver: 00CF2001
-         Video Accel: 
-         DXVA2 Modes: {86695F12-340E-4F04-9FD3-9253DD327460}  DXVA2_ModeMPEG2_VLD  {6F3EC719-3735-42CC-8063-65CC3CB36616}  DXVA2_ModeVC1_D2010  DXVA2_ModeVC1_VLD  {32FCFE3F-DE46-4A49-861B-AC71110649D5}  DXVA2_ModeH264_VLD_Stereo_Progressive_NoFGT  DXVA2_ModeH264_VLD_Stereo_NoFGT  DXVA2_ModeH264_VLD_NoFGT  DXVA2_ModeHEVC_VLD_Main  DXVA2_ModeHEVC_VLD_Main10  {20BB8B0A-97AA-4571-8E99-64E60606C1A6}  {15DF9B21-06C4-47F1-841E-A67C97D7F312}  DXVA2_ModeMPEG4pt2_VLD_Simple  DXVA2_ModeMPEG4pt2_VLD_AdvSimple_NoGMC  {9947EC6F-689B-11DC-A320-0019DBBC4184}  {33FCFE41-DE46-4A49-861B-AC71110649D5}  DXVA2_ModeVP9_VLD_Profile0  DXVA2_ModeVP9_VLD_10bit_Profile2  {DDA19DC7-93B5-49F5-A9B3-2BDA28A2CE6E}  {B8BE4CCB-CF53-46BA-8D59-D6B8A6DA5D2A}  {6AFFD11E-1D96-42B1-A215-93A31F09A53D}  {914C84A3-4078-4FA9-984C-E2F262CB5C9C}  {8A1A1031-29BC-46D0-A007-E9B092CA6767}  
-   Deinterlace Caps: {6CB69578-7617-4637-91E5-1C02DB810285}: Format(In/Out)=(YUY2,YUY2) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY DeinterlaceTech_PixelAdaptive 
-                     {F9F19DA5-3B09-4B2F-9D89-C64753E3EAAB}: Format(In/Out)=(YUY2,YUY2) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY 
-                     {5A54A0C9-C7EC-4BD9-8EDE-F3C75DC4393B}: Format(In/Out)=(YUY2,YUY2) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY 
-                     {335AA36E-7884-43A4-9C91-7F87FAF3E37E}: Format(In/Out)=(YUY2,YUY2) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY DeinterlaceTech_BOBVerticalStretch 
-                     {6CB69578-7617-4637-91E5-1C02DB810285}: Format(In/Out)=(UYVY,UYVY) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY DeinterlaceTech_PixelAdaptive 
-                     {F9F19DA5-3B09-4B2F-9D89-C64753E3EAAB}: Format(In/Out)=(UYVY,UYVY) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY 
-                     {5A54A0C9-C7EC-4BD9-8EDE-F3C75DC4393B}: Format(In/Out)=(UYVY,UYVY) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY 
-                     {335AA36E-7884-43A4-9C91-7F87FAF3E37E}: Format(In/Out)=(UYVY,UYVY) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY DeinterlaceTech_BOBVerticalStretch 
-                     {6CB69578-7617-4637-91E5-1C02DB810285}: Format(In/Out)=(YV12,0x32315659) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY DeinterlaceTech_PixelAdaptive 
-                     {F9F19DA5-3B09-4B2F-9D89-C64753E3EAAB}: Format(In/Out)=(YV12,0x32315659) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY 
-                     {5A54A0C9-C7EC-4BD9-8EDE-F3C75DC4393B}: Format(In/Out)=(YV12,0x32315659) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY 
-                     {335AA36E-7884-43A4-9C91-7F87FAF3E37E}: Format(In/Out)=(YV12,0x32315659) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY DeinterlaceTech_BOBVerticalStretch 
-                     {6CB69578-7617-4637-91E5-1C02DB810285}: Format(In/Out)=(NV12,0x3231564e) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY DeinterlaceTech_PixelAdaptive 
-                     {F9F19DA5-3B09-4B2F-9D89-C64753E3EAAB}: Format(In/Out)=(NV12,0x3231564e) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY 
-                     {5A54A0C9-C7EC-4BD9-8EDE-F3C75DC4393B}: Format(In/Out)=(NV12,0x3231564e) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY 
-                     {335AA36E-7884-43A4-9C91-7F87FAF3E37E}: Format(In/Out)=(NV12,0x3231564e) Frames(Prev/Fwd/Back)=(0,0,0) Caps=VideoProcess_YUV2RGB VideoProcess_StretchX VideoProcess_StretchY DeinterlaceTech_BOBVerticalStretch 
-                     {6CB69578-7617-4637-91E5-1C02DB810285}: Format(In/Out)=(IMC1,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
-                     {F9F19DA5-3B09-4B2F-9D89-C64753E3EAAB}: Format(In/Out)=(IMC1,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
-                     {5A54A0C9-C7EC-4BD9-8EDE-F3C75DC4393B}: Format(In/Out)=(IMC1,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
-                     {335AA36E-7884-43A4-9C91-7F87FAF3E37E}: Format(In/Out)=(IMC1,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
-                     {6CB69578-7617-4637-91E5-1C02DB810285}: Format(In/Out)=(IMC2,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
-                     {F9F19DA5-3B09-4B2F-9D89-C64753E3EAAB}: Format(In/Out)=(IMC2,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
-                     {5A54A0C9-C7EC-4BD9-8EDE-F3C75DC4393B}: Format(In/Out)=(IMC2,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
-                     {335AA36E-7884-43A4-9C91-7F87FAF3E37E}: Format(In/Out)=(IMC2,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
-                     {6CB69578-7617-4637-91E5-1C02DB810285}: Format(In/Out)=(IMC3,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
-                     {F9F19DA5-3B09-4B2F-9D89-C64753E3EAAB}: Format(In/Out)=(IMC3,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
-                     {5A54A0C9-C7EC-4BD9-8EDE-F3C75DC4393B}: Format(In/Out)=(IMC3,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
-                     {335AA36E-7884-43A4-9C91-7F87FAF3E37E}: Format(In/Out)=(IMC3,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
-                     {6CB69578-7617-4637-91E5-1C02DB810285}: Format(In/Out)=(IMC4,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
-                     {F9F19DA5-3B09-4B2F-9D89-C64753E3EAAB}: Format(In/Out)=(IMC4,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
-                     {5A54A0C9-C7EC-4BD9-8EDE-F3C75DC4393B}: Format(In/Out)=(IMC4,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
-                     {335AA36E-7884-43A4-9C91-7F87FAF3E37E}: Format(In/Out)=(IMC4,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
-                     {6CB69578-7617-4637-91E5-1C02DB810285}: Format(In/Out)=(S340,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
-                     {F9F19DA5-3B09-4B2F-9D89-C64753E3EAAB}: Format(In/Out)=(S340,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
-                     {5A54A0C9-C7EC-4BD9-8EDE-F3C75DC4393B}: Format(In/Out)=(S340,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
-                     {335AA36E-7884-43A4-9C91-7F87FAF3E37E}: Format(In/Out)=(S340,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
-                     {6CB69578-7617-4637-91E5-1C02DB810285}: Format(In/Out)=(S342,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
-                     {F9F19DA5-3B09-4B2F-9D89-C64753E3EAAB}: Format(In/Out)=(S342,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
-                     {5A54A0C9-C7EC-4BD9-8EDE-F3C75DC4393B}: Format(In/Out)=(S342,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
-                     {335AA36E-7884-43A4-9C91-7F87FAF3E37E}: Format(In/Out)=(S342,UNKNOWN) Frames(Prev/Fwd/Back)=(0,0,0) Caps=
+   Device Identifier: {D7B71EE2-5578-11CF-6949-4E026BC2D335}
+           Vendor ID: 0x1002
+           Device ID: 0x1638
+           SubSys ID: 0x148C1043
+         Revision ID: 0x00C4
+  Driver Strong Name: oem41.inf:cb0ae4142291f9c2:ati2mtag_Cezanne:30.0.14018.15002:PCI\VEN_1002&DEV_1638&SUBSYS_148C1043&REV_C4
+      Rank Of Driver: 00CF0000
+         Video Accel: Unknown
+         DXVA2 Modes: DXVA2_ModeMPEG2_VLD  {86695F12-340E-4F04-9FD3-9253DD327460}  DXVA2_ModeH264_VLD_NoFGT  {4245F676-2BBC-4166-A0BB-54E7B849C380}  {6719B6FB-5CAD-4ACB-B00A-F3BFDEC38727}  {9901CCD3-CA12-4B7E-867A-E2223D9255C3}  DXVA2_ModeHEVC_VLD_Main  {EA72396A-67EC-4781-BEDE-56F498F04EF2}  {C152CA8F-738C-461B-AD89-FC292CF8F162}  {514A356C-7027-4AFF-8A60-AFD2C1F672F1}  DXVA2_ModeH264_VLD_Stereo_Progressive_NoFGT  DXVA2_ModeH264_VLD_Stereo_NoFGT  DXVA2_ModeVC1_VLD  {CA15D19A-2B48-43D6-979E-7A6E9C802FF8}  {D1C20509-AE7B-4E72-AE3B-49F88D58992F}  {84AD67F6-4C21-419A-9F0B-24F0578906C1}  {725AD240-786C-471E-AD3C-38F739936517}  {95664FF5-9E03-4C74-BB4F-9178D6035E58}  {5EF7D40D-5B96-49E7-B419-23342094A4CF}  DXVA2_ModeHEVC_VLD_Main10  {65D1FA41-58AF-453A-9CAB-5D981156DA9F}  {2DB154B6-DBB2-4079-A3FF-60D7A898A6AB}  {C74A3FD0-D713-4581-A02E-8EDFB112ACE3}  DXVA2_ModeVP9_VLD_Profile0  DXVA2_ModeVP9_VLD_10bit_Profile2  {603A4756-A864-4F91-BB62-2C935B7A1391}  {C58B9A06-7E89-11E1-BB00-70B34824019B}  
+      Deinterlace Caps: n/a
         D3D9 Overlay: Not Supported
-             DXVA-HD: Supported
+             DXVA-HD: Not Supported
         DDraw Status: Enabled
           D3D Status: Enabled
           AGP Status: Enabled
-       MPO MaxPlanes: 1
-            MPO Caps: Not Supported
-         MPO Stretch: Not Supported
-     MPO Media Hints: Not Supported
-         MPO Formats: Not Supported
-    PanelFitter Caps: Not Supported
- PanelFitter Stretch: Not Supported
+       MPO MaxPlanes: 3
+            MPO Caps: ROTATION,VERTICAL_FLIP,HORIZONTAL_FLIP,RGB,YUV,BILINEAR,STRETCH_YUV,STRETCH_RGB,HDR (MPO3)
+         MPO Stretch: 16.000X - 0.250X
+     MPO Media Hints: rotation, resizing, colorspace Conversion 
+         MPO Formats: NV12,420_OPAQUE,R16G16B16A16_FLOAT,R10G10B10A2_UNORM,R8G8B8A8_UNORM,B8G8R8A8_UNORM
+    PanelFitter Caps: ROTATION,VERTICAL_FLIP,HORIZONTAL_FLIP,RGB,YUV,BILINEAR,STRETCH_YUV,STRETCH_RGB,HDR (MPO3)
+ PanelFitter Stretch: 16.000X - 0.250X
+   Extension Drivers: 
+             Driver Name: C:\WINDOWS\System32\DriverStore\FileRepository\amdwddme.inf_amd64_8cfc4a7e7eef5a57\amdwddme.inf
+          Driver Version: 30.0.14018.15002
+             Driver Date: 03/18/2022
+         Driver Provider: Advanced Micro Devices, Inc.
+      Catalog Attributes: Universal:False Declarative:True 
+   Component Drivers: 
+             Driver Name: Unknown
+          Driver Version: Unknown
+             Driver Date: Unknown
+         Driver Provider: Unknown
+      Catalog Attributes: N/A
 
 -------------
 Sound Devices
 -------------
-            Description: Headphones (Astro MixAmp Pro Game)
+            Description: AI Noise-cancelling Output (ASUS Utility)
+ Default Sound Playback: No
+ Default Voice Playback: No
+            Hardware ID: *IGOVAC
+        Manufacturer ID: N/A
+             Product ID: N/A
+                   Type: N/A
+            Driver Name: igovsd.sys
+         Driver Version: 3.0.4.0 (English)
+      Driver Attributes: Final Retail
+            WHQL Logo'd: Yes
+          Date and Size: 9/21/2020 7:00:00 PM, 42344 bytes
+            Other Files: 
+        Driver Provider: ASUSTek Computer Inc.
+         HW Accel Level: Emulation Only
+              Cap Flags: 0xF1F
+    Min/Max Sample Rate: 100, 200000
+Static/Strm HW Mix Bufs: 1, 0
+ Static/Strm HW 3D Bufs: 0, 0
+              HW Memory: 0
+       Voice Management: No
+ EAX(tm) 2.0 Listen/Src: No, No
+   I3DL2(tm) Listen/Src: No, No
+Sensaura(tm) ZoomFX(tm): No
+
+            Description: Speakers (Realtek(R) Audio)
  Default Sound Playback: Yes
- Default Voice Playback: No
-            Hardware ID: USB\VID_9886&PID_0038&REV_0000&MI_03
-        Manufacturer ID: N/A
-             Product ID: N/A
-                   Type: N/A
-            Driver Name: USBAUDIO.sys
-         Driver Version: 10.0.22621.2506 (English)
-      Driver Attributes: Final Retail
-            WHQL Logo'd: Yes
-          Date and Size: 10/18/2023 7:00:00 PM, 282624 bytes
-            Other Files: 
-        Driver Provider: Microsoft
-         HW Accel Level: Emulation Only
-              Cap Flags: 0xF1F
-    Min/Max Sample Rate: 100, 200000
-Static/Strm HW Mix Bufs: 1, 0
- Static/Strm HW 3D Bufs: 0, 0
-              HW Memory: 0
-       Voice Management: No
- EAX(tm) 2.0 Listen/Src: No, No
-   I3DL2(tm) Listen/Src: No, No
-Sensaura(tm) ZoomFX(tm): No
-
-            Description: Headset Earphone (2- Astro MixAmp Pro Voice)
- Default Sound Playback: No
  Default Voice Playback: Yes
-            Hardware ID: USB\VID_9886&PID_0038&REV_0000&MI_00
+            Hardware ID: HDAUDIO\FUNC_01&VEN_10EC&DEV_0294&SUBSYS_10431662&REV_1000
         Manufacturer ID: N/A
              Product ID: N/A
                    Type: N/A
-            Driver Name: USBAUDIO.sys
-         Driver Version: 10.0.22621.2506 (English)
+            Driver Name: RTKVHD64.sys
+         Driver Version: 6.0.9075.1 (English)
       Driver Attributes: Final Retail
             WHQL Logo'd: Yes
-          Date and Size: 10/18/2023 7:00:00 PM, 282624 bytes
-            Other Files: 
-        Driver Provider: Microsoft
-         HW Accel Level: Emulation Only
-              Cap Flags: 0xF1F
-    Min/Max Sample Rate: 100, 200000
-Static/Strm HW Mix Bufs: 1, 0
- Static/Strm HW 3D Bufs: 0, 0
-              HW Memory: 0
-       Voice Management: No
- EAX(tm) 2.0 Listen/Src: No, No
-   I3DL2(tm) Listen/Src: No, No
-Sensaura(tm) ZoomFX(tm): No
-
-            Description: Pixio PX277P (NVIDIA High Definition Audio)
- Default Sound Playback: No
- Default Voice Playback: No
-            Hardware ID: HDAUDIO\FUNC_01&VEN_10DE&DEV_009E&SUBSYS_1043880E&REV_1001
-        Manufacturer ID: N/A
-             Product ID: N/A
-                   Type: N/A
-            Driver Name: nvhda64v.sys
-         Driver Version: 1.3.40.14 (English)
-      Driver Attributes: Final Retail
-            WHQL Logo'd: Yes
-          Date and Size: 1/18/2023 7:00:00 PM, 121880 bytes
-            Other Files: 
-        Driver Provider: NVIDIA Corporation
-         HW Accel Level: Emulation Only
-              Cap Flags: 0xF1F
-    Min/Max Sample Rate: 100, 200000
-Static/Strm HW Mix Bufs: 1, 0
- Static/Strm HW 3D Bufs: 0, 0
-              HW Memory: 0
-       Voice Management: No
- EAX(tm) 2.0 Listen/Src: No, No
-   I3DL2(tm) Listen/Src: No, No
-Sensaura(tm) ZoomFX(tm): No
-
-            Description: Realtek Digital Output (Realtek USB Audio)
- Default Sound Playback: No
- Default Voice Playback: No
-            Hardware ID: USB\VID_0B05&PID_1996&REV_0013&MI_00
-        Manufacturer ID: N/A
-             Product ID: N/A
-                   Type: N/A
-            Driver Name: RtUsbA64.2307.sys
-         Driver Version: 6.3.9600.2307 (English)
-      Driver Attributes: Final Retail
-            WHQL Logo'd: Yes
-          Date and Size: 11/9/2021 7:00:00 PM, 473696 bytes
+          Date and Size: 11/30/2020 7:00:00 PM, 5968480 bytes
             Other Files: 
         Driver Provider: Realtek Semiconductor Corp.
-         HW Accel Level: Emulation Only
-              Cap Flags: 0xF1F
-    Min/Max Sample Rate: 100, 200000
-Static/Strm HW Mix Bufs: 1, 0
- Static/Strm HW 3D Bufs: 0, 0
-              HW Memory: 0
-       Voice Management: No
- EAX(tm) 2.0 Listen/Src: No, No
-   I3DL2(tm) Listen/Src: No, No
-Sensaura(tm) ZoomFX(tm): No
-
-            Description: Speakers (Sonic Studio Virtual Mixer)
- Default Sound Playback: No
- Default Voice Playback: No
-            Hardware ID: ROOT\AVoluteSS3Vad
-        Manufacturer ID: N/A
-             Product ID: N/A
-                   Type: N/A
-            Driver Name: AVoluteSS3Vad.sys
-         Driver Version: 1.0.2.0 (English)
-      Driver Attributes: Final Retail
-            WHQL Logo'd: Yes
-          Date and Size: 10/13/2021 7:00:00 PM, 93672 bytes
-            Other Files: 
-        Driver Provider: Nahimic
          HW Accel Level: Emulation Only
               Cap Flags: 0xF1F
     Min/Max Sample Rate: 100, 200000
@@ -289,43 +184,23 @@ Sensaura(tm) ZoomFX(tm): No
 ---------------------
 Sound Capture Devices
 ---------------------
-            Description: Headset Microphone (2- Astro MixAmp Pro Voice)
+            Description: AI Noise-cancelling Input (ASUS Utility)
+  Default Sound Capture: No
+  Default Voice Capture: No
+            Driver Name: igovsd.sys
+         Driver Version: 3.0.4.0 (English)
+      Driver Attributes: Final Retail
+          Date and Size: 9/21/2020 7:00:00 PM, 42344 bytes
+              Cap Flags: 0x1
+           Format Flags: 0xFFFFF
+
+            Description: Microphone Array (Realtek(R) Audio)
   Default Sound Capture: Yes
   Default Voice Capture: Yes
-            Driver Name: USBAUDIO.sys
-         Driver Version: 10.0.22621.2506 (English)
+            Driver Name: RTKVHD64.sys
+         Driver Version: 6.0.9075.1 (English)
       Driver Attributes: Final Retail
-          Date and Size: 10/18/2023 7:00:00 PM, 282624 bytes
-              Cap Flags: 0x1
-           Format Flags: 0xFFFFF
-
-            Description: Line (Astro MixAmp Pro Game)
-  Default Sound Capture: No
-  Default Voice Capture: No
-            Driver Name: USBAUDIO.sys
-         Driver Version: 10.0.22621.2506 (English)
-      Driver Attributes: Final Retail
-          Date and Size: 10/18/2023 7:00:00 PM, 282624 bytes
-              Cap Flags: 0x1
-           Format Flags: 0xFFFFF
-
-            Description: Microphone (HD Pro Webcam C920)
-  Default Sound Capture: No
-  Default Voice Capture: No
-            Driver Name: USBAUDIO.sys
-         Driver Version: 10.0.22621.2506 (English)
-      Driver Attributes: Final Retail
-          Date and Size: 10/18/2023 7:00:00 PM, 282624 bytes
-              Cap Flags: 0x1
-           Format Flags: 0xFFFFF
-
-            Description: Microphone (Sonic Studio Virtual Mixer)
-  Default Sound Capture: No
-  Default Voice Capture: No
-            Driver Name: AVoluteSS3Vad.sys
-         Driver Version: 1.0.2.0 (English)
-      Driver Attributes: Final Retail
-          Date and Size: 10/13/2021 7:00:00 PM, 93672 bytes
+          Date and Size: 11/30/2020 7:00:00 PM, 5968480 bytes
               Cap Flags: 0x1
            Format Flags: 0xFFFFF
 
@@ -333,14 +208,14 @@ Sound Capture Devices
 Video Capture Devices
 Number of Devices: 1
 ---------------------
-           FriendlyName: HD Pro Webcam C920
+           FriendlyName: USB2.0 HD UVC WebCam
                Category: Camera
-           SymbolicLink: \\?\usb#vid_046d&pid_08e5&mi_00#6&1d4318bd&1&0000#{e5323777-f976-4f5b-9b55-b94699c46e44}\global
-               Location: n/a
-               Rotation: n/a
+           SymbolicLink: \\?\usb#vid_13d3&pid_56dd&mi_00#7&3124c791&0&0000#{e5323777-f976-4f5b-9b55-b94699c46e44}\global
+               Location: Front
+               Rotation: 0
       SensorOrientation: 0
            Manufacturer: Microsoft
-             HardwareID: USB\VID_046D&PID_08E5&REV_0021&MI_00,USB\VID_046D&PID_08E5&MI_00
+             HardwareID: USB\VID_13D3&PID_56DD&REV_1852&MI_00,USB\VID_13D3&PID_56DD&MI_00
              DriverDesc: USB Video Device
          DriverProvider: Microsoft
           DriverVersion: 10.0.22621.2506
@@ -349,23 +224,23 @@ Number of Devices: 1
                 Service: usbvideo
                   Class: Camera
           DevNodeStatus: 180200A[DN_DRIVER_LOADED|DN_STARTED|DN_DISABLEABLE|DN_NT_ENUMERATOR|DN_NT_DRIVER]
-            ContainerId: {D80BB0B2-B654-5A1C-91D0-44F22A6F9071}
+            ContainerId: {00000000-0000-0000-FFFF-FFFFFFFFFFFF}
             ProblemCode: No Problem
-  BusReportedDeviceDesc: HD Pro Webcam C920
-                 Parent: USB\VID_046D&PID_08E5\73579FCF
+  BusReportedDeviceDesc: USB2.0 HD UVC WebCam
+                 Parent: USB\VID_13D3&PID_56DD\0x0001
       DriverProblemDesc: n/a
            UpperFilters: n/a
            LowerFilters: WdmCompanionFilter
-                  Stack: \Driver\ksthunk,\Driver\usbvideo,\Driver\usbccgp
+                  Stack: \Driver\ksthunk,\Driver\usbvideo,\Driver\ACPI,\Driver\usbccgp
       ContainerCategory: n/a
-          SensorGroupID: n/a
+          SensorGroupID: {78DCB7D0-33EA-458B-B98A-56E9A3A40B50}
                    MFT0: n/a
                    DMFT: n/a
     CustomCaptureSource: n/a
-  DependentStillCapture: n/a
-     EnablePlatformDMFT: n/a
+  DependentStillCapture: False
+     EnablePlatformDMFT: True
               DMFTChain: n/a
- EnableDshowRedirection: n/a
+ EnableDshowRedirection: True
      FrameServerEnabled: n/a
         AnalogProviders: n/a
          MSXUCapability: n/a
@@ -386,82 +261,94 @@ Vendor/Product ID: n/a
 Vendor/Product ID: n/a
         FF Driver: n/a
 
-      Device Name: USB Receiver
+      Device Name: HIDI2C Device
          Attached: 1
     Controller ID: 0x0
-Vendor/Product ID: 0x046D, 0xC547
+Vendor/Product ID: 0x04F3, 0x2C82
         FF Driver: n/a
 
-      Device Name: Keychron K2
+      Device Name: HIDI2C Device
          Attached: 1
     Controller ID: 0x0
-Vendor/Product ID: 0x05AC, 0x024F
+Vendor/Product ID: 0x04F3, 0x2C82
         FF Driver: n/a
 
-      Device Name: USB Receiver
+      Device Name: HIDI2C Device
          Attached: 1
     Controller ID: 0x0
-Vendor/Product ID: 0x046D, 0xC547
+Vendor/Product ID: 0x04F3, 0x2C82
         FF Driver: n/a
 
-      Device Name: USB Receiver
+      Device Name: HIDI2C Device
          Attached: 1
     Controller ID: 0x0
-Vendor/Product ID: 0x046D, 0xC547
+Vendor/Product ID: 0x04F3, 0x2C82
         FF Driver: n/a
 
-      Device Name: USB Receiver
+      Device Name: HIDI2C Device
          Attached: 1
     Controller ID: 0x0
-Vendor/Product ID: 0x046D, 0xC547
+Vendor/Product ID: 0x04F3, 0x2C82
         FF Driver: n/a
 
-      Device Name: CORSAIR Lighting Node CORE
+      Device Name: HIDI2C Device
          Attached: 1
     Controller ID: 0x0
-Vendor/Product ID: 0x1B1C, 0x0C1A
+Vendor/Product ID: 0x04F3, 0x2C82
         FF Driver: n/a
 
-      Device Name: Astro MixAmp Pro
+      Device Name: ASUSTeK Computer Inc.
          Attached: 1
     Controller ID: 0x0
-Vendor/Product ID: 0x9886, 0x0038
+Vendor/Product ID: 0x0B05, 0x19B6
         FF Driver: n/a
 
-      Device Name: AURA LED Controller
+      Device Name: ASUSTeK Computer Inc.
          Attached: 1
     Controller ID: 0x0
-Vendor/Product ID: 0x0B05, 0x18F3
+Vendor/Product ID: 0x0B05, 0x19B6
         FF Driver: n/a
 
-      Device Name: USB Audio
+      Device Name: ASUSTeK Computer Inc.
          Attached: 1
     Controller ID: 0x0
-Vendor/Product ID: 0x0B05, 0x1996
+Vendor/Product ID: 0x0B05, 0x19B6
         FF Driver: n/a
 
-      Device Name: CORSAIR iCUE Commander CORE
+      Device Name: ASUSTeK Computer Inc.
          Attached: 1
     Controller ID: 0x0
-Vendor/Product ID: 0x1B1C, 0x0C1C
+Vendor/Product ID: 0x0B05, 0x19B6
         FF Driver: n/a
 
-      Device Name: CORSAIR iCUE Commander CORE
+      Device Name: ASUSTeK Computer Inc.
          Attached: 1
     Controller ID: 0x0
-Vendor/Product ID: 0x1B1C, 0x0C1C
+Vendor/Product ID: 0x0B05, 0x19B6
         FF Driver: n/a
 
-      Device Name: Keychron K2
+      Device Name: ASUS Wireless Radio Control
          Attached: 1
     Controller ID: 0x0
-Vendor/Product ID: 0x05AC, 0x024F
+Vendor/Product ID: n/a
         FF Driver: n/a
 
-      Device Name: Keychron K2
+      Device Name: HIDI2C Device
          Attached: 1
     Controller ID: 0x0
-Vendor/Product ID: 0x05AC, 0x024F
+Vendor/Product ID: 0x04F3, 0x3098
+        FF Driver: n/a
+
+      Device Name: HIDI2C Device
+         Attached: 1
+    Controller ID: 0x0
+Vendor/Product ID: 0x04F3, 0x2C82
+        FF Driver: n/a
+
+      Device Name: HIDI2C Device
+         Attached: 1
+    Controller ID: 0x0
+Vendor/Product ID: 0x04F3, 0x2C82
         FF Driver: n/a
 
 Poll w/ Interrupt: No
@@ -470,109 +357,33 @@ Poll w/ Interrupt: No
 USB Devices
 -----------
 + USB Root Hub (USB 3.0)
-| Vendor/Product ID: 0x8086, 0x43ED
+| Vendor/Product ID: 0x1022, 0x1639
 | Matching Device ID: USB\ROOT_HUB30
 | Service: USBHUB3
-| Driver: USBHUB3.SYS, 2/18/2024 18:07:51, 726496 bytes
+| Driver: USBHUB3.SYS, 2/14/2024 08:46:39, 726496 bytes
 | 
-+-+ Generic USB Hub
-| | Vendor/Product ID: 0x174C, 0x2074
-| | Location: Port_#0010.Hub_#0001
-| | Matching Device ID: USB\USB20_HUB
-| | Service: USBHUB3
-| | Driver: USBHUB3.SYS, 2/18/2024 18:07:51, 726496 bytes
++-+ USB Composite Device
+| | Vendor/Product ID: 0x0B05, 0x19B6
+| | Location: Port_#0003.Hub_#0001
+| | Matching Device ID: USB\COMPOSITE
+| | Service: usbccgp
+| | Driver: usbccgp.sys, 2/14/2024 08:46:39, 230784 bytes
 | | 
-| +-+ Generic USB Hub
-| | | Vendor/Product ID: 0x0BDA, 0x5411
-| | | Location: Port_#0001.Hub_#0003
-| | | Matching Device ID: USB\USB20_HUB
-| | | Service: USBHUB3
-| | | Driver: USBHUB3.SYS, 2/18/2024 18:07:51, 726496 bytes
+| +-+ USB Input Device
+| | | Vendor/Product ID: 0x0B05, 0x19B6
+| | | Location: 0008.0000.0003.003.000.000.000.000.000
+| | | Matching Device ID: USB\Class_03&SubClass_01
+| | | Service: HidUsb
+| | | Driver: hidusb.sys, 11/16/2023 12:24:48, 77824 bytes
+| | | Driver: hidclass.sys, 11/16/2023 12:24:48, 278528 bytes
+| | | Driver: hidparse.sys, 11/16/2023 12:24:48, 90112 bytes
 | | | 
-| | +-+ USB Composite Device
-| | | | Vendor/Product ID: 0x05AC, 0x024F
-| | | | Location: Port_#0002.Hub_#0006
-| | | | Matching Device ID: USB\COMPOSITE
-| | | | Service: usbccgp
-| | | | Driver: usbccgp.sys, 2/18/2024 18:07:51, 230784 bytes
-| | | | 
-| | | +-+ USB Input Device
-| | | | | Vendor/Product ID: 0x05AC, 0x024F
-| | | | | Location: 0000.0014.0000.010.001.002.000.000.000
-| | | | | Matching Device ID: USB\Class_03&SubClass_01
-| | | | | Service: HidUsb
-| | | | | Driver: hidusb.sys, 11/15/2023 19:20:48, 77824 bytes
-| | | | | Driver: hidclass.sys, 11/15/2023 19:20:48, 278528 bytes
-| | | | | Driver: hidparse.sys, 11/15/2023 19:20:48, 90112 bytes
-| | | | | 
-| | | | +-+ HID Keyboard Device
-| | | | | | Vendor/Product ID: 0x05AC, 0x024F
-| | | | | | Matching Device ID: HID_DEVICE_SYSTEM_KEYBOARD
-| | | | | | Service: kbdhid
-| | | | | | Driver: kbdhid.sys, 5/7/2022 00:19:25, 73728 bytes
-| | | | | | Driver: kbdclass.sys, 5/7/2022 00:19:25, 95576 bytes
-| | | | | 
-| | | +-+ USB Input Device
-| | | | | Vendor/Product ID: 0x05AC, 0x024F
-| | | | | Location: 0000.0014.0000.010.001.002.000.000.000
-| | | | | Matching Device ID: USB\Class_03&SubClass_01
-| | | | | Service: HidUsb
-| | | | | Driver: hidusb.sys, 11/15/2023 19:20:48, 77824 bytes
-| | | | | Driver: hidclass.sys, 11/15/2023 19:20:48, 278528 bytes
-| | | | | Driver: hidparse.sys, 11/15/2023 19:20:48, 90112 bytes
-| | | | | 
-| | | | +-+ HID Keyboard Device
-| | | | | | Vendor/Product ID: 0x05AC, 0x024F
-| | | | | | Matching Device ID: HID_DEVICE_SYSTEM_KEYBOARD
-| | | | | | Service: kbdhid
-| | | | | | Driver: kbdhid.sys, 5/7/2022 00:19:25, 73728 bytes
-| | | | | | Driver: kbdclass.sys, 5/7/2022 00:19:25, 95576 bytes
-| | | | | | 
-| | | | +-+ HID-compliant mouse
-| | | | | | Vendor/Product ID: 0x05AC, 0x024F
-| | | | | | Matching Device ID: HID_DEVICE_SYSTEM_MOUSE
-| | | | | | Service: mouhid
-| | | | | | Driver: mouhid.sys, 5/7/2022 00:19:25, 69632 bytes
-| | | | | | Driver: mouclass.sys, 5/7/2022 00:19:25, 95592 bytes
-| | | 
-| +-+ USB Composite Device
-| | | Vendor/Product ID: 0x046D, 0xC547
-| | | Location: Port_#0003.Hub_#0003
-| | | Matching Device ID: USB\COMPOSITE
-| | | Service: usbccgp
-| | | Driver: usbccgp.sys, 2/18/2024 18:07:51, 230784 bytes
-| | | 
-| | +-+ USB Input Device
-| | | | Vendor/Product ID: 0x046D, 0xC547
-| | | | Location: 0000.0014.0000.010.003.000.000.000.000
-| | | | Matching Device ID: USB\Class_03&SubClass_01
-| | | | Service: HidUsb
-| | | | Driver: hidusb.sys, 11/15/2023 19:20:48, 77824 bytes
-| | | | Driver: hidclass.sys, 11/15/2023 19:20:48, 278528 bytes
-| | | | Driver: hidparse.sys, 11/15/2023 19:20:48, 90112 bytes
-| | | | 
-| | | +-+ HID-compliant mouse
-| | | | | Vendor/Product ID: 0x046D, 0xC547
-| | | | | Matching Device ID: HID_DEVICE_SYSTEM_MOUSE
-| | | | | Service: mouhid
-| | | | | Driver: mouhid.sys, 5/7/2022 00:19:25, 69632 bytes
-| | | | | Driver: mouclass.sys, 5/7/2022 00:19:25, 95592 bytes
-| | | | 
-| | +-+ USB Input Device
-| | | | Vendor/Product ID: 0x046D, 0xC547
-| | | | Location: 0000.0014.0000.010.003.000.000.000.000
-| | | | Matching Device ID: USB\Class_03&SubClass_01
-| | | | Service: HidUsb
-| | | | Driver: hidusb.sys, 11/15/2023 19:20:48, 77824 bytes
-| | | | Driver: hidclass.sys, 11/15/2023 19:20:48, 278528 bytes
-| | | | Driver: hidparse.sys, 11/15/2023 19:20:48, 90112 bytes
-| | | | 
-| | | +-+ HID Keyboard Device
-| | | | | Vendor/Product ID: 0x046D, 0xC547
-| | | | | Matching Device ID: HID_DEVICE_SYSTEM_KEYBOARD
-| | | | | Service: kbdhid
-| | | | | Driver: kbdhid.sys, 5/7/2022 00:19:25, 73728 bytes
-| | | | | Driver: kbdclass.sys, 5/7/2022 00:19:25, 95576 bytes
+| | +-+ HID Keyboard Device
+| | | | Vendor/Product ID: 0x0B05, 0x19B6
+| | | | Matching Device ID: HID_DEVICE_SYSTEM_KEYBOARD
+| | | | Service: kbdhid
+| | | | Driver: kbdhid.sys, 5/7/2022 00:19:25, 73728 bytes
+| | | | Driver: kbdclass.sys, 5/7/2022 00:19:25, 95576 bytes
 
 ----------------
 Gameport Devices
@@ -581,334 +392,316 @@ Gameport Devices
 ------------
 PS/2 Devices
 ------------
++ HID-compliant mouse
+| Vendor/Product ID: 0x04F3, 0x0000
+| Matching Device ID: HID_DEVICE_SYSTEM_MOUSE
+| Service: mouhid
+| Driver: mouhid.sys, 5/7/2022 00:19:25, 69632 bytes
+| Driver: mouclass.sys, 5/7/2022 00:19:25, 95592 bytes
 
 ------------------------
 Disk & DVD/CD-ROM Drives
 ------------------------
       Drive: C:
- Free Space: 412.5 GB
+ Free Space: 612.3 GB
 Total Space: 953.1 GB
 File System: NTFS
-      Model: Samsung SSD 980 PRO 1TB
-
-      Drive: D:
- Free Space: 296.1 GB
-Total Space: 1907.7 GB
-File System: NTFS
-      Model: Samsung SSD 980 PRO 2TB
+      Model: WDC PC SN530 SDBPTPZ-1T00-1002
 
 --------------
 System Devices
 --------------
-     Name: SM Bus Controller
-Device ID: PCI\VEN_8086&DEV_43A3&SUBSYS_86941043&REV_11\3&11583659&0&FC
+     Name: PCI standard host CPU bridge
+Device ID: PCI\VEN_1022&DEV_166E&SUBSYS_00000000&REV_00\3&11583659&0&C4
    Driver: n/a
 
-     Name: High Definition Audio Controller
-Device ID: PCI\VEN_8086&DEV_43C8&SUBSYS_86941043&REV_11\3&11583659&0&FB
-   Driver: C:\WINDOWS\system32\DRIVERS\hdaudbus.sys, 10.00.22621.2792 (English), 12/12/2023 17:17:51, 192512 bytes
-   Driver: C:\WINDOWS\system32\DRIVERS\drmk.sys, 10.00.22621.2506 (English), 11/15/2023 19:20:24, 143360 bytes
-   Driver: C:\WINDOWS\system32\DRIVERS\portcls.sys, 10.00.22621.2506 (English), 11/15/2023 19:20:25, 471040 bytes
-
-     Name: Intel(R) Wi-Fi 6E AX210 160MHz
-Device ID: PCI\VEN_8086&DEV_2725&SUBSYS_00248086&REV_1A\4&13199003&0&00E7
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\netwtw6e.inf_amd64_cc3a2460c42c06f6\Netwtw12.sys, 22.250.0001.0002 (English), 8/14/2023 11:13:24, 5334952 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\netwtw6e.inf_amd64_cc3a2460c42c06f6\netwfw12.dat, 8/14/2023 10:00:12, 33125432 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\netwtw6e.inf_amd64_cc3a2460c42c06f6\IntelIHVRouter12.dll, 22.12240.0001.0001 (English), 8/14/2023 11:13:14, 1475496 bytes
-
-     Name: PCI-to-PCI Bridge
-Device ID: PCI\VEN_8086&DEV_43C0&SUBSYS_86941043&REV_11\3&11583659&0&D8
-   Driver: C:\WINDOWS\system32\DRIVERS\pci.sys, 10.00.22621.2861 (English), 12/12/2023 17:17:53, 579056 bytes
-
-     Name: Standard NVM Express Controller
-Device ID: PCI\VEN_144D&DEV_A80A&SUBSYS_A801144D&REV_00\4&13288166&0&00DC
-   Driver: C:\WINDOWS\system32\DRIVERS\stornvme.sys, 10.00.22621.3085 (English), 2/18/2024 18:07:41, 251376 bytes
-
-     Name: PCI-to-PCI Bridge
-Device ID: PCI\VEN_8086&DEV_4C09&SUBSYS_00000000&REV_01\3&11583659&0&30
-   Driver: C:\WINDOWS\system32\DRIVERS\pci.sys, 10.00.22621.2861 (English), 12/12/2023 17:17:53, 579056 bytes
-
-     Name: PCI Device
-Device ID: PCI\VEN_8086&DEV_43E8&SUBSYS_86941043&REV_11\3&11583659&0&A8
+     Name: AMD SMBus
+Device ID: PCI\VEN_1022&DEV_790B&SUBSYS_790B1022&REV_51\3&11583659&0&A0
    Driver: n/a
 
-     Name: Intel(R) Management Engine Interface #1
-Device ID: PCI\VEN_8086&DEV_43E0&SUBSYS_86941043&REV_11\3&11583659&0&B0
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\heci.inf_amd64_649c7923a043d3be\x64\TeeDriverW10x64.sys, 2145.01.0042.0000 (English), 12/27/2021 18:50:40, 309888 bytes
+     Name: PCI Express Root Port
+Device ID: PCI\VEN_1022&DEV_1633&SUBSYS_16621043&REV_00\3&11583659&0&09
+   Driver: C:\WINDOWS\system32\DRIVERS\pci.sys, 10.00.22621.2861 (English), 12/13/2023 10:09:48, 579056 bytes
 
-     Name: PCI-to-PCI Bridge
-Device ID: PCI\VEN_8086&DEV_43BE&SUBSYS_86941043&REV_11\3&11583659&0&E6
-   Driver: C:\WINDOWS\system32\DRIVERS\pci.sys, 10.00.22621.2861 (English), 12/12/2023 17:17:53, 579056 bytes
-
-     Name: NVIDIA GeForce RTX 3070 Ti
-Device ID: PCI\VEN_10DE&DEV_2482&SUBSYS_880E1043&REV_A1\4&39FDDC03&0&0008
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\NVWMI\nvPerfProvider.man, 1/12/2024 17:30:12, 14175 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\NVWMI\nvWmi.mof, 1/12/2024 17:30:12, 148921 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\NVWMI\nvWmi64.exe, 2.36.0000.0000 (English), 1/13/2024 05:05:00, 4516488 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\Display.NvContainer\MessageBus.dll, 1.22.2758.1620 (English), 1/13/2024 05:04:12, 7542592 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\Display.NvContainer\NVDisplay.Container.exe, 1.39.3323.1171 (English), 1/13/2024 05:04:14, 1275000 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\Display.NvContainer\NvContainerRecovery.bat, 1/12/2024 17:30:12, 1951 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\Display.NvContainer\dlsargs.xml, 1/12/2024 17:30:12, 544 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\Display.NvContainer\dlsnetparams.csv, 1/12/2024 17:30:12, 341661 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\Display.NvContainer\messagebus_client.conf, 1/12/2024 17:30:12, 57 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\Display.NvContainer\nvgwls.exe, 1/13/2024 05:04:18, 3941512 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\Display.NvContainer\nvtopps.db3, 1/12/2024 17:30:12, 126976 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\Display.NvContainer\plugins\LocalSystem\NvXDCore.dll, 31.00.0015.4665 (English), 1/13/2024 05:04:24, 1879672 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\Display.NvContainer\plugins\LocalSystem\NvcDispCorePlugin.dll, 31.00.0015.4665 (English), 1/13/2024 05:04:22, 520840 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\Display.NvContainer\plugins\LocalSystem\NvcDispWatchdog.dll, 1.39.3323.1171 (English), 1/13/2024 05:04:22, 759816 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\Display.NvContainer\plugins\LocalSystem\_DisplayDriverRAS.dll, 1.10.0000.0000 (English), 1/13/2024 05:04:24, 2712200 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\Display.NvContainer\plugins\LocalSystem\_NvMsgBusBroadcast.dll, 1.34.3030.7627 (English), 1/13/2024 05:04:26, 3192856 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\Display.NvContainer\plugins\LocalSystem\_nvtopps.dll, 31.00.0015.4665 (English), 1/13/2024 05:04:26, 12259872 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\Display.NvContainer\plugins\LocalSystem\messagebus.conf, 1/12/2024 17:30:12, 57 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\Display.NvContainer\plugins\LocalSystem\wksServicePluginZ.dll, 31.00.0015.4665 (English), 1/13/2024 05:04:24, 277112 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\Display.NvContainer\plugins\Session\_NvGSTPlugin.dll, 31.00.0015.4665 (English), 1/13/2024 05:04:42, 2656904 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\Display.NvContainer\plugins\Session\nvprofileupdaterplugin.dll, 31.00.0015.4665 (English), 1/13/2024 05:04:28, 2228344 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\Display.NvContainer\plugins\Session\nvxdsyncplugin.dll, 8.17.0015.4665 (English), 1/13/2024 05:04:28, 1833592 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\Display.NvContainer\plugins\Session\wksServicePlugin.dll, 31.00.0015.4665 (English), 1/13/2024 05:04:36, 310816 bytes
-   Driver: C:\WINDOWS\system32\DRIVERS\NVIDIA Corporation\Drs\dbInstaller.exe, 31.00.0015.4665 (English), 1/13/2024 04:55:58, 733832 bytes
-   Driver: C:\WINDOWS\system32\DRIVERS\NVIDIA Corporation\Drs\nvdrsdb.bin, 1/12/2024 17:30:12, 1934764 bytes
-   Driver: C:\WINDOWS\system32\nvcpl.dll, 8.17.0015.4665 (English), 1/13/2024 04:56:10, 5861000 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nv3dappshext.dll, 6.14.0015.4665 (English), 1/13/2024 04:56:08, 1005192 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nv3dappshextr.dll, 6.14.0015.4665 (English), 1/13/2024 04:56:08, 97912 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvcoproc.bin, 1/12/2024 17:30:12, 10525347 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvcpl.dll, 8.17.0015.4665 (English), 1/13/2024 04:56:10, 5861000 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvdevtools.dll, 31.00.0015.4665 (English), 1/13/2024 04:57:18, 4587640 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvdevtoolsr.dll, 31.00.0015.4665 (English), 1/13/2024 04:57:24, 245896 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvdisps.dll, 31.00.0015.4665 (English), 1/13/2024 04:57:26, 11649568 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvdispsr.dll, 31.00.0015.4665 (English), 1/13/2024 04:57:26, 11574904 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvgames.dll, 31.00.0015.4665 (English), 1/13/2024 04:58:16, 12485240 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvgamesr.dll, 31.00.0015.4665 (English), 1/13/2024 04:58:18, 13254280 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvlicensings.dll, 6.14.0015.4665 (English), 1/13/2024 04:59:52, 4573816 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvlicensingsr.dll, 6.14.0015.4665 (English), 1/13/2024 04:59:54, 363128 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvshext.dll, 1.02.0000.0001 (English), 1/13/2024 05:02:16, 133768 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvsmartmax.dll, 6.14.0010.10003 (English), 1/13/2024 05:02:16, 199304 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvsmartmax64.dll, 6.14.0010.10003 (English), 1/13/2024 05:02:18, 235552 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvsmartmaxapp.exe, 6.14.0010.10003 (English), 1/13/2024 05:02:18, 274056 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvsmartmaxapp64.exe, 6.14.0010.10003 (English), 1/13/2024 05:02:20, 284296 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvsvc64.dll, 31.00.0015.4665 (English), 1/13/2024 05:02:20, 2668680 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvsvcr.dll, 31.00.0015.4665 (English), 1/13/2024 05:02:24, 1801224 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvsvs.dll, 31.00.0015.4665 (English), 1/13/2024 05:02:24, 5096568 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvsvsr.dll, 31.00.0015.4665 (English), 1/13/2024 05:02:32, 2014240 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvui.dll, 8.17.0015.4665 (English), 1/13/2024 05:02:34, 6647328 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvuir.dll, 8.17.0015.4665 (English), 1/13/2024 05:02:36, 2649632 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvvitvs.dll, 31.00.0015.4665 (English), 1/13/2024 05:02:42, 7451656 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvvitvsr.dll, 31.00.0015.4665 (English), 1/13/2024 05:02:46, 4227080 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvwss.dll, 31.00.0015.4665 (English), 1/13/2024 05:03:30, 12263032 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvwssr.dll, 31.00.0015.4665 (English), 1/13/2024 05:03:34, 9528456 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvxdapix.dll, 8.17.0015.4665 (English), 1/13/2024 05:03:38, 9343624 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvxdbat.dll, 8.17.0015.4665 (English), 1/13/2024 05:03:42, 1648264 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvxdplcy.dll, 8.17.0015.4665 (English), 1/13/2024 05:03:44, 1891464 bytes
-   Driver: C:\WINDOWS\system32\lxss\lib\libcuda.so, 1/12/2024 17:30:12, 158304 bytes
-   Driver: C:\WINDOWS\system32\lxss\lib\libcuda.so.1, 1/12/2024 17:30:12, 158304 bytes
-   Driver: C:\WINDOWS\system32\lxss\lib\libcuda.so.1.1, 1/12/2024 17:30:12, 158304 bytes
-   Driver: C:\WINDOWS\system32\lxss\lib\libcudadebugger.so.1, 1/12/2024 17:30:12, 10593576 bytes
-   Driver: C:\WINDOWS\system32\lxss\lib\libnvcuvid.so, 1/12/2024 17:30:12, 11123896 bytes
-   Driver: C:\WINDOWS\system32\lxss\lib\libnvcuvid.so.1, 1/12/2024 17:30:12, 11123896 bytes
-   Driver: C:\WINDOWS\system32\lxss\lib\libnvdxdlkernels.so, 1/12/2024 17:30:12, 113395360 bytes
-   Driver: C:\WINDOWS\system32\lxss\lib\libnvidia-encode.so, 1/12/2024 17:30:12, 555624 bytes
-   Driver: C:\WINDOWS\system32\lxss\lib\libnvidia-encode.so.1, 1/12/2024 17:30:12, 555624 bytes
-   Driver: C:\WINDOWS\system32\lxss\lib\libnvidia-ml.so.1, 1/12/2024 17:30:12, 234568 bytes
-   Driver: C:\WINDOWS\system32\lxss\lib\libnvidia-opticalflow.so, 1/12/2024 17:30:12, 362960 bytes
-   Driver: C:\WINDOWS\system32\lxss\lib\libnvidia-opticalflow.so.1, 1/12/2024 17:30:12, 362960 bytes
-   Driver: C:\WINDOWS\system32\lxss\lib\libnvoptix.so.1, 1/12/2024 17:30:12, 68552 bytes
-   Driver: C:\WINDOWS\system32\lxss\lib\libnvwgf2umx.so, 1/12/2024 17:30:12, 67924736 bytes
-   Driver: C:\WINDOWS\system32\lxss\lib\nvidia-smi, 1/12/2024 17:30:12, 686416 bytes
-   Driver: C:\WINDOWS\system32\DRIVERS\NVIDIA Corporation\license.txt, 1/12/2024 17:30:12, 35335 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\_nvngx.dll, 31.00.0015.4665 (English), 1/13/2024 05:04:06, 1542792 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\cudnn_infer64_7.dll, 1/13/2024 04:55:50, 22774320 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvngx.dll, 30.00.0014.9516 (English), 1/13/2024 04:59:56, 488672 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvngx_update.exe, 31.00.0015.4665 (English), 1/13/2024 04:59:58, 1191032 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\NvCamera\FreqTransfer32.exe, 1/13/2024 05:04:44, 3764768 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\NvCamera\FreqTransfer64.exe, 1/13/2024 05:04:44, 4057736 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\NvCamera\GreenScreenBG01.jpg, 1/12/2024 17:30:12, 281528 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\NvCamera\GreenScreenBG02.jpg, 1/12/2024 17:30:12, 499736 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\NvCamera\HighresBlender32.exe, 1/13/2024 05:04:46, 3860600 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\NvCamera\HighresBlender64.exe, 1/13/2024 05:04:46, 4163192 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\NvCamera\NvCamera32.dll, 7.01.0000.0000 (English), 1/13/2024 05:04:46, 8183568 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\NvCamera\NvCamera64.dll, 7.01.0000.0000 (English), 1/13/2024 05:04:48, 8684072 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\NvCamera\NvCameraAllowlisting32.dll, 7.01.0000.0000 (English), 1/13/2024 05:04:48, 520256 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\NvCamera\NvCameraAllowlisting64.dll, 7.01.0000.0000 (English), 1/13/2024 05:04:50, 666504 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\NvCamera\NvCameraEnable.exe, 1/13/2024 05:04:50, 374904 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\NvCamera\NvImageConvert32.exe, 1/13/2024 05:04:50, 3764360 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\NvCamera\NvImageConvert64.exe, 1/13/2024 05:04:58, 4037640 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\NvCamera\ReShadeFXC32.exe, 2.00.0000.0000 (English), 1/13/2024 05:04:58, 776824 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\NvCamera\ReShadeFXC64.exe, 2.00.0000.0000 (English), 1/13/2024 05:04:58, 891936 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\NvCamera\ShotWithGeforce518x32.rgba, 1/12/2024 17:30:12, 66304 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\NvCamera\SphericalEquirect32.exe, 1/13/2024 05:05:00, 3716728 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\NvCamera\SphericalEquirect64.exe, 1/13/2024 05:05:00, 3940984 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\NvCamera\Sticker01.png, 1/12/2024 17:30:12, 49695 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\NvCamera\Sticker02.png, 1/12/2024 17:30:12, 474002 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\NvCamera\Sticker03.png, 1/12/2024 17:30:12, 380006 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\NvCamera\Sticker04.png, 1/12/2024 17:30:12, 86881 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\NvCamera\Sticker05.png, 1/12/2024 17:30:12, 59304 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\NvCamera\Sticker06.png, 1/12/2024 17:30:12, 13547 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\NvCamera\Sticker07.png, 1/12/2024 17:30:12, 6342 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\NvCamera\Sticker08.png, 1/12/2024 17:30:12, 96493 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\NvCamera\d3dcompiler_47_32.dll, 6.03.9600.16384 (English), 1/13/2024 05:04:42, 3470856 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\NvCamera\d3dcompiler_47_64.dll, 6.03.9600.16384 (English), 1/13/2024 05:04:44, 4178464 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\NvCamera\scratches.jpg, 1/12/2024 17:30:12, 346354 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\NvCamera\tools_licenses.txt, 1/12/2024 17:30:12, 15970 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\NvCamera\ui.tga, 1/12/2024 17:30:12, 120236 bytes
-   Driver: C:\WINDOWS\system32\MCU.exe, 1.01.5204.20580 (English), 1/13/2024 04:56:08, 853112 bytes
-   Driver: C:\WINDOWS\system32\nvdebugdump.exe, 6.14.0015.4665 (English), 1/13/2024 04:57:06, 459272 bytes
-   Driver: C:\WINDOWS\system32\nvidia-smi.exe, 8.17.0015.4665 (English), 1/13/2024 04:58:24, 810632 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvopencl32.dll, 31.00.0015.4665 (English), 1/13/2024 05:00:36, 18538504 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvopencl64.dll, 31.00.0015.4665 (English), 1/13/2024 05:00:44, 10626568 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvlddmkm.sys, 31.00.0015.4665 (English), 1/13/2024 04:59:38, 58756216 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvvm32.dll, 31.00.0015.4665 (English), 1/13/2024 05:02:50, 60463224 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvvm64.dll, 31.00.0015.4665 (English), 1/13/2024 05:03:04, 68342408 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\gsp_ga10x.bin, 1/12/2024 17:30:12, 39777824 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\gsp_tu10x.bin, 1/12/2024 17:30:12, 24574240 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\libcuda.so.1.1, 1/12/2024 17:30:12, 29165112 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\libcuda_loader.so, 1/12/2024 17:30:12, 158304 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\libcudadebugger.so.1, 1/12/2024 17:30:12, 10593576 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\libnvcuvid.so.1, 1/12/2024 17:30:12, 11123896 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\libnvdxdlkernels.so, 1/12/2024 17:30:12, 113395360 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\libnvidia-encode.so.1, 1/12/2024 17:30:12, 555624 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\libnvidia-ml.so.1, 1/12/2024 17:30:12, 1631632 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\libnvidia-ml_loader.so, 1/12/2024 17:30:12, 234568 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\libnvidia-nvvm.so.4, 1/12/2024 17:30:12, 27904040 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\libnvidia-opticalflow.so.1, 1/12/2024 17:30:12, 362960 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\libnvidia-ptxjitcompiler.so.1, 1/12/2024 17:30:12, 26466472 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\libnvoptix_loader.so.1, 1/12/2024 17:30:12, 68552 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\libnvwgf2umx.so, 1/12/2024 17:30:12, 67924736 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nv-vk64.json, 1/12/2024 17:30:12, 671 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvDecMFTMjpeg.dll, 31.00.0015.4665 (English), 1/13/2024 04:57:08, 507528 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvDecMFTMjpegx.dll, 31.00.0015.4665 (English), 1/13/2024 04:57:16, 657952 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvEncMFTH264.dll, 31.00.0015.4665 (English), 1/13/2024 04:57:50, 913544 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvEncMFTH264x.dll, 31.00.0015.4665 (English), 1/13/2024 04:57:54, 1163912 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvEncMFThevc.dll, 31.00.0015.4665 (English), 1/13/2024 04:57:58, 917624 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvEncMFThevcx.dll, 31.00.0015.4665 (English), 1/13/2024 04:58:02, 1171064 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvcubins.bin, 1/12/2024 17:30:12, 25249216 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvcuda32.dll, 31.00.0015.4665 (English), 1/13/2024 04:56:16, 22735992 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvcuda64.dll, 31.00.0015.4665 (English), 1/13/2024 04:56:24, 9926664 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvd3dumx.dll, 31.00.0015.4665 (English), 1/13/2024 04:56:08, 44170904 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvdlistx.dll, 31.00.0015.4665 (English), 1/13/2024 04:56:24, 236496 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvdlppx.dll, 31.00.0015.4665 (English), 1/13/2024 04:56:28, 13450096 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvdxdlkernels.dll, 1/13/2024 04:57:32, 121051256 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvgpucomp32.dll, 31.00.0015.4665 (English), 1/13/2024 04:56:40, 28905120 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvgpucomp64.dll, 31.00.0015.4665 (English), 1/13/2024 04:56:54, 36056752 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvidia-smi, 1/12/2024 17:30:12, 686416 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvldumdx.dll, 31.00.0015.4665 (English), 1/13/2024 04:57:06, 774256 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvml.dll, 8.17.0015.4665 (English), 1/13/2024 04:59:56, 1525896 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvoglv64.dll, 31.00.0015.4665 (English), 1/13/2024 05:00:20, 45448312 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvoptix.bin, 1/12/2024 17:30:12, 117066996 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvoptix.dll, 8.00.0000.0000 (English), 1/13/2024 05:00:54, 57224736 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvppe.dll, 31.00.0015.4665 (English), 1/13/2024 04:57:08, 7323616 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvppex.dll, 31.00.0015.4665 (English), 1/13/2024 04:57:14, 7799872 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvptxJitCompiler32.dll, 31.00.0015.4665 (English), 1/13/2024 05:01:24, 16765472 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvptxJitCompiler64.dll, 31.00.0015.4665 (English), 1/13/2024 05:01:30, 19381368 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvrtum64.dll, 31.00.0015.4665 (English), 1/13/2024 05:01:38, 114486904 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvwgf2umx.dll, 31.00.0015.4665 (English), 1/13/2024 04:57:38, 88884672 bytes
-   Driver: C:\WINDOWS\system32\NvFBC64.dll, 6.14.0015.4665 (English), 1/13/2024 04:58:16, 2171528 bytes
-   Driver: C:\WINDOWS\system32\NvIFR64.dll, 6.14.0015.4665 (English), 1/13/2024 04:59:30, 1541256 bytes
-   Driver: C:\WINDOWS\system32\OpenCL.dll, 3.00.0003.0000 (English), 1/13/2024 05:03:56, 1488008 bytes
-   Driver: C:\WINDOWS\system32\nvEncodeAPI64.dll, 31.00.0015.4665 (English), 1/13/2024 04:58:08, 996984 bytes
-   Driver: C:\WINDOWS\system32\nvapi64.dll, 31.00.0015.4665 (English), 1/13/2024 04:55:48, 7869664 bytes
-   Driver: C:\WINDOWS\system32\nvcuda.dll, 31.00.0015.4665 (English), 1/13/2024 04:56:46, 3619960 bytes
-   Driver: C:\WINDOWS\system32\nvcudadebugger.dll, 0.00.0000.0000 (English), 1/13/2024 04:56:30, 5862408 bytes
-   Driver: C:\WINDOWS\system32\nvcuvid.dll, 7.17.0015.4665 (English), 1/13/2024 04:56:58, 12375160 bytes
-   Driver: C:\WINDOWS\system32\nvinfo.pb, 1/12/2024 17:30:12, 113947 bytes
-   Driver: C:\WINDOWS\system32\nvml.dll, 8.17.0015.4665 (English), 1/13/2024 04:59:56, 958600 bytes
-   Driver: C:\WINDOWS\system32\nvofapi64.dll, 31.00.0015.4665 (English), 1/13/2024 05:00:04, 669704 bytes
-   Driver: C:\WINDOWS\system32\vulkan-1-999-0-0-0.dll, 1.03.0255.0000 (English), 1/13/2024 05:03:58, 1424064 bytes
-   Driver: C:\WINDOWS\system32\vulkan-1.dll, 1.03.0255.0000 (English), 1/13/2024 05:03:58, 1424064 bytes
-   Driver: C:\WINDOWS\system32\vulkaninfo-1-999-0-0-0.exe, 1.03.0255.0000 (English), 1/13/2024 05:04:02, 850624 bytes
-   Driver: C:\WINDOWS\system32\vulkaninfo.exe, 1.03.0255.0000 (English), 1/13/2024 05:04:02, 850624 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nv-vk32.json, 1/12/2024 17:30:12, 671 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvIccAdvancedColorIdentity.icm, 1/12/2024 17:30:12, 3288 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvd3dum.dll, 31.00.0015.4665 (English), 1/13/2024 04:55:56, 41672008 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvdispco64.exe, 1.00.0016.0000 (English), 1/13/2024 04:57:24, 1739784 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvdlist.dll, 31.00.0015.4665 (English), 1/13/2024 04:56:20, 200056 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvldumd.dll, 31.00.0015.4665 (English), 1/13/2024 04:57:04, 619752 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvoglv32.dll, 31.00.0015.4665 (English), 1/13/2024 05:00:10, 32256120 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\nvwgf2um.dll, 31.00.0015.4665 (English), 1/13/2024 04:57:20, 63987528 bytes
-   Driver: C:\WINDOWS\SysWow64\NvFBC.dll, 6.14.0015.4665 (English), 1/13/2024 04:58:12, 1624184 bytes
-   Driver: C:\WINDOWS\SysWow64\NvIFR.dll, 6.14.0015.4665 (English), 1/13/2024 04:59:26, 1198728 bytes
-   Driver: C:\WINDOWS\SysWow64\OpenCL.dll, 3.00.0003.0000 (English), 1/13/2024 05:03:54, 1227400 bytes
-   Driver: C:\WINDOWS\SysWow64\nvEncodeAPI.dll, 31.00.0015.4665 (English), 1/13/2024 04:58:08, 774280 bytes
-   Driver: C:\WINDOWS\SysWow64\nvapi.dll, 31.00.0015.4665 (English), 1/13/2024 04:55:42, 6745752 bytes
-   Driver: C:\WINDOWS\SysWow64\nvcuda.dll, 31.00.0015.4665 (English), 1/13/2024 04:56:44, 6462496 bytes
-   Driver: C:\WINDOWS\SysWow64\nvcuvid.dll, 7.17.0015.4665 (English), 1/13/2024 04:56:52, 15095416 bytes
-   Driver: C:\WINDOWS\SysWow64\nvofapi.dll, 31.00.0015.4665 (English), 1/13/2024 05:00:02, 504952 bytes
-   Driver: C:\WINDOWS\SysWow64\vulkan-1-999-0-0-0.dll, 1.03.0255.0000 (English), 1/13/2024 05:04:00, 1246400 bytes
-   Driver: C:\WINDOWS\SysWow64\vulkan-1.dll, 1.03.0255.0000 (English), 1/13/2024 05:04:00, 1246400 bytes
-   Driver: C:\WINDOWS\SysWow64\vulkaninfo-1-999-0-0-0.exe, 1.03.0255.0000 (English), 1/13/2024 05:04:02, 731328 bytes
-   Driver: C:\WINDOWS\SysWow64\vulkaninfo.exe, 1.03.0255.0000 (English), 1/13/2024 05:04:02, 731328 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_72a60bcfb646da4c\NvTelemetry64.dll, 14.03.0060.0000 (English), 1/13/2024 05:02:32, 4466120 bytes
-
-     Name: PCI Device
-Device ID: PCI\VEN_8086&DEV_43A4&SUBSYS_86941043&REV_11\3&11583659&0&FD
-   Driver: n/a
-
-     Name: PCI standard RAM Controller
-Device ID: PCI\VEN_8086&DEV_43EF&SUBSYS_86941043&REV_11\3&11583659&0&A2
-   Driver: n/a
-
-     Name: Standard SATA AHCI Controller
-Device ID: PCI\VEN_8086&DEV_43D2&SUBSYS_86941043&REV_11\3&11583659&0&B8
-   Driver: C:\WINDOWS\system32\DRIVERS\storahci.sys, 10.00.22621.2506 (English), 11/15/2023 19:20:27, 214400 bytes
-
-     Name: PCI-to-PCI Bridge
-Device ID: PCI\VEN_8086&DEV_43B8&SUBSYS_86941043&REV_11\3&11583659&0&E0
-   Driver: C:\WINDOWS\system32\DRIVERS\pci.sys, 10.00.22621.2861 (English), 12/12/2023 17:17:53, 579056 bytes
-
-     Name: PCI standard ISA bridge
-Device ID: PCI\VEN_8086&DEV_4385&SUBSYS_86941043&REV_11\3&11583659&0&F8
-   Driver: C:\WINDOWS\system32\DRIVERS\msisadrv.sys, 10.00.22621.0001 (English), 5/7/2022 00:19:04, 54608 bytes
-
-     Name: PCI-to-PCI Bridge
-Device ID: PCI\VEN_8086&DEV_43B0&SUBSYS_86941043&REV_11\3&11583659&0&E8
-   Driver: C:\WINDOWS\system32\DRIVERS\pci.sys, 10.00.22621.2861 (English), 12/12/2023 17:17:53, 579056 bytes
-
-     Name: PCI-to-PCI Bridge
-Device ID: PCI\VEN_8086&DEV_43C4&SUBSYS_86941043&REV_11\3&11583659&0&DC
-   Driver: C:\WINDOWS\system32\DRIVERS\pci.sys, 10.00.22621.2861 (English), 12/12/2023 17:17:53, 579056 bytes
-
-     Name: High Definition Audio Controller
-Device ID: PCI\VEN_10DE&DEV_228B&SUBSYS_880E1043&REV_A1\4&39FDDC03&0&0108
-   Driver: C:\WINDOWS\system32\DRIVERS\hdaudbus.sys, 10.00.22621.2792 (English), 12/12/2023 17:17:51, 192512 bytes
-   Driver: C:\WINDOWS\system32\DRIVERS\drmk.sys, 10.00.22621.2506 (English), 11/15/2023 19:20:24, 143360 bytes
-   Driver: C:\WINDOWS\system32\DRIVERS\portcls.sys, 10.00.22621.2506 (English), 11/15/2023 19:20:25, 471040 bytes
-
-     Name: PCI Device
-Device ID: PCI\VEN_8086&DEV_43E9&SUBSYS_86941043&REV_11\3&11583659&0&A9
-   Driver: n/a
-
-     Name: Standard NVM Express Controller
-Device ID: PCI\VEN_144D&DEV_A80A&SUBSYS_A801144D&REV_00\4&12FB7CC4&0&0030
-   Driver: C:\WINDOWS\system32\DRIVERS\stornvme.sys, 10.00.22621.3085 (English), 2/18/2024 18:07:41, 251376 bytes
-
-     Name: Intel(R) Ethernet Controller (3) I225-V #2
-Device ID: PCI\VEN_8086&DEV_15F3&SUBSYS_87D21043&REV_03\4&255B870&0&00E6
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\e2fn.inf_amd64_fcb868ac03f43b71\e2fn.sys, 2.01.0003.0015 (English), 7/3/2023 01:42:24, 1427528 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\e2fn.inf_amd64_fcb868ac03f43b71\e2fnmsg.dll, 0.00.0000.0006 (English), 7/3/2023 01:42:30, 84552 bytes
-
-     Name: PCI-to-PCI Bridge
-Device ID: PCI\VEN_8086&DEV_43BF&SUBSYS_86941043&REV_11\3&11583659&0&E7
-   Driver: C:\WINDOWS\system32\DRIVERS\pci.sys, 10.00.22621.2861 (English), 12/12/2023 17:17:53, 579056 bytes
-
-     Name: Intel(R) USB 3.20 eXtensible Host Controller - 1.20 (Microsoft)
-Device ID: PCI\VEN_8086&DEV_43ED&SUBSYS_86941043&REV_11\3&11583659&0&A0
-   Driver: C:\WINDOWS\system32\DRIVERS\USBXHCI.SYS, 10.00.22621.2506 (English), 11/15/2023 19:20:49, 677232 bytes
-   Driver: C:\WINDOWS\system32\DRIVERS\UMDF\UsbXhciCompanion.dll, 10.00.22621.2506 (English), 11/15/2023 19:20:49, 170856 bytes
-
-     Name: Intel(R) Ethernet Controller (3) I225-V
-Device ID: PCI\VEN_8086&DEV_15F3&SUBSYS_87D21043&REV_03\4&356AA108&0&00E5
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\e2fn.inf_amd64_fcb868ac03f43b71\e2fn.sys, 2.01.0003.0015 (English), 7/3/2023 01:42:24, 1427528 bytes
-   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\e2fn.inf_amd64_fcb868ac03f43b71\e2fnmsg.dll, 0.00.0000.0006 (English), 7/3/2023 01:42:30, 84552 bytes
-
-     Name: PCI-to-PCI Bridge
-Device ID: PCI\VEN_8086&DEV_4C01&SUBSYS_86941043&REV_01\3&11583659&0&08
-   Driver: C:\WINDOWS\system32\DRIVERS\pci.sys, 10.00.22621.2861 (English), 12/12/2023 17:17:53, 579056 bytes
-
-     Name: PCI-to-PCI Bridge
-Device ID: PCI\VEN_8086&DEV_43BD&SUBSYS_86941043&REV_11\3&11583659&0&E5
-   Driver: C:\WINDOWS\system32\DRIVERS\pci.sys, 10.00.22621.2861 (English), 12/12/2023 17:17:53, 579056 bytes
+     Name: PCI Express Root Port
+Device ID: PCI\VEN_1022&DEV_1635&SUBSYS_16351022&REV_00\3&11583659&0&41
+   Driver: C:\WINDOWS\system32\DRIVERS\pci.sys, 10.00.22621.2861 (English), 12/13/2023 10:09:48, 579056 bytes
 
      Name: PCI standard host CPU bridge
-Device ID: PCI\VEN_8086&DEV_4C43&SUBSYS_86941043&REV_01\3&11583659&0&00
+Device ID: PCI\VEN_1022&DEV_1671&SUBSYS_00000000&REV_00\3&11583659&0&C7
    Driver: n/a
+
+     Name: PCI standard host CPU bridge
+Device ID: PCI\VEN_1022&DEV_1632&SUBSYS_00000000&REV_00\3&11583659&0&40
+   Driver: n/a
+
+     Name: PCI standard host CPU bridge
+Device ID: PCI\VEN_1022&DEV_1632&SUBSYS_00000000&REV_00\3&11583659&0&10
+   Driver: n/a
+
+     Name: PCI standard host CPU bridge
+Device ID: PCI\VEN_1022&DEV_1632&SUBSYS_00000000&REV_00\3&11583659&0&08
+   Driver: n/a
+
+     Name: Intel(R) Wi-Fi 6 AX200 160MHz
+Device ID: PCI\VEN_8086&DEV_2723&SUBSYS_008C8086&REV_1A\4&1CFC170D&0&0012
+   Driver: C:\WINDOWS\system32\DRIVERS\Netwtw10.sys, 22.180.0016.0001 (English), 5/16/2023 15:07:28, 5169424 bytes
+   Driver: C:\WINDOWS\system32\DRIVERS\Netwfw10.dat, 5/16/2023 14:53:14, 15401320 bytes
+   Driver: C:\WINDOWS\system32\IntelIHVRouter10.dll, 22.12230.0000.0002 (English), 5/16/2023 15:07:20, 1474832 bytes
+
+     Name: PCI standard host CPU bridge
+Device ID: PCI\VEN_1022&DEV_166C&SUBSYS_00000000&REV_00\3&11583659&0&C2
+   Driver: n/a
+
+     Name: AMD Sensor Fusion Hub
+Device ID: PCI\VEN_1022&DEV_15E4&SUBSYS_15E41022&REV_00\4&12C9051D&0&0741
+   Driver: C:\WINDOWS\system32\DRIVERS\amdsfhkmdf.sys, 1.00.0000.0327 (English), 3/10/2022 00:09:08, 162440 bytes
+
+     Name: PCI standard host CPU bridge
+Device ID: PCI\VEN_1022&DEV_166F&SUBSYS_00000000&REV_00\3&11583659&0&C5
+   Driver: n/a
+
+     Name: PCI Express Root Port
+Device ID: PCI\VEN_1022&DEV_1634&SUBSYS_16621043&REV_00\3&11583659&0&14
+   Driver: C:\WINDOWS\system32\DRIVERS\pci.sys, 10.00.22621.2861 (English), 12/13/2023 10:09:48, 579056 bytes
+
+     Name: PCI Express Root Port
+Device ID: PCI\VEN_1022&DEV_1634&SUBSYS_16621043&REV_00\3&11583659&0&12
+   Driver: C:\WINDOWS\system32\DRIVERS\pci.sys, 10.00.22621.2861 (English), 12/13/2023 10:09:48, 579056 bytes
+
+     Name: AMD Audio CoProcessor
+Device ID: PCI\VEN_1022&DEV_15E2&SUBSYS_16621043&REV_01\4&12C9051D&0&0541
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\amdacpbus.inf_amd64_0ffea48a6727a34d\amdacpbus.sys, 6.00.0000.0071 (English), 5/17/2023 21:13:40, 6043584 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\amdacpbus.inf_amd64_0ffea48a6727a34d\acpimg0001.dat, 5/17/2023 21:06:30, 4023584 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\amdacpbus.inf_amd64_0ffea48a6727a34d\acpcfg0001.dat, 5/17/2023 21:06:30, 88368 bytes
+
+     Name: PCI standard host CPU bridge
+Device ID: PCI\VEN_1022&DEV_166A&SUBSYS_00000000&REV_00\3&11583659&0&C0
+   Driver: n/a
+
+     Name: High Definition Audio Bus
+Device ID: PCI\VEN_1002&DEV_1637&SUBSYS_16371002&REV_00\4&12C9051D&0&0141
+   Driver: C:\WINDOWS\system32\DRIVERS\hdaudbus.sys, 10.00.22621.2792 (English), 12/13/2023 10:09:44, 192512 bytes
+   Driver: C:\WINDOWS\system32\DRIVERS\drmk.sys, 10.00.22621.2506 (English), 11/16/2023 12:23:48, 143360 bytes
+   Driver: C:\WINDOWS\system32\DRIVERS\portcls.sys, 10.00.22621.2506 (English), 11/16/2023 12:23:48, 471040 bytes
+
+     Name: PCI standard ISA bridge
+Device ID: PCI\VEN_1022&DEV_790E&SUBSYS_790E1022&REV_51\3&11583659&0&A3
+   Driver: C:\WINDOWS\system32\DRIVERS\msisadrv.sys, 10.00.22621.0001 (English), 5/7/2022 00:19:04, 54608 bytes
+
+     Name: AMD PSP 10.0 Device
+Device ID: PCI\VEN_1022&DEV_15DF&SUBSYS_15DF1022&REV_00\4&12C9051D&0&0241
+   Driver: C:\WINDOWS\system32\DRIVERS\amdpsp.sys, 5.19.0000.0000 (English), 5/26/2022 08:13:14, 49168 bytes
+   Driver: C:\WINDOWS\system32\amdtee_api.dll, 5.19.0000.0000 (English), 5/26/2022 08:13:14, 437264 bytes
+   Driver: C:\WINDOWS\SysWOW64\amdtee_api.dll, 5.19.0000.0000 (English), 5/26/2022 08:13:14, 350752 bytes
+
+     Name: PCI standard host CPU bridge
+Device ID: PCI\VEN_1022&DEV_166D&SUBSYS_00000000&REV_00\3&11583659&0&C3
+   Driver: n/a
+
+     Name: AMD Radeon(TM) Graphics
+Device ID: PCI\VEN_1002&DEV_1638&SUBSYS_148C1043&REV_C4\4&12C9051D&0&0041
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\ativvaxy_vcn3.dat, 3/24/2022 12:43:48, 551744 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\ativvaxy_vcn3_1.dat, 3/24/2022 12:43:48, 536864 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\aticfx32.dll, 30.00.14018.15002 (English), 3/24/2022 13:09:52, 1513072 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\aticfx64.dll, 30.00.14018.15002 (English), 3/24/2022 13:09:56, 1844624 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\atiumdag.dll, 30.00.14018.15002 (English), 3/24/2022 13:10:36, 11366832 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\atiumdva.dll, 30.00.14018.15002 (English), 3/24/2022 13:10:42, 14389688 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\atiumd64.dll, 30.00.14018.15002 (English), 3/24/2022 13:10:28, 14140016 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\atiumd6a.dll, 30.00.14018.15002 (English), 3/24/2022 13:10:30, 15295256 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\ativce02.dat, 3/24/2022 12:43:48, 100832 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\ativvaxy_cik.dat, 3/24/2022 12:43:48, 234676 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\ativvaxy_cik_nd.dat, 3/24/2022 12:43:48, 234416 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amdmmcl.dll, 30.00.14018.15002 (English), 3/24/2022 13:10:54, 128944 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amdmmcl6.dll, 30.00.14018.15002 (English), 3/24/2022 13:10:56, 150960 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\ativvaxy_nv.dat, 3/24/2022 12:43:48, 399424 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amdefctb.dat, 3/24/2022 12:43:30, 515239 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amdxn32.dll, 8.14.0010.0171 (English), 3/24/2022 13:11:28, 25618328 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amdxn64.dll, 8.14.0010.0171 (English), 3/24/2022 13:11:30, 30052272 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\ativvaxy_vg20.dat, 3/24/2022 12:43:48, 379200 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\ativvaxy_vg20_nd.dat, 3/24/2022 12:43:48, 383392 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amdave32.dll, 30.00.14018.15002 (English), 3/24/2022 13:08:56, 136864 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amdave64.dll, 30.00.14018.15002 (English), 3/24/2022 13:09:00, 162088 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\ativvaxy_rv.dat, 3/24/2022 12:43:48, 363744 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amde40a.dat, 3/24/2022 12:43:30, 173536 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\ativvaxy_gl_nd.dat, 3/24/2022 12:43:48, 380576 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amduve64.dll, 18.03.0006.0000 (English), 3/24/2022 13:09:32, 202256 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amduve32.dll, 18.03.0006.0000 (English), 3/24/2022 13:09:30, 168624 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amfrtdrv32.dll, 1.04.0023.0000 (English), 3/24/2022 13:11:52, 5862296 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amfrtdrv64.dll, 1.04.0023.0000 (English), 3/24/2022 13:11:54, 6170008 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\AMDh265Enc32.dll, 30.00.14018.15002 (English), 3/24/2022 13:09:10, 1286472 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\AMDh265Enc64.dll, 30.00.14018.15002 (English), 3/24/2022 13:09:14, 1628264 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amde34b.dat, 3/24/2022 12:43:30, 175008 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amde34a.dat, 3/24/2022 12:43:30, 175008 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\ativvaxy_stn_nd.dat, 3/24/2022 12:43:48, 278432 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amdvlk32.dll, 30.00.14018.15002 (English), 3/24/2022 13:11:10, 35264920 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amdvlk64.dll, 30.00.14018.15002 (English), 3/24/2022 13:11:14, 41255848 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amd-vulkan32.json, 3/24/2022 12:43:30, 703 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amd-vulkan64.json, 3/24/2022 12:43:30, 703 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\ativvaxy_el_nd.dat, 3/24/2022 12:43:48, 376224 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amdicdxx.dat, 3/24/2022 12:43:30, 1240517 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\atiicdxx.dat, 3/24/2022 12:43:48, 737410 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\ativvaxy_FJ.dat, 3/24/2022 12:43:48, 268244 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\ativvaxy_FJ_nd.dat, 3/24/2022 12:43:48, 267984 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amdxc32.dll, 30.00.14018.15002 (English), 3/24/2022 13:09:36, 39875608 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amdxc64.dll, 30.00.14018.15002 (English), 3/24/2022 13:09:40, 44796576 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\ativvaxy_cz_nd.dat, 3/24/2022 12:43:48, 272928 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amde31a.dat, 3/24/2022 12:43:30, 159072 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\AMDhwDecoder_32.dll, 30.00.14018.15002 (English), 3/24/2022 13:09:52, 249264 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\AMDhwDecoder_64.dll, 30.00.14018.15002 (English), 3/24/2022 13:09:56, 302512 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\AMDh264Enc32.dll, 30.00.14018.15002 (English), 3/24/2022 13:09:02, 1991872 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\AMDh264Enc64.dll, 30.00.14018.15002 (English), 3/24/2022 13:09:06, 2127136 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\ativce03.dat, 3/24/2022 12:43:48, 160768 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\ativvaxy_vi.dat, 3/24/2022 12:43:48, 325188 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\ativvaxy_vi_nd.dat, 3/24/2022 12:43:48, 324928 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amdhdl32.dll, 3/24/2022 13:09:16, 399112 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amdhdl64.dll, 3/24/2022 13:09:20, 525040 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amdocl.dll, 10.00.3354.0013 (English), 3/24/2022 13:11:00, 57522072 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amdocl64.dll, 10.00.3354.0013 (English), 3/24/2022 13:11:06, 67916720 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amdmantle32.dll, 3/24/2022 13:10:46, 25166784 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amdmantle64.dll, 3/24/2022 13:10:50, 29647792 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\atiesrxx.exe, 30.00.14018.15002 (English), 3/24/2022 13:12:32, 597424 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\atiu9pag.dll, 30.00.14018.15002 (English), 3/24/2022 13:10:24, 184608 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\atigktxx.dll, 30.00.14018.15002 (English), 3/24/2022 13:12:42, 221592 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\atiglpxx.dll, 30.00.14018.15002 (English), 3/24/2022 13:12:44, 153496 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\atiuxpag.dll, 30.00.14018.15002 (English), 3/24/2022 13:10:50, 204400 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\atiu9p64.dll, 30.00.14018.15002 (English), 3/24/2022 13:10:20, 225504 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\atiuxp64.dll, 30.00.14018.15002 (English), 3/24/2022 13:10:44, 242832 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\atig6pxx.dll, 30.00.14018.15002 (English), 3/24/2022 13:12:34, 182704 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\atig6txx.dll, 30.00.14018.15002 (English), 3/24/2022 13:12:40, 262552 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\atidxx32.dll, 30.00.14018.15002 (English), 3/24/2022 13:10:02, 27862896 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\atidxx64.dll, 30.00.14018.15002 (English), 3/24/2022 13:10:08, 33280080 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\atioglxx.dll, 30.00.14018.15002 (English), 3/24/2022 13:12:56, 38769048 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\atio6axx.dll, 30.00.14018.15002 (English), 3/24/2022 13:12:50, 47714248 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amdkmdag.sys, 30.00.14018.15002 (English), 3/24/2022 13:10:16, 82906544 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amdenc64.dll, 0.00.0000.0000 (English), 3/24/2022 13:09:30, 459992 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amdenc32.dll, 0.00.0000.0000 (English), 3/24/2022 13:09:28, 352352 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amdfendr.ctz, 3/24/2022 12:43:30, 11018 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amdfendr.itz, 3/24/2022 12:43:30, 2814 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amdfendr.stz, 21.30.0000.0009 (English), 3/24/2022 13:09:32, 170952 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amdfendrmgr.stz, 21.30.0000.0009 (English), 3/24/2022 13:09:36, 59848 bytes
+   Driver: C:\WINDOWS\System32\DriverStore\FileRepository\u0377732.inf_amd64_79fea957424079d3\B377738\amdfendrsr.etz, 21.20.0000.0103 (English), 3/24/2022 13:09:40, 604512 bytes
+   Driver: C:\WINDOWS\system32\aticfx64.dll, 8.17.0010.1697 (English), 3/24/2022 13:12:08, 203552 bytes
+   Driver: C:\WINDOWS\system32\atisamu64.dll, 30.00.14018.15002 (English), 3/24/2022 13:13:00, 180120 bytes
+   Driver: C:\WINDOWS\system32\atiumd6a.cap, 3/24/2022 12:43:48, 3437632 bytes
+   Driver: C:\WINDOWS\system32\ativvsva.dat, 3/24/2022 12:43:48, 157144 bytes
+   Driver: C:\WINDOWS\system32\ativvsvl.dat, 3/24/2022 12:43:48, 204952 bytes
+   Driver: C:\WINDOWS\system32\atimpc64.dll, 30.00.14018.15002 (English), 3/24/2022 13:10:16, 151680 bytes
+   Driver: C:\WINDOWS\system32\atimuixx.dll, 30.00.14018.15002 (English), 3/24/2022 13:12:46, 168368 bytes
+   Driver: C:\WINDOWS\system32\amdihk64.dll, 2.00.0000.1788 (English), 3/24/2022 13:10:08, 211768 bytes
+   Driver: C:\WINDOWS\system32\amd_comgr.dll, 3/24/2022 13:11:36, 88762288 bytes
+   Driver: C:\WINDOWS\system32\amdlogum.exe, 3/24/2022 13:10:26, 468400 bytes
+   Driver: C:\WINDOWS\system32\amdhip64.dll, 10.00.3354.0013 (English), 3/24/2022 13:09:50, 69075376 bytes
+   Driver: C:\WINDOWS\system32\EEURestart.exe, 3/24/2022 13:13:16, 494000 bytes
+   Driver: C:\WINDOWS\system32\atiadlxx.dll, 30.00.14018.15002 (English), 3/24/2022 13:12:00, 1868720 bytes
+   Driver: C:\WINDOWS\system32\amdave64.dll, 30.00.14018.15002 (English), 3/24/2022 13:09:00, 162088 bytes
+   Driver: C:\WINDOWS\system32\amdpcom64.dll, 30.00.14018.15002 (English), 3/24/2022 13:09:28, 151632 bytes
+   Driver: C:\WINDOWS\system32\amfrt64.dll, 1.04.0023.0000 (English), 3/24/2022 13:11:50, 139672 bytes
+   Driver: C:\WINDOWS\system32\dgtrayicon.exe, 3/24/2022 13:13:14, 502184 bytes
+   Driver: C:\WINDOWS\system32\AMDKernelEvents.man, 3/24/2022 12:43:30, 76237 bytes
+   Driver: C:\WINDOWS\system32\vulkan-1.dll, 1.03.0241.0000 (English), 8/16/2023 05:15:06, 653504 bytes
+   Driver: C:\WINDOWS\system32\vulkan-1-999-0-0-0.dll, 1.03.0241.0000 (English), 8/16/2023 05:15:06, 653504 bytes
+   Driver: C:\WINDOWS\system32\vulkaninfo.exe, 1.03.0241.0000 (English), 8/16/2023 05:15:10, 849088 bytes
+   Driver: C:\WINDOWS\system32\vulkaninfo-1-999-0-0-0.exe, 1.03.0241.0000 (English), 8/16/2023 05:15:10, 849088 bytes
+   Driver: C:\WINDOWS\system32\GameManager64.dll, 3/24/2022 13:13:28, 559560 bytes
+   Driver: C:\WINDOWS\system32\amdmiracast.dll, 3/24/2022 13:09:22, 551920 bytes
+   Driver: C:\WINDOWS\system32\amdlvr64.dll, 1.00.0016.0000 (English), 3/24/2022 13:10:36, 943560 bytes
+   Driver: C:\WINDOWS\system32\RapidFireServer64.dll, 1.02.0000.0015 (English), 3/24/2022 13:14:02, 48560 bytes
+   Driver: C:\WINDOWS\system32\Rapidfire64.dll, 2.01.0000.0020 (English), 3/24/2022 13:13:56, 798640 bytes
+   Driver: C:\WINDOWS\system32\amdxc64.dll, 3/24/2022 13:11:24, 135088 bytes
+   Driver: C:\WINDOWS\system32\amf-mft-mjpeg-decoder64.dll, 30.00.14018.15002 (English), 3/24/2022 13:09:48, 1714248 bytes
+   Driver: C:\WINDOWS\system32\mcl64.dll, 30.00.14018.15002 (English), 3/24/2022 13:13:50, 92584 bytes
+   Driver: C:\WINDOWS\system32\kapp_ci.sbin, 3/24/2022 12:43:50, 128048 bytes
+   Driver: C:\WINDOWS\system32\samu_krnl_ci.sbin, 3/24/2022 12:43:50, 154384 bytes
+   Driver: C:\WINDOWS\system32\samu_krnl_isv_ci.sbin, 3/24/2022 12:43:50, 138832 bytes
+   Driver: C:\WINDOWS\system32\kapp_si.sbin, 3/24/2022 12:43:50, 121168 bytes
+   Driver: C:\WINDOWS\system32\OpenCL.dll, 3.00.0003.0000 (English), 8/16/2023 05:14:56, 1487376 bytes
+   Driver: C:\WINDOWS\system32\clinfo.exe, 3/24/2022 13:13:06, 346032 bytes
+   Driver: C:\WINDOWS\system32\mantle64.dll, 3/24/2022 13:13:34, 196016 bytes
+   Driver: C:\WINDOWS\system32\mantleaxl64.dll, 3/24/2022 13:13:44, 179120 bytes
+   Driver: C:\WINDOWS\system32\detoured.dll, 30.00.14018.15002 (English), 3/24/2022 13:13:12, 30032 bytes
+   Driver: C:\WINDOWS\system32\amdgfxinfo64.dll, 3/24/2022 13:09:48, 560040 bytes
+   Driver: C:\WINDOWS\system32\atieah64.exe, 3/24/2022 13:12:24, 527256 bytes
+   Driver: C:\WINDOWS\system32\atieclxx.exe, 30.00.14018.15002 (English), 3/24/2022 13:12:26, 858032 bytes
+   Driver: C:\WINDOWS\system32\atiapfxx.blb, 3/24/2022 12:43:36, 569200 bytes
+   Driver: C:\WINDOWS\system32\atig6txx.dll, 30.00.14018.15002 (English), 3/24/2022 13:12:40, 262552 bytes
+   Driver: C:\WINDOWS\system32\atidxx64.dll, 3/24/2022 13:12:18, 141232 bytes
+   Driver: C:\WINDOWS\system32\ati2erec.dll, 30.00.14018.15002 (English), 3/24/2022 13:11:56, 72088 bytes
+   Driver: C:\WINDOWS\system32\atidemgy.dll, 4.05.8112.8367 (English), 3/24/2022 13:12:10, 470448 bytes
+   Driver: C:\WINDOWS\system32\amdxc64.so, 3/24/2022 12:43:34, 56256608 bytes
+   Driver: C:\WINDOWS\system32\atiacm64.dll, 6.14.0010.2001 (English), 3/24/2022 13:11:58, 1538480 bytes
+   Driver: C:\WINDOWS\system32\atiacmLocalisation.ini, 3/24/2022 12:43:36, 10622 bytes
+   Driver: C:\WINDOWS\system32\branding.bmp, 3/24/2022 12:43:48, 822 bytes
+   Driver: C:\WINDOWS\system32\brandingRSX.bmp, 3/24/2022 12:43:48, 12344 bytes
+   Driver: C:\WINDOWS\system32\brandingWS_RSX.bmp, 3/24/2022 12:43:48, 12344 bytes
+   Driver: C:\WINDOWS\SysWOW64\aticfx32.dll, 8.17.0010.1697 (English), 3/24/2022 13:12:04, 167960 bytes
+   Driver: C:\WINDOWS\SysWOW64\atisamu32.dll, 30.00.14018.15002 (English), 3/24/2022 13:12:58, 142744 bytes
+   Driver: C:\WINDOWS\SysWOW64\atiumdva.cap, 3/24/2022 12:43:48, 3471376 bytes
+   Driver: C:\WINDOWS\SysWOW64\ativvsva.dat, 3/24/2022 12:43:48, 157144 bytes
+   Driver: C:\WINDOWS\SysWOW64\ativvsvl.dat, 3/24/2022 12:43:48, 204952 bytes
+   Driver: C:\WINDOWS\SysWOW64\atimpc32.dll, 30.00.14018.15002 (English), 3/24/2022 13:10:10, 122752 bytes
+   Driver: C:\WINDOWS\SysWOW64\amdihk32.dll, 2.00.0000.1788 (English), 3/24/2022 13:10:04, 178296 bytes
+   Driver: C:\WINDOWS\SysWOW64\amd_comgr32.dll, 3/24/2022 13:11:40, 73119128 bytes
+   Driver: C:\WINDOWS\SysWOW64\atiadlxx.dll, 30.00.14018.15002 (English), 3/24/2022 13:12:02, 1405872 bytes
+   Driver: C:\WINDOWS\SysWOW64\atiadlxy.dll, 30.00.14018.15002 (English), 3/24/2022 13:12:02, 1405872 bytes
+   Driver: C:\WINDOWS\SysWOW64\amdave32.dll, 30.00.14018.15002 (English), 3/24/2022 13:08:56, 136864 bytes
+   Driver: C:\WINDOWS\SysWOW64\amdpcom32.dll, 30.00.14018.15002 (English), 3/24/2022 13:09:26, 122704 bytes
+   Driver: C:\WINDOWS\SysWOW64\amfrt32.dll, 1.04.0023.0000 (English), 3/24/2022 13:11:48, 115608 bytes
+   Driver: C:\WINDOWS\SysWOW64\vulkan-1.dll, 1.03.0241.0000 (English), 8/16/2023 05:15:08, 637112 bytes
+   Driver: C:\WINDOWS\SysWOW64\vulkan-1-999-0-0-0.dll, 1.03.0241.0000 (English), 8/16/2023 05:15:08, 637112 bytes
+   Driver: C:\WINDOWS\SysWOW64\vulkaninfo.exe, 1.03.0241.0000 (English), 8/16/2023 05:15:12, 713912 bytes
+   Driver: C:\WINDOWS\SysWOW64\vulkaninfo-1-999-0-0-0.exe, 1.03.0241.0000 (English), 8/16/2023 05:15:12, 713912 bytes
+   Driver: C:\WINDOWS\SysWOW64\GameManager32.dll, 3/24/2022 13:13:22, 420808 bytes
+   Driver: C:\WINDOWS\SysWOW64\amdlvr32.dll, 1.00.0016.0000 (English), 3/24/2022 13:10:28, 771008 bytes
+   Driver: C:\WINDOWS\SysWOW64\RapidFireServer.dll, 1.02.0000.0015 (English), 3/24/2022 13:13:58, 45464 bytes
+   Driver: C:\WINDOWS\SysWOW64\Rapidfire.dll, 2.01.0000.0020 (English), 3/24/2022 13:13:52, 675736 bytes
+   Driver: C:\WINDOWS\SysWOW64\amdxc32.dll, 3/24/2022 13:11:16, 109976 bytes
+   Driver: C:\WINDOWS\SysWOW64\amf-mft-mjpeg-decoder32.dll, 30.00.14018.15002 (English), 3/24/2022 13:09:44, 1389736 bytes
+   Driver: C:\WINDOWS\SysWOW64\mcl32.dll, 30.00.14018.15002 (English), 3/24/2022 13:13:46, 77232 bytes
+   Driver: C:\WINDOWS\SysWOW64\OpenCL.dll, 3.00.0003.0000 (English), 8/16/2023 05:14:54, 1227296 bytes
+   Driver: C:\WINDOWS\SysWOW64\mantle32.dll, 3/24/2022 13:13:32, 157120 bytes
+   Driver: C:\WINDOWS\SysWOW64\mantleaxl32.dll, 3/24/2022 13:13:42, 142784 bytes
+   Driver: C:\WINDOWS\SysWOW64\detoured.dll, 30.00.14018.15002 (English), 3/24/2022 13:13:10, 30032 bytes
+   Driver: C:\WINDOWS\SysWOW64\amdgfxinfo32.dll, 3/24/2022 13:09:44, 423344 bytes
+   Driver: C:\WINDOWS\SysWOW64\atieah32.exe, 3/24/2022 13:12:22, 395160 bytes
+   Driver: C:\WINDOWS\SysWOW64\atiapfxx.blb, 3/24/2022 12:43:36, 569200 bytes
+   Driver: C:\WINDOWS\SysWOW64\atigktxx.dll, 30.00.14018.15002 (English), 3/24/2022 13:12:42, 221592 bytes
+   Driver: C:\WINDOWS\SysWOW64\atidxx32.dll, 3/24/2022 13:12:14, 115120 bytes
+   Driver: C:\WINDOWS\system32\AMD\amdkmpfd\amdkmpfd.stz, 21.40.0001.0000 (English), 3/24/2022 13:10:20, 119616 bytes
+   Driver: C:\WINDOWS\system32\AMD\amdkmpfd\amdkmpfd.itz, 3/24/2022 12:43:30, 1999 bytes
+   Driver: C:\WINDOWS\system32\AMD\amdkmpfd\amdkmpfd.ctz, 3/24/2022 12:43:30, 10100 bytes
+
+     Name: PCI standard host CPU bridge
+Device ID: PCI\VEN_1022&DEV_1630&SUBSYS_16301022&REV_00\3&11583659&0&00
+   Driver: n/a
+
+     Name: AMD USB 3.10 eXtensible Host Controller - 1.10 (Microsoft)
+Device ID: PCI\VEN_1022&DEV_1639&SUBSYS_16391022&REV_00\4&12C9051D&0&0441
+   Driver: C:\WINDOWS\system32\DRIVERS\USBXHCI.SYS, 10.00.22621.2506 (English), 11/16/2023 12:24:49, 677232 bytes
+   Driver: C:\WINDOWS\system32\DRIVERS\UMDF\UsbXhciCompanion.dll, 10.00.22621.2506 (English), 11/16/2023 12:24:49, 170856 bytes
+
+     Name: AMD USB 3.10 eXtensible Host Controller - 1.10 (Microsoft)
+Device ID: PCI\VEN_1022&DEV_1639&SUBSYS_16391022&REV_00\4&12C9051D&0&0341
+   Driver: C:\WINDOWS\system32\DRIVERS\USBXHCI.SYS, 10.00.22621.2506 (English), 11/16/2023 12:24:49, 677232 bytes
+   Driver: C:\WINDOWS\system32\DRIVERS\UMDF\UsbXhciCompanion.dll, 10.00.22621.2506 (English), 11/16/2023 12:24:49, 170856 bytes
+
+     Name: PCI standard host CPU bridge
+Device ID: PCI\VEN_1022&DEV_1670&SUBSYS_00000000&REV_00\3&11583659&0&C6
+   Driver: n/a
+
+     Name: PCI standard host CPU bridge
+Device ID: PCI\VEN_1022&DEV_166B&SUBSYS_00000000&REV_00\3&11583659&0&C1
+   Driver: n/a
+
+     Name: Standard NVM Express Controller
+Device ID: PCI\VEN_15B7&DEV_5007&SUBSYS_500715B7&REV_01\4&33237FCA&0&0014
+   Driver: C:\WINDOWS\system32\DRIVERS\stornvme.sys, 10.00.22621.3085 (English), 2/14/2024 08:46:16, 251376 bytes
+
+     Name: High Definition Audio Controller
+Device ID: PCI\VEN_1022&DEV_15E3&SUBSYS_16621043&REV_00\4&12C9051D&0&0641
+   Driver: C:\WINDOWS\system32\DRIVERS\hdaudbus.sys, 10.00.22621.2792 (English), 12/13/2023 10:09:44, 192512 bytes
+   Driver: C:\WINDOWS\system32\DRIVERS\drmk.sys, 10.00.22621.2506 (English), 11/16/2023 12:23:48, 143360 bytes
+   Driver: C:\WINDOWS\system32\DRIVERS\portcls.sys, 10.00.22621.2506 (English), 11/16/2023 12:23:48, 471040 bytes
 
 ------------------
 DirectShow Filters
@@ -930,10 +723,8 @@ WM ASF Reader,0x00400000,0,0,qasf.dll,12.00.22621.0001
 AVI Splitter,0x00600000,1,1,quartz.dll,10.00.22621.2506
 VGA 16 Color Ditherer,0x00400000,1,1,quartz.dll,10.00.22621.2506
 SBE2MediaTypeProfile,0x00200000,0,0,sbe.dll,10.00.22621.2861
-XSplitMJPEGDecoder,0x00200002,1,1,,
 Microsoft DTV-DVD Video Decoder,0x005fffff,2,4,msmpeg2vdec.dll,10.00.22621.3155
 AC3 Parser Filter,0x00600000,1,1,mpg2splt.ax,10.00.22621.0001
-XSplitQsMJPEGDecoder,0x00200001,1,1,,
 StreamBufferSink,0x00200000,0,0,sbe.dll,10.00.22621.2861
 MJPEG Decompressor,0x00600000,1,1,quartz.dll,10.00.22621.2506
 MPEG-I Stream Splitter,0x00600000,1,2,quartz.dll,10.00.22621.2506
@@ -1011,10 +802,8 @@ CCITT u-Law,0x00200000,1,1,quartz.dll,10.00.22621.2506
 MPEG Layer-3,0x00200000,1,1,quartz.dll,10.00.22621.2506
 
 Audio Capture Sources:
-Headset Microphone (2- Astro MixAmp Pro Voice),0x00200000,0,0,qcap.dll,10.00.22621.0001
-Microphone (Sonic Studio Virtual Mixer),0x00200000,0,0,qcap.dll,10.00.22621.0001
-Line (Astro MixAmp Pro Game),0x00200000,0,0,qcap.dll,10.00.22621.0001
-Microphone (HD Pro Webcam C920),0x00200000,0,0,qcap.dll,10.00.22621.0001
+Microphone Array (Realtek(R) Audio),0x00200000,0,0,qcap.dll,10.00.22621.0001
+AI Noise-cancelling Input (ASUS Utility),0x00200000,0,0,qcap.dll,10.00.22621.0001
 
 PBDA CP Filters:
 PBDA DTFilter,0x00600000,1,1,CPFilters.dll,10.00.22621.2715
@@ -1026,31 +815,23 @@ Default MidiOut Device,0x00800000,1,0,quartz.dll,10.00.22621.2506
 Microsoft GS Wavetable Synth,0x00200000,1,0,quartz.dll,10.00.22621.2506
 
 WDM Streaming Capture Devices:
-Astro MixAmp Pro Game,0x00200000,2,2,ksproxy.ax,10.00.22621.0001
-HD Pro Webcam C920,0x00200000,1,1,ksproxy.ax,10.00.22621.0001
-Realtek USB Audio,0x00200000,1,1,ksproxy.ax,10.00.22621.0001
-Realtek USB Audio,0x00200000,1,1,ksproxy.ax,10.00.22621.0001
-Realtek USB Audio,0x00200000,1,1,ksproxy.ax,10.00.22621.0001
+Realtek HD Audio Mic input,0x00200000,1,1,ksproxy.ax,10.00.22621.0001
 ,0x00000000,0,0,,
+Realtek HD Audio Stereo input,0x00200000,1,1,ksproxy.ax,10.00.22621.0001
+Realtek HD Audio Mic Array input,0x00200000,1,1,ksproxy.ax,10.00.22621.0001
 ,0x00000000,0,0,,
-SONICSTUDIOVAD Wave Speaker,0x00200000,2,2,ksproxy.ax,10.00.22621.0001
-Astro MixAmp Pro Voice,0x00200000,2,2,ksproxy.ax,10.00.22621.0001
-HD Pro Webcam C920,0x00200000,1,1,ksproxy.ax,10.00.22621.0001
+Intelligo VAC (W),0x00200000,4,4,ksproxy.ax,10.00.22621.0001
 ,0x00000000,0,0,,
+USB2.0 HD UVC WebCam,0x00200000,1,1,ksproxy.ax,10.00.22621.0001
 
 WDM Streaming Rendering Devices:
-Realtek USB Audio,0x00200000,1,1,ksproxy.ax,10.00.22621.0001
-Realtek USB Audio,0x00200000,1,1,ksproxy.ax,10.00.22621.0001
-Realtek USB Audio,0x00200000,1,1,ksproxy.ax,10.00.22621.0001
-Astro MixAmp Pro Game,0x00200000,2,2,ksproxy.ax,10.00.22621.0001
-SONICSTUDIOVAD Wave Speaker,0x00200000,2,2,ksproxy.ax,10.00.22621.0001
 ,0x00000000,0,0,,
 ,0x00200000,1,1,,
-,0x00000000,0,0,,
+Intelligo VAC (W),0x00200000,4,4,ksproxy.ax,10.00.22621.0001
 ,0x00200000,1,1,,
-Astro MixAmp Pro Voice,0x00200000,2,2,ksproxy.ax,10.00.22621.0001
 ,0x00000000,0,0,,
-,0x00200000,1,1,,
+Realtek HD Audio output with HAP,0x00200000,2,2,ksproxy.ax,10.00.22621.0001
+Realtek HD Audio 2nd output,0x00200000,1,1,ksproxy.ax,10.00.22621.0001
 
 BDA Network Providers:
 Microsoft ATSC Network Provider,0x00200000,0,1,MSDvbNP.ax,10.00.22621.0001
@@ -1060,9 +841,7 @@ Microsoft DVBT Network Provider,0x00200000,0,1,MSDvbNP.ax,10.00.22621.0001
 Microsoft Network Provider,0x00200000,0,1,MSNP.ax,10.00.22621.0001
 
 Video Capture Sources:
-HD Pro Webcam C920,0x00200000,1,1,ksproxy.ax,10.00.22621.0001
-Logi Capture,0x00200000,0,1,LogiCam.dll,1.00.0000.0002
-OBS Virtual Camera,0x00200000,0,1,obs-virtualcam-module64.dll,27.02.0003.0000
+USB2.0 HD UVC WebCam,0x00200000,1,1,ksproxy.ax,10.00.22621.0001
 
 Multi-Instance Capable VBI Codecs:
 VBI Codec,0x00600000,1,4,VBICodec.ax,10.00.22621.0001
@@ -1075,18 +854,12 @@ WDM Streaming Communication Transforms:
 Tee/Sink-to-Sink Converter,0x00200000,1,1,ksproxy.ax,10.00.22621.0001
 
 Audio Renderers:
-Headphones (Astro MixAmp Pro Game),0x00200000,1,0,quartz.dll,10.00.22621.2506
+Speakers (Realtek(R) Audio),0x00200000,1,0,quartz.dll,10.00.22621.2506
 Default DirectSound Device,0x00800000,1,0,quartz.dll,10.00.22621.2506
 Default WaveOut Device,0x00200000,1,0,quartz.dll,10.00.22621.2506
-DirectSound: Headphones (Astro MixAmp Pro Game),0x00200000,1,0,quartz.dll,10.00.22621.2506
-DirectSound: Realtek Digital Output (Realtek USB Audio),0x00200000,1,0,quartz.dll,10.00.22621.2506
-DirectSound: Speakers (Sonic Studio Virtual Mixer),0x00200000,1,0,quartz.dll,10.00.22621.2506
-DirectSound: Pixio PX277P (NVIDIA High Definition Audio),0x00200000,1,0,quartz.dll,10.00.22621.2506
-DirectSound: Headset Earphone (2- Astro MixAmp Pro Voice),0x00200000,1,0,quartz.dll,10.00.22621.2506
-Realtek Digital Output (Realtek USB Audio),0x00200000,1,0,quartz.dll,10.00.22621.2506
-Speakers (Sonic Studio Virtual Mixer),0x00200000,1,0,quartz.dll,10.00.22621.2506
-Pixio PX277P (NVIDIA High Definition Audio),0x00200000,1,0,quartz.dll,10.00.22621.2506
-Headset Earphone (2- Astro MixAmp Pro Voice),0x00200000,1,0,quartz.dll,10.00.22621.2506
+DirectSound: AI Noise-cancelling Output (ASUS Utility),0x00200000,1,0,quartz.dll,10.00.22621.2506
+DirectSound: Speakers (Realtek(R) Audio),0x00200000,1,0,quartz.dll,10.00.22621.2506
+AI Noise-cancelling Output (ASUS Utility),0x00200000,1,0,quartz.dll,10.00.22621.2506
 
 
 ----------------------------
@@ -1172,7 +945,10 @@ Media Foundation Transforms
   <transform friendly name>, <transform CLSID>, <flags>, [<merit>, ]<file name>, <file version>
 
 Video Decoders:
-  NVIDIA MJPEG Video Decoder MFT, {70F36578-2741-454F-B494-E8563DDD1CB4}, 0x4, 8, nvDecMFTMjpegx.dll, 31.00.0015.4665
+  AMD D3D11 Hardware MFT Playback Decoder, {17796AEB-0F66-4663-B8FB-99CBEE0224CE}, 0x4, 8, amdhwdecoder_64.dll, 30.00.14018.15002
+  AMD MFT MJPEG Decoder, {687CBC51-25DA-4FFC-A678-1E64943285A7}, 0x4, 8, amf-mft-mjpeg-decoder64.dll, 30.00.14018.15002
+  AMD D3D11 Hardware MFT Playback Decoder, {17796AEB-0F66-4663-B8FB-99CBEE0224CE}, 0x4, 8, amdhwdecoder_64.dll, 30.00.14018.15002
+  AMD MFT MJPEG Decoder, {687CBC51-25DA-4FFC-A678-1E64943285A7}, 0x4, 8, amf-mft-mjpeg-decoder64.dll, 30.00.14018.15002
   Microsoft MPEG Video Decoder MFT, {2D709E52-123F-49B5-9CBC-9AF5CDE28FB9}, 0x1, msmpeg2vdec.dll, 10.00.22621.3155
   DV Decoder MFT, {404A6DE5-D4D6-4260-9BC7-5A6CBD882432}, 0x1, mfdvdec.dll, 10.00.22621.0001
   Mpeg4s Decoder MFT, CLSID_CMpeg4sDecMFT, 0x1, mp4sdecd.dll, 10.00.22621.0001
@@ -1183,21 +959,23 @@ Video Decoders:
   Mpeg43 Decoder MFT, CLSID_CMpeg43DecMediaObject, 0x1, mp43decd.dll, 10.00.22621.0001
   Mpeg4 Decoder MFT, CLSID_CMpeg4DecMediaObject, 0x1, mpg4decd.dll, 10.00.22621.0001
   HEIFImageExtension
-  HEVCVideoExtension
   VP9VideoExtensionDecoder
   RawImageExtension
   WebpImageExtension
+  HEVCVideoExtension
 Video Encoders:
-  NVIDIA H.264 Encoder MFT, {60F44560-5A20-4857-BFEF-D29773CB8040}, 0x4, 8, nvEncMFTH264x.dll, 31.00.0015.4665
-  NVIDIA HEVC Encoder MFT, {966F107C-8EA2-425D-B822-E4A71BEF01D7}, 0x4, 8, nvEncMFThevcx.dll, 31.00.0015.4665
+  AMDh265Encoder, {5FD65104-A924-4835-AB71-09A223E3E37B}, 0x4, 8, amdh265enc64.dll, 30.00.14018.15002
+  AMDh264Encoder, {ADC9BC80-0F41-46C6-AB75-D693D793597D}, 0x4, 8, amdh264enc64.dll, 30.00.14018.15002
+  AMDh265Encoder, {5FD65104-A924-4835-AB71-09A223E3E37B}, 0x4, 8, amdh265enc64.dll, 30.00.14018.15002
+  AMDh264Encoder, {ADC9BC80-0F41-46C6-AB75-D693D793597D}, 0x4, 8, amdh264enc64.dll, 30.00.14018.15002
   H264 Encoder MFT, {6CA50344-051A-4DED-9779-A43305165E35}, 0x1, mfh264enc.dll, 10.00.22621.0001
   WMVideo8 Encoder MFT, CLSID_CWMVXEncMediaObject, 0x1, wmvxencd.dll, 10.00.22621.0001
   H263 Encoder MFT, {BC47FCFE-98A0-4F27-BB07-698AF24F2B38}, 0x1, mfh263enc.dll, 10.00.22621.0001
   WMVideo9 Encoder MFT, CLSID_CWMV9EncMediaObject, 0x1, wmvencod.dll, 10.00.22621.0001
   Microsoft MPEG-2 Video Encoder MFT, {E6335F02-80B7-4DC4-ADFA-DFE7210D20D5}, 0x2, msmpeg2enc.dll, 10.00.22621.2506
   HEIFImageExtension
-  HEVCVideoExtensionEncoder
   VP9VideoExtensionEncoder
+  HEVCVideoExtensionEncoder
 Video Effects:
   Frame Rate Converter, CLSID_CFrameRateConvertDmo, 0x1, mfvdsp.dll, 10.00.22621.0001
   Resizer MFT, CLSID_CResizerDMO, 0x1, vidreszr.dll, 10.00.22621.2506
@@ -1252,7 +1030,6 @@ Media Foundation Enabled Hardware Categories
 [HKEY_LOCAL_MACHINE\Software\Microsoft\Windows Media Foundation\HardwareMFT]
 
 EnableDecoders = 1
-EnableEncoders = 1
 
 
 -------------------------------------
@@ -1511,169 +1288,169 @@ Diagnostics
 
 Windows Error Reporting:
 +++ WER0 +++:
-Fault bucket 1647704607751872273, type 4
+Fault bucket 1170882942672734120, type 4
 Event Name: APPCRASH
 Response: Not available
 Cab Id: 0
 
 Problem signature:
-P1: lghub_updater.exe
-P2: 2023.4.7679.0
-P3: 6465211a
-P4: StackHash_03b6
+P1: RtkAudUService64.exe
+P2: 1.0.334.1
+P3: 5fc482b1
+P4: combase.dll
 P5: 10.0.22621.3085
-P6: bced4b82
-P7: c0000374
-P8: PCH_6B_FROM_ntdll+0x000000000009FEC4
+P6: 9c05761b
+P7: c0000005
+P8: 00000000000cf7bb
 P9: 
 P10: 
 
 
 +++ WER1 +++:
-Fault bucket , type 0
-Event Name: APPCRASH
+Fault bucket 1710886649276791167, type 5
+Event Name: BEX64
 Response: Not available
 Cab Id: 0
 
 Problem signature:
-P1: lghub_updater.exe
-P2: 2023.4.7679.0
-P3: 6465211a
-P4: StackHash_03b6
-P5: 10.0.22621.3085
-P6: bced4b82
-P7: c0000374
-P8: PCH_6B_FROM_ntdll+0x000000000009FEC4
-P9: 
+P1: RtkAudUService64.exe
+P2: 1.0.334.1
+P3: 5fc482b1
+P4: StackHash_93ca
+P5: 0.0.0.0
+P6: 00000000
+P7: PCH_FC_FROM_ntdll+0x000000000009FEC4
+P8: c0000005
+P9: 0000000000000008
 P10: 
 
 
 +++ WER2 +++:
 Fault bucket , type 0
-Event Name: APPCRASH
+Event Name: BEX64
 Response: Not available
 Cab Id: 0
 
 Problem signature:
-P1: lghub_updater.exe
-P2: 2023.4.7679.0
-P3: 6465211a
-P4: StackHash_03b6
-P5: 10.0.22621.3085
-P6: bced4b82
-P7: c0000374
-P8: PCH_6B_FROM_ntdll+0x000000000009FEC4
-P9: 
+P1: RtkAudUService64.exe
+P2: 1.0.334.1
+P3: 5fc482b1
+P4: StackHash_93ca
+P5: 0.0.0.0
+P6: 00000000
+P7: PCH_FC_FROM_ntdll+0x000000000009FEC4
+P8: c0000005
+P9: 0000000000000008
 P10: 
 
 
 +++ WER3 +++:
-Fault bucket LKD_0x144_CONTEXT_ERROR_AFTER_SET_DEQUEUE_USBXHCI!TelemetryData_CreateReport_VEN_8086_DEV_43ed_REV_0011, type 0
-Event Name: LiveKernelEvent
+Fault bucket 1615178682929024728, type 5
+Event Name: StoreAgentInstallFailure1
 Response: Not available
-Cab Id: 85d5b799-b11e-4f7e-bd20-4514484d4d50
+Cab Id: 0
 
 Problem signature:
-P1: 144
-P2: 100a
-P3: ffffcd0739a7f0b0
-P4: 0
-P5: 0
-P6: 10_0_22621
-P7: 0_0
-P8: 256_1
+P1: Update;ScanForUpdatesForUser
+P2: 80073d02
+P3: 22631
+P4: 3155
+P5: Windows.Desktop
+P6: V
+P7: 
+P8: 
 P9: 
 P10: 
 
 
 +++ WER4 +++:
 Fault bucket , type 0
-Event Name: LiveKernelEvent
+Event Name: StoreAgentInstallFailure1
 Response: Not available
 Cab Id: 0
 
 Problem signature:
-P1: 144
-P2: 100a
-P3: ffffcd0739a7f0b0
-P4: 0
-P5: 0
-P6: 10_0_22621
-P7: 0_0
-P8: 256_1
+P1: Update;ScanForUpdatesForUser
+P2: 80073d02
+P3: 22631
+P4: 3155
+P5: Windows.Desktop
+P6: V
+P7: 
+P8: 
 P9: 
 P10: 
 
 
 +++ WER5 +++:
-Fault bucket 1584488747574177783, type 5
-Event Name: MoAppCrash
+Fault bucket 1615178682929024728, type 5
+Event Name: StoreAgentInstallFailure1
 Response: Not available
 Cab Id: 0
 
 Problem signature:
-P1: Microsoft.MinecraftUWP_1.20.6201.0_x64__8wekyb3d8bbwe
-P2: praid:App
-P3: 1.20.62.1
-P4: 65caa2db
-P5: Minecraft.Windows.exe
-P6: 1.20.62.1
-P7: 65caa2db
-P8: c0000005
-P9: 000000000468af30
+P1: Update;ScanForUpdatesForUser
+P2: 80073d02
+P3: 22631
+P4: 3155
+P5: Windows.Desktop
+P6: V
+P7: 
+P8: 
+P9: 
 P10: 
 
 
 +++ WER6 +++:
-Fault bucket 1233562409359205488, type 4
-Event Name: APPCRASH
+Fault bucket , type 0
+Event Name: StoreAgentInstallFailure1
 Response: Not available
 Cab Id: 0
 
 Problem signature:
-P1: lghub_updater.exe
-P2: 2023.4.7679.0
-P3: 6465211a
-P4: StackHash_03b6
-P5: 10.0.22621.2506
-P6: bced4b82
-P7: c0000374
-P8: PCH_CA_FROM_ntdll+0x000000000009FEC4
+P1: Update;ScanForUpdatesForUser
+P2: 80073d02
+P3: 22631
+P4: 3155
+P5: Windows.Desktop
+P6: V
+P7: 
+P8: 
 P9: 
 P10: 
 
 
 +++ WER7 +++:
-Fault bucket , type 0
-Event Name: APPCRASH
+Fault bucket 1781194463310951863, type 5
+Event Name: StoreAgentScanForUpdatesFailure0
 Response: Not available
 Cab Id: 0
 
 Problem signature:
-P1: lghub_updater.exe
-P2: 2023.4.7679.0
-P3: 6465211a
-P4: StackHash_03b6
-P5: 10.0.22621.2506
-P6: bced4b82
-P7: c0000374
-P8: PCH_CA_FROM_ntdll+0x000000000009FEC4
+P1: Update;
+P2: 8024001e
+P3: 22631
+P4: 3155
+P5: Windows.Desktop
+P6: 
+P7: 
+P8: 
 P9: 
 P10: 
 
 
 +++ WER8 +++:
-Fault bucket 1189061962825347312, type 5
-Event Name: RADAR_PRE_LEAK_64
+Fault bucket , type 0
+Event Name: StoreAgentScanForUpdatesFailure0
 Response: Not available
 Cab Id: 0
 
 Problem signature:
-P1: Minecraft.Windows.exe
-P2: 1.20.60.4
-P3: 10.0.22621.2.0.0
-P4: 
-P5: 
+P1: Update;
+P2: 8024001e
+P3: 22631
+P4: 3155
+P5: Windows.Desktop
 P6: 
 P7: 
 P8: 
@@ -1682,20 +1459,20 @@ P10:
 
 
 +++ WER9 +++:
-Fault bucket 2225279746364563690, type 5
-Event Name: RADAR_PRE_LEAK_64
+Fault bucket 1170882942672734120, type 4
+Event Name: APPCRASH
 Response: Not available
 Cab Id: 0
 
 Problem signature:
-P1: FallGuys_client_game.exe
-P2: 2021.3.16.28737
-P3: 10.0.22621.2.0.0
-P4: 
-P5: 
-P6: 
-P7: 
-P8: 
+P1: RtkAudUService64.exe
+P2: 1.0.334.1
+P3: 5fc482b1
+P4: combase.dll
+P5: 10.0.22621.3085
+P6: 9c05761b
+P7: c0000005
+P8: 00000000000cf7bb
 P9: 
 P10: 
 

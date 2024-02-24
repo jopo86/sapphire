@@ -1,14 +1,18 @@
-#include "Sapphire.h"
+#include "Core.h"
+#include "Logger.h"
+#include "DSA.h"
+#include "System.h"
+#include "Console.h"
+#include "FileSystem.h"
 
 Sapphire::Logger* p_logger;
+Sapphire::System::SystemInfo sysinfo;
 int currentTextColor;
 
 #ifdef OS_WINDOWS
     HANDLE hConsole;
     Sapphire::FileSystem::File dxdiag;
 #endif
-
-Sapphire::System::SystemInfo sysinfo;
 
 void Sapphire::Init() 
 {
@@ -160,7 +164,7 @@ void Sapphire::Init()
 
 std::string Sapphire::Version() 
 {
-    return std::string(SAPPHIRE_VERSION);
+    return std::string(SAPPHIRE_VERSION_MAJOR) + "." + std::string(SAPPHIRE_VERSION_MINOR) + "." + std::string(SAPPHIRE_VERSION_PATCH);
 }
 
 Sapphire::Logger::Logger() 
@@ -1179,7 +1183,7 @@ void Sapphire::FileSystem::File::refresh()
     extension = Sapphire::FileSystem::GetExtension(path);
     filename = Sapphire::FileSystem::GetFilename(path);
 
-    size = contents.size();
+    size = std::filesystem::file_size(path);
 
     istream.close();
 }
@@ -1720,4 +1724,15 @@ std::vector<std::string> Sapphire::FileSystem::ReadLines(const std::string& path
     std::string line;
     while (std::getline(istream, line)) lines.push_back(line);
     return lines;
+}
+
+int Sapphire::FileSystem::GetSize(const std::string& path)
+{
+    if (p_logger != nullptr) if (!Exists(path))
+    {
+        p_logger->err("failed to get size of file, path does not exist: \"" + path + "\"");
+        return 0;
+    }
+
+    return std::filesystem::file_size(path);
 }
