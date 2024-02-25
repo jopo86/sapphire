@@ -48,22 +48,30 @@ typedef unsigned long long ulonglong;
 namespace Sapphire {
 
     /*
-        @brief Initializes the library.
-        Must be called before using any other function (except creating a Logger object).
-     */
-    void Init();
-
-    /*
         @brief Returns the version of the library
         @return The version of the library in the format "MAJOR.MINOR.PATCH".
       */
     std::string Version();
 
     /*
+        @brief Initializes the library.
+        Must be called before using any other function (except creating a Logger object).
+        @param getSysInfo Whether to fetch system info.
+        This can take a while, especially if it's the first time the program is being ran.
+        Enter false if you don't need to access system info.
+        True by default.
+     */
+    void Init(bool getSysInfo = true);
+
+    /*
         @brief Initializes the library with the specified logger.
         @param logger The logger to use.
+        @param getSysInfo Whether to fetch system info.
+        This can take a while, especially if it's the first time the program is being ran.
+        Enter false if you don't need to access system info.
+        True by default.
      */
-    void Init(Logger& logger);
+    void Init(Logger& logger, bool getSysInfo = true);
 
     /*
         @brief Sets the logger to use.

@@ -14,157 +14,160 @@ int currentTextColor;
     Sapphire::FileSystem::File dxdiag;
 #endif
 
-void Sapphire::Init() 
+std::string Sapphire::Version() 
+{
+    return std::string(SAPPHIRE_VERSION_MAJOR) + "." + std::string(SAPPHIRE_VERSION_MINOR) + "." + std::string(SAPPHIRE_VERSION_PATCH);
+}
+
+void Sapphire::Init(bool getSysInfo) 
 {
     p_logger = nullptr;
     currentTextColor = Sapphire::Console::Colors::NO_COLOR;
     
     #ifdef OS_WINDOWS
         hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-        
-        #ifdef OS_WINDOWS
-            sysinfo.setOS(Sapphire::System::OS::WINDOWS);
-        #elif defined(OS_LINUX)
-            sysinfo.setOS(Sapphire::System::OS::LINUX);
-        #elif defined(OS_MAC)
-            sysinfo.setOS(Sapphire::System::OS::MAC);
-        #else
-            sysinfo.setOS(Sapphire::System::OS::UNKNOWN);
-        #endif
 
-        #ifdef ARCH_X86
-            sysinfo.setARCH(Sapphire::System::ARCH::X86);
-        #elif defined(ARCH_X64)
-            sysinfo.setARCH(Sapphire::System::ARCH::X64);
-        #else
-            sysinfo.setARCH(Sapphire::System::ARCH::UNKNOWN);
-        #endif
+        if (getSysInfo)
+        {    
+            #ifdef OS_WINDOWS
+                sysinfo.setOS(Sapphire::System::OS::WINDOWS);
+            #elif defined(OS_LINUX)
+                sysinfo.setOS(Sapphire::System::OS::LINUX);
+            #elif defined(OS_MAC)
+                sysinfo.setOS(Sapphire::System::OS::MAC);
+            #else
+                sysinfo.setOS(Sapphire::System::OS::UNKNOWN);
+            #endif
 
-        if (!Sapphire::FileSystem::Exists("dxdiag.txt")) system("dxdiag /t dxdiag.txt");
-        dxdiag = Sapphire::FileSystem::File("dxdiag.txt");
+            #ifdef ARCH_X86
+                sysinfo.setARCH(Sapphire::System::ARCH::X86);
+            #elif defined(ARCH_X64)
+                sysinfo.setARCH(Sapphire::System::ARCH::X64);
+            #else
+                sysinfo.setARCH(Sapphire::System::ARCH::UNKNOWN);
+            #endif
 
-        std::vector<std::string> lines = dxdiag.getLines();
+            if (!Sapphire::FileSystem::Exists("dxdiag.txt")) system("dxdiag /t dxdiag.txt");
+            dxdiag = Sapphire::FileSystem::File("dxdiag.txt");
 
-        for (int i = 0; i < lines.size(); i++)
-        {
-            if (lines[i].find("System Information") != std::string::npos)
+            std::vector<std::string> lines = dxdiag.getLines();
+
+            for (int i = 0; i < lines.size(); i++)
             {
-                i += 2;
-                sysinfo.setMachineName(lines[i + 1].substr(lines[i + 1].find(":") + 2));
-                sysinfo.setMachineID(lines[i + 2].substr(lines[i + 2].find(":") + 2));
-                sysinfo.setOSString(lines[i + 3].substr(lines[i + 3].find(":") + 2));
-                sysinfo.setLanguage(lines[i + 4].substr(lines[i + 4].find(":") + 2));
-                sysinfo.setManufacturer(lines[i + 5].substr(lines[i + 5].find(":") + 2));
-                sysinfo.setModel(lines[i + 6].substr(lines[i + 6].find(":") + 2));
-                sysinfo.setBIOS(lines[i + 7].substr(lines[i + 7].find(":") + 2));
-                sysinfo.setProcessor(lines[i + 8].substr(lines[i + 8].find(":") + 2));
-                sysinfo.setMemory(std::stoi(lines[i + 9].substr(lines[i + 9].find(":") + 2, lines[i + 9].find("MB") - lines[i + 9].find(":") - 2)));
-                sysinfo.setAvailableMemory(std::stoi(lines[i + 10].substr(lines[i + 10].find(":") + 2, lines[i + 10].find("MB") - lines[i + 10].find(":") - 2)));
-            }
-            else if (lines[i].find("Display Devices") != std::string::npos)
-            {
-                i += 2;
-                while (lines[i].find("---") == std::string::npos)
+                if (lines[i].find("System Information") != std::string::npos)
                 {
-                    if (lines[i].find("Card name") != std::string::npos)
-                    {
-                        Sapphire::System::DisplayDevice device;
-                        device.setCardName(lines[i].substr(lines[i].find(":") + 2));
-                        device.setManufacturer(lines[i + 1].substr(lines[i + 1].find(":") + 2));
-                        device.setChipType(lines[i + 2].substr(lines[i + 2].find(":") + 2));
-                        device.setMemory(std::stoi(lines[i + 10].substr(lines[i + 10].find(":") + 2, lines[i + 10].find("MB") - lines[i + 10].find(":") - 2)));
-                        sysinfo.addDisplayDevice(device);
-                    }
-                    i++;
+                    i += 2;
+                    sysinfo.setMachineName(lines[i + 1].substr(lines[i + 1].find(":") + 2));
+                    sysinfo.setMachineID(lines[i + 2].substr(lines[i + 2].find(":") + 2));
+                    sysinfo.setOSString(lines[i + 3].substr(lines[i + 3].find(":") + 2));
+                    sysinfo.setLanguage(lines[i + 4].substr(lines[i + 4].find(":") + 2));
+                    sysinfo.setManufacturer(lines[i + 5].substr(lines[i + 5].find(":") + 2));
+                    sysinfo.setModel(lines[i + 6].substr(lines[i + 6].find(":") + 2));
+                    sysinfo.setBIOS(lines[i + 7].substr(lines[i + 7].find(":") + 2));
+                    sysinfo.setProcessor(lines[i + 8].substr(lines[i + 8].find(":") + 2));
+                    sysinfo.setMemory(std::stoi(lines[i + 9].substr(lines[i + 9].find(":") + 2, lines[i + 9].find("MB") - lines[i + 9].find(":") - 2)));
+                    sysinfo.setAvailableMemory(std::stoi(lines[i + 10].substr(lines[i + 10].find(":") + 2, lines[i + 10].find("MB") - lines[i + 10].find(":") - 2)));
                 }
-            }
-            else if (lines[i].find("Sound Devices") != std::string::npos)
-            {
-                i += 2;
-                while (lines[i].find("---") == std::string::npos)
+                else if (lines[i].find("Display Devices") != std::string::npos)
                 {
-                    if (lines[i].find("Description") != std::string::npos)
+                    i += 2;
+                    while (lines[i].find("---") == std::string::npos)
                     {
-                        Sapphire::System::SoundPlaybackDevice device;
-                        device.setName(lines[i].substr(lines[i].find(":") + 2));
-                        device.setDefault(lines[i + 1].find("Yes") != std::string::npos || lines[i + 2].find("Yes") != std::string::npos);
-                        device.setHardwareID(lines[i + 3].substr(lines[i + 3].find(":") + 2));
-                        sysinfo.addSoundPlaybackDevice(device);
+                        if (lines[i].find("Card name") != std::string::npos)
+                        {
+                            Sapphire::System::DisplayDevice device;
+                            device.setCardName(lines[i].substr(lines[i].find(":") + 2));
+                            device.setManufacturer(lines[i + 1].substr(lines[i + 1].find(":") + 2));
+                            device.setChipType(lines[i + 2].substr(lines[i + 2].find(":") + 2));
+                            device.setMemory(std::stoi(lines[i + 10].substr(lines[i + 10].find(":") + 2, lines[i + 10].find("MB") - lines[i + 10].find(":") - 2)));
+                            sysinfo.addDisplayDevice(device);
+                        }
+                        i++;
                     }
-                    i++;
                 }
-            }
-            else if (lines[i].find("Sound Capture Devices") != std::string::npos)
-            {
-                i += 2;
-                while (lines[i].find("---") == std::string::npos)
+                else if (lines[i].find("Sound Devices") != std::string::npos)
                 {
-                    if (lines[i].find("Description") != std::string::npos)
+                    i += 2;
+                    while (lines[i].find("---") == std::string::npos)
                     {
-                        Sapphire::System::SoundCaptureDevice device;
-                        device.setName(lines[i].substr(lines[i].find(":") + 2));
-                        device.setDefault(lines[i + 1].find("Yes") != std::string::npos || lines[i + 2].find("Yes") != std::string::npos);
-                        sysinfo.addSoundCaptureDevice(device);
+                        if (lines[i].find("Description") != std::string::npos)
+                        {
+                            Sapphire::System::SoundPlaybackDevice device;
+                            device.setName(lines[i].substr(lines[i].find(":") + 2));
+                            device.setDefault(lines[i + 1].find("Yes") != std::string::npos || lines[i + 2].find("Yes") != std::string::npos);
+                            device.setHardwareID(lines[i + 3].substr(lines[i + 3].find(":") + 2));
+                            sysinfo.addSoundPlaybackDevice(device);
+                        }
+                        i++;
                     }
-                    i++;
                 }
-            }
-            else if (lines[i].find("Video Capture Devices") != std::string::npos)
-            {
-                i += 3;
-                while (lines[i].find("---") == std::string::npos)
+                else if (lines[i].find("Sound Capture Devices") != std::string::npos)
                 {
-                    if (lines[i].find("FriendlyName") != std::string::npos)
+                    i += 2;
+                    while (lines[i].find("---") == std::string::npos)
                     {
-                        Sapphire::System::VideoCaptureDevice device;
-                        device.setName(lines[i].substr(lines[i].find(":") + 2));
-                        device.setManufacturer(lines[i + 6].substr(lines[i + 6].find(":") + 2));
-                        device.setHardwareID(lines[i + 7].substr(lines[i + 7].find(":") + 2));
-                        sysinfo.addVideoCaptureDevice(device);
+                        if (lines[i].find("Description") != std::string::npos)
+                        {
+                            Sapphire::System::SoundCaptureDevice device;
+                            device.setName(lines[i].substr(lines[i].find(":") + 2));
+                            device.setDefault(lines[i + 1].find("Yes") != std::string::npos || lines[i + 2].find("Yes") != std::string::npos);
+                            sysinfo.addSoundCaptureDevice(device);
+                        }
+                        i++;
                     }
-                    i++;
                 }
-            }
-            else if (lines[i].find("DirectInput Devices") != std::string::npos)
-            {
-                i += 2;
-                while (lines[i].find("---") == std::string::npos)
+                else if (lines[i].find("Video Capture Devices") != std::string::npos)
                 {
-                    if (lines[i].find("Device Name") != std::string::npos)
+                    i += 3;
+                    while (lines[i].find("---") == std::string::npos)
                     {
-                        Sapphire::System::DirectInputDevice device;
-                        device.setName(lines[i].substr(lines[i].find(":") + 2));
-                        device.setNumAttached(std::stoi(lines[i + 1].substr(lines[i + 1].find(":") + 2)));
-                        sysinfo.addDirectInputDevice(device);
+                        if (lines[i].find("FriendlyName") != std::string::npos)
+                        {
+                            Sapphire::System::VideoCaptureDevice device;
+                            device.setName(lines[i].substr(lines[i].find(":") + 2));
+                            device.setManufacturer(lines[i + 6].substr(lines[i + 6].find(":") + 2));
+                            device.setHardwareID(lines[i + 7].substr(lines[i + 7].find(":") + 2));
+                            sysinfo.addVideoCaptureDevice(device);
+                        }
+                        i++;
                     }
-                    i++;
                 }
-            }
-            else if (lines[i].find("Disk & DVD/CD-ROM Drives") != std::string::npos)
-            {
-                i += 2;
-                while (lines[i].find("---") == std::string::npos)
+                else if (lines[i].find("DirectInput Devices") != std::string::npos)
                 {
-                    if (lines[i].find("Drive") != std::string::npos)
+                    i += 2;
+                    while (lines[i].find("---") == std::string::npos)
                     {
-                        Sapphire::System::Drive drive;
-                        drive.setName(lines[i].substr(lines[i].find(":") + 2));
-                        drive.setFreeSpace(std::stoi(lines[i + 1].substr(lines[i + 1].find(":") + 2, lines[i + 1].find("GB") - lines[i + 1].find(":") - 2)));
-                        drive.setTotalSpace(std::stoi(lines[i + 2].substr(lines[i + 2].find(":") + 2, lines[i + 2].find("GB") - lines[i + 2].find(":") - 2)));
-                        drive.setFileSystem(lines[i + 3].substr(lines[i + 3].find(":") + 2));
-                        sysinfo.addDrive(drive);
+                        if (lines[i].find("Device Name") != std::string::npos)
+                        {
+                            Sapphire::System::DirectInputDevice device;
+                            device.setName(lines[i].substr(lines[i].find(":") + 2));
+                            device.setNumAttached(std::stoi(lines[i + 1].substr(lines[i + 1].find(":") + 2)));
+                            sysinfo.addDirectInputDevice(device);
+                        }
+                        i++;
                     }
-                    i++;
+                }
+                else if (lines[i].find("Disk & DVD/CD-ROM Drives") != std::string::npos)
+                {
+                    i += 2;
+                    while (lines[i].find("---") == std::string::npos)
+                    {
+                        if (lines[i].find("Drive") != std::string::npos)
+                        {
+                            Sapphire::System::Drive drive;
+                            drive.setName(lines[i].substr(lines[i].find(":") + 2));
+                            drive.setFreeSpace(std::stoi(lines[i + 1].substr(lines[i + 1].find(":") + 2, lines[i + 1].find("GB") - lines[i + 1].find(":") - 2)));
+                            drive.setTotalSpace(std::stoi(lines[i + 2].substr(lines[i + 2].find(":") + 2, lines[i + 2].find("GB") - lines[i + 2].find(":") - 2)));
+                            drive.setFileSystem(lines[i + 3].substr(lines[i + 3].find(":") + 2));
+                            sysinfo.addDrive(drive);
+                        }
+                        i++;
+                    }
                 }
             }
         }
 
     #endif
-}
-
-std::string Sapphire::Version() 
-{
-    return std::string(SAPPHIRE_VERSION_MAJOR) + "." + std::string(SAPPHIRE_VERSION_MINOR) + "." + std::string(SAPPHIRE_VERSION_PATCH);
 }
 
 Sapphire::Logger::Logger() 
@@ -283,165 +286,182 @@ void Sapphire::Logger::setThrowsEnabled(bool throwsEnabled)
     this->throwsEnabled = throwsEnabled;
 }
 
-void Sapphire::Init(Logger& logger) 
+void Sapphire::Init(Logger& logger, bool getSysInfo) 
 {
     p_logger = &logger;
     currentTextColor = Sapphire::Console::Colors::NO_COLOR;
 
+    std::string osHint;
+
     #ifdef OS_WINDOWS
-
+        osHint = "Windows";
         hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-        p_logger->log("initializing... (Windows)");
-        
-        #ifdef OS_WINDOWS
-            sysinfo.setOS(Sapphire::System::OS::WINDOWS);
-        #elif defined(OS_LINUX)
-            sysinfo.setOS(Sapphire::System::OS::LINUX);
-        #elif defined(OS_MAC)
-            sysinfo.setOS(Sapphire::System::OS::MAC);
-        #else
-            sysinfo.setOS(Sapphire::System::OS::UNKNOWN);
-        #endif
+    #elif defined(OS_LINUX)
+        osHint = "Linux";
+    #elif defined(OS_MAC)
+        osHint = "Mac";
+    #else
+        osHint = "Unknown OS";
+    #endif
 
-        #ifdef ARCH_X86
-            sysinfo.setARCH(Sapphire::System::ARCH::X86);
-        #elif defined(ARCH_X64)
-            sysinfo.setARCH(Sapphire::System::ARCH::X64);
-        #else
-            sysinfo.setARCH(Sapphire::System::ARCH::UNKNOWN);
-        #endif
+    p_logger->log("initializing... (" + osHint + ")");
 
-        if (!Sapphire::FileSystem::Exists("dxdiag.txt")) {
-            p_logger->log("dxdiag.txt does not exist. Running dxdiag...");
-            auto start = std::chrono::high_resolution_clock::now();
-            system("dxdiag /t dxdiag.txt");
-            auto end = std::chrono::high_resolution_clock::now();
-            p_logger->log("dxdiag finished in " + std::to_string(std::chrono::duration_cast<std::chrono::seconds>(end - start).count()) + " seconds.");
-        }
-
-        p_logger->log("Parsing dxdiag.txt...");
-        dxdiag = Sapphire::FileSystem::File("dxdiag.txt");
-
-        std::vector<std::string> lines = dxdiag.getLines();
-
-        for (int i = 0; i < lines.size(); i++)
+    #ifdef OS_WINDOWS
+    
+        if (getSysInfo)
         {
-            if (lines[i].find("System Information") != std::string::npos)
-            {
-                i += 2;
-                sysinfo.setMachineName(lines[i + 1].substr(lines[i + 1].find(":") + 2));
-                sysinfo.setMachineID(lines[i + 2].substr(lines[i + 2].find(":") + 2));
-                sysinfo.setOSString(lines[i + 3].substr(lines[i + 3].find(":") + 2));
-                sysinfo.setLanguage(lines[i + 4].substr(lines[i + 4].find(":") + 2));
-                sysinfo.setManufacturer(lines[i + 5].substr(lines[i + 5].find(":") + 2));
-                sysinfo.setModel(lines[i + 6].substr(lines[i + 6].find(":") + 2));
-                sysinfo.setBIOS(lines[i + 7].substr(lines[i + 7].find(":") + 2));
-                sysinfo.setProcessor(lines[i + 8].substr(lines[i + 8].find(":") + 2));
-                sysinfo.setMemory(std::stoi(lines[i + 9].substr(lines[i + 9].find(":") + 2, lines[i + 9].find("MB") - lines[i + 9].find(":") - 2)));
-                sysinfo.setAvailableMemory(std::stoi(lines[i + 10].substr(lines[i + 10].find(":") + 2, lines[i + 10].find("MB") - lines[i + 10].find(":") - 2)));
+            #ifdef OS_WINDOWS
+                sysinfo.setOS(Sapphire::System::OS::WINDOWS);
+            #elif defined(OS_LINUX)
+                sysinfo.setOS(Sapphire::System::OS::LINUX);
+            #elif defined(OS_MAC)
+                sysinfo.setOS(Sapphire::System::OS::MAC);
+            #else
+                sysinfo.setOS(Sapphire::System::OS::UNKNOWN);
+            #endif
+
+            #ifdef ARCH_X86
+                sysinfo.setARCH(Sapphire::System::ARCH::X86);
+            #elif defined(ARCH_X64)
+                sysinfo.setARCH(Sapphire::System::ARCH::X64);
+            #else
+                sysinfo.setARCH(Sapphire::System::ARCH::UNKNOWN);
+            #endif
+
+            if (!Sapphire::FileSystem::Exists("dxdiag.txt")) {
+                p_logger->log("dxdiag.txt does not exist. Running dxdiag...");
+                auto start = std::chrono::high_resolution_clock::now();
+                system("dxdiag /t dxdiag.txt");
+                auto end = std::chrono::high_resolution_clock::now();
+                p_logger->log("dxdiag finished in " + std::to_string(std::chrono::duration_cast<std::chrono::seconds>(end - start).count()) + " seconds.");
             }
-            else if (lines[i].find("Display Devices") != std::string::npos)
+
+            p_logger->log("Parsing dxdiag.txt...");
+            dxdiag = Sapphire::FileSystem::File("dxdiag.txt");
+
+            std::vector<std::string> lines = dxdiag.getLines();
+
+            for (int i = 0; i < lines.size(); i++)
             {
-                i += 2;
-                while (lines[i].find("---") == std::string::npos)
+                if (lines[i].find("System Information") != std::string::npos)
                 {
-                    if (lines[i].find("Card name") != std::string::npos)
+                    i += 2;
+                    sysinfo.setMachineName(lines[i + 1].substr(lines[i + 1].find(":") + 2));
+                    sysinfo.setMachineID(lines[i + 2].substr(lines[i + 2].find(":") + 2));
+                    sysinfo.setOSString(lines[i + 3].substr(lines[i + 3].find(":") + 2));
+                    sysinfo.setLanguage(lines[i + 4].substr(lines[i + 4].find(":") + 2));
+                    sysinfo.setManufacturer(lines[i + 5].substr(lines[i + 5].find(":") + 2));
+                    sysinfo.setModel(lines[i + 6].substr(lines[i + 6].find(":") + 2));
+                    sysinfo.setBIOS(lines[i + 7].substr(lines[i + 7].find(":") + 2));
+                    sysinfo.setProcessor(lines[i + 8].substr(lines[i + 8].find(":") + 2));
+                    sysinfo.setMemory(std::stoi(lines[i + 9].substr(lines[i + 9].find(":") + 2, lines[i + 9].find("MB") - lines[i + 9].find(":") - 2)));
+                    sysinfo.setAvailableMemory(std::stoi(lines[i + 10].substr(lines[i + 10].find(":") + 2, lines[i + 10].find("MB") - lines[i + 10].find(":") - 2)));
+                }
+                else if (lines[i].find("Display Devices") != std::string::npos)
+                {
+                    i += 2;
+                    while (lines[i].find("---") == std::string::npos)
                     {
-                        Sapphire::System::DisplayDevice device;
-                        device.setCardName(lines[i].substr(lines[i].find(":") + 2));
-                        device.setManufacturer(lines[i + 1].substr(lines[i + 1].find(":") + 2));
-                        device.setChipType(lines[i + 2].substr(lines[i + 2].find(":") + 2));
-                        device.setMemory(std::stoi(lines[i + 10].substr(lines[i + 10].find(":") + 2, lines[i + 10].find("MB") - lines[i + 10].find(":") - 2)));
-                        sysinfo.addDisplayDevice(device);
+                        if (lines[i].find("Card name") != std::string::npos)
+                        {
+                            Sapphire::System::DisplayDevice device;
+                            device.setCardName(lines[i].substr(lines[i].find(":") + 2));
+                            device.setManufacturer(lines[i + 1].substr(lines[i + 1].find(":") + 2));
+                            device.setChipType(lines[i + 2].substr(lines[i + 2].find(":") + 2));
+                            device.setMemory(std::stoi(lines[i + 10].substr(lines[i + 10].find(":") + 2, lines[i + 10].find("MB") - lines[i + 10].find(":") - 2)));
+                            sysinfo.addDisplayDevice(device);
+                        }
+                        i++;
                     }
-                    i++;
+                }
+                else if (lines[i].find("Sound Devices") != std::string::npos)
+                {
+                    i += 2;
+                    while (lines[i].find("---") == std::string::npos)
+                    {
+                        if (lines[i].find("Description") != std::string::npos)
+                        {
+                            Sapphire::System::SoundPlaybackDevice device;
+                            device.setName(lines[i].substr(lines[i].find(":") + 2));
+                            device.setDefault(lines[i + 1].find("Yes") != std::string::npos || lines[i + 2].find("Yes") != std::string::npos);
+                            device.setHardwareID(lines[i + 3].substr(lines[i + 3].find(":") + 2));
+                            sysinfo.addSoundPlaybackDevice(device);
+                        }
+                        i++;
+                    }
+                }
+                else if (lines[i].find("Sound Capture Devices") != std::string::npos)
+                {
+                    i += 2;
+                    while (lines[i].find("---") == std::string::npos)
+                    {
+                        if (lines[i].find("Description") != std::string::npos)
+                        {
+                            Sapphire::System::SoundCaptureDevice device;
+                            device.setName(lines[i].substr(lines[i].find(":") + 2));
+                            device.setDefault(lines[i + 1].find("Yes") != std::string::npos || lines[i + 2].find("Yes") != std::string::npos);
+                            sysinfo.addSoundCaptureDevice(device);
+                        }
+                        i++;
+                    }
+                }
+                else if (lines[i].find("Video Capture Devices") != std::string::npos)
+                {
+                    i += 3;
+                    while (lines[i].find("---") == std::string::npos)
+                    {
+                        if (lines[i].find("FriendlyName") != std::string::npos)
+                        {
+                            Sapphire::System::VideoCaptureDevice device;
+                            device.setName(lines[i].substr(lines[i].find(":") + 2));
+                            device.setManufacturer(lines[i + 6].substr(lines[i + 6].find(":") + 2));
+                            device.setHardwareID(lines[i + 7].substr(lines[i + 7].find(":") + 2));
+                            sysinfo.addVideoCaptureDevice(device);
+                        }
+                        i++;
+                    }
+                }
+                else if (lines[i].find("DirectInput Devices") != std::string::npos)
+                {
+                    i += 2;
+                    while (lines[i].find("---") == std::string::npos)
+                    {
+                        if (lines[i].find("Device Name") != std::string::npos)
+                        {
+                            Sapphire::System::DirectInputDevice device;
+                            device.setName(lines[i].substr(lines[i].find(":") + 2));
+                            device.setNumAttached(std::stoi(lines[i + 1].substr(lines[i + 1].find(":") + 2)));
+                            sysinfo.addDirectInputDevice(device);
+                        }
+                        i++;
+                    }
+                }
+                else if (lines[i].find("Disk & DVD/CD-ROM Drives") != std::string::npos)
+                {
+                    i += 2;
+                    while (lines[i].find("---") == std::string::npos)
+                    {
+                        if (lines[i].find("Drive") != std::string::npos)
+                        {
+                            Sapphire::System::Drive drive;
+                            drive.setName(lines[i].substr(lines[i].find(":") + 2));
+                            drive.setFreeSpace(std::stoi(lines[i + 1].substr(lines[i + 1].find(":") + 2, lines[i + 1].find("GB") - lines[i + 1].find(":") - 2)));
+                            drive.setTotalSpace(std::stoi(lines[i + 2].substr(lines[i + 2].find(":") + 2, lines[i + 2].find("GB") - lines[i + 2].find(":") - 2)));
+                            drive.setFileSystem(lines[i + 3].substr(lines[i + 3].find(":") + 2));
+                            sysinfo.addDrive(drive);
+                        }
+                        i++;
+                    }
                 }
             }
-            else if (lines[i].find("Sound Devices") != std::string::npos)
-            {
-                i += 2;
-                while (lines[i].find("---") == std::string::npos)
-                {
-                    if (lines[i].find("Description") != std::string::npos)
-                    {
-                        Sapphire::System::SoundPlaybackDevice device;
-                        device.setName(lines[i].substr(lines[i].find(":") + 2));
-                        device.setDefault(lines[i + 1].find("Yes") != std::string::npos || lines[i + 2].find("Yes") != std::string::npos);
-                        device.setHardwareID(lines[i + 3].substr(lines[i + 3].find(":") + 2));
-                        sysinfo.addSoundPlaybackDevice(device);
-                    }
-                    i++;
-                }
-            }
-            else if (lines[i].find("Sound Capture Devices") != std::string::npos)
-            {
-                i += 2;
-                while (lines[i].find("---") == std::string::npos)
-                {
-                    if (lines[i].find("Description") != std::string::npos)
-                    {
-                        Sapphire::System::SoundCaptureDevice device;
-                        device.setName(lines[i].substr(lines[i].find(":") + 2));
-                        device.setDefault(lines[i + 1].find("Yes") != std::string::npos || lines[i + 2].find("Yes") != std::string::npos);
-                        sysinfo.addSoundCaptureDevice(device);
-                    }
-                    i++;
-                }
-            }
-            else if (lines[i].find("Video Capture Devices") != std::string::npos)
-            {
-                i += 3;
-                while (lines[i].find("---") == std::string::npos)
-                {
-                    if (lines[i].find("FriendlyName") != std::string::npos)
-                    {
-                        Sapphire::System::VideoCaptureDevice device;
-                        device.setName(lines[i].substr(lines[i].find(":") + 2));
-                        device.setManufacturer(lines[i + 6].substr(lines[i + 6].find(":") + 2));
-                        device.setHardwareID(lines[i + 7].substr(lines[i + 7].find(":") + 2));
-                        sysinfo.addVideoCaptureDevice(device);
-                    }
-                    i++;
-                }
-            }
-            else if (lines[i].find("DirectInput Devices") != std::string::npos)
-            {
-                i += 2;
-                while (lines[i].find("---") == std::string::npos)
-                {
-                    if (lines[i].find("Device Name") != std::string::npos)
-                    {
-                        Sapphire::System::DirectInputDevice device;
-                        device.setName(lines[i].substr(lines[i].find(":") + 2));
-                        device.setNumAttached(std::stoi(lines[i + 1].substr(lines[i + 1].find(":") + 2)));
-                        sysinfo.addDirectInputDevice(device);
-                    }
-                    i++;
-                }
-            }
-            else if (lines[i].find("Disk & DVD/CD-ROM Drives") != std::string::npos)
-            {
-                i += 2;
-                while (lines[i].find("---") == std::string::npos)
-                {
-                    if (lines[i].find("Drive") != std::string::npos)
-                    {
-                        Sapphire::System::Drive drive;
-                        drive.setName(lines[i].substr(lines[i].find(":") + 2));
-                        drive.setFreeSpace(std::stoi(lines[i + 1].substr(lines[i + 1].find(":") + 2, lines[i + 1].find("GB") - lines[i + 1].find(":") - 2)));
-                        drive.setTotalSpace(std::stoi(lines[i + 2].substr(lines[i + 2].find(":") + 2, lines[i + 2].find("GB") - lines[i + 2].find(":") - 2)));
-                        drive.setFileSystem(lines[i + 3].substr(lines[i + 3].find(":") + 2));
-                        sysinfo.addDrive(drive);
-                    }
-                    i++;
-                }
-            }
+
+            p_logger->log("Finished parsing dxdiag.txt.");
         }
 
-        p_logger->log("Finished parsing dxdiag.txt.");
-        p_logger->log("Sapphire initialized.");
 
     #endif
+
+    p_logger->log("Sapphire initialized.");
 }
 
 void Sapphire::SetLogger(Logger& logger) 

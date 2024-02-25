@@ -1,40 +1,22 @@
 #include <iostream>
+#include <string>
 
 #include "Core.h"
 #include "Logger.h"
 #include "System.h"
 #include "DSA.h"
 
+using namespace Sapphire::DSA;
+
 int main() {
     
     std::cout << "\n";
 
     Sapphire::Logger logger(true, true, true, false);
-    Sapphire::Init(logger);
+    Sapphire::Init(logger, false);
     
-    Sapphire::DSA::ArrayList<int> list(5);
-    for (int i = 0; i < list.size(); i++)
-    {
-        std::cout << list[i] << " ";
-    }
-    
-    std::cout << "\n";
-
-    list.add(1);
-    for (int i = 0; i < list.size(); i++)
-    {
-        std::cout << list[i] << " ";
-    }
-
-    // !doubling list, fix
-
-    std::cout << "\n";
-
-    list.add(1, 0);
-    for (int i = 0; i < list.size(); i++)
-    {
-        std::cout << list[i] << " ";
-    }
+    ArrayList<int> nums = { 1, 2, 3 };
+    std::cout << nums[3];
 
     return 0;
 }
