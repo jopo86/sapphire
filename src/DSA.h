@@ -2,6 +2,8 @@
 
 #include <iostream>
 
+#include "Core.h"
+
 typedef unsigned int uint;
 
 /*
@@ -17,13 +19,87 @@ namespace Sapphire
     namespace DSA
     {
         template<typename T>
+        T Min(T a, T b)
+        {
+            return a < b ? a : b;
+        }
+
+        template<typename T>
+        int MinIndex(T* arr, uint size)
+        {
+            if (size = 0)
+            {
+                Sapphire::Warn("DSA::Min(T* arr, uint size) --> size is 0, cannot find minimum value. Returning -1");
+                return -1;
+            }
+            
+            int minI = 0;
+            for (int i = 1; i < size; i++)
+            {
+                if (arr[i] < arr[minI]) minI = i;
+            }
+            return minI;
+        }
+        
+        template<typename T>
+        int MinIndex(T* arr, uint start, uint end)
+        {
+            if (end - start == 0)
+            {
+                Sapphire::Warn("DSA::Min(T* arr, uint start, uint end) --> range is 0, cannot find minimum value. Returning -1");
+                return -1;
+            }
+
+            int minI = start;
+            for (int i = start + 1; i < end; i++)
+            {
+                if (arr[i] < arr[minI]) minI = i;
+            }
+            return minI;
+        }
+
+        template<typename T>
         T Max(T a, T b)
         {
             return a > b ? a : b;
         }
 
         template<typename T>
-        int Find(T* arr, int size, T elem)
+        int MaxIndex(T* arr, uint size)
+        {
+            if (size = 0)
+            {
+                Sapphire::Warn("DSA::Min(T* arr, uint size) --> size is 0, cannot find minimum value. Returning -1");
+                return -1;
+            }
+            
+            int maxI = 0;
+            for (int i = 1; i < size; i++)
+            {
+                if (arr[i] > arr[maxI]) maxI = i;
+            }
+            return maxI;
+        }
+        
+        template<typename T>
+        int MaxIndex(T* arr, uint start, uint end)
+        {
+            if (end - start == 0)
+            {
+                Sapphire::Warn("DSA::Min(T* arr, uint start, uint end) --> range is 0, cannot find minimum value. Returning -1");
+                return -1;
+            }
+
+            int maxI = start;
+            for (int i = start + 1; i < end; i++)
+            {
+                if (arr[i] > arr[maxI]) maxI = i;
+            }
+            return maxI;
+        }
+
+        template<typename T>
+        int LinearSearch(T* arr, uint size, T elem)
         {
             for (int i = 0; i < size; i++)
             {
@@ -33,9 +109,54 @@ namespace Sapphire
         }
 
         template<typename T>
-        int Contains(T* arr, int size, T elem)
+        int BinarySearch(T* arr, uint size, T elem)
         {
-            return Find(arr, size, elem) != -1;
+            int left = 0;
+            int right = size - 1;
+            
+            for (int i = (left + right) / 2; left - right != 1; i = (left + right) / 2)
+            {
+                if (elem == arr[i]) return i;
+                else if (elem > arr[i]) left = i + 1;
+                else right = i - 1;
+            }
+
+            return -1;
+        }
+
+        template<typename T>
+        int Contains(T* arr, uint size, T elem)
+        {
+            return LinearSearch(arr, size, elem) != -1;
+        }
+
+        template<typename T>
+        void BubbleSort(T* arr, uint size)
+        {
+            for (int i = 0; i < size - 1; i++)
+            {
+                for (int j = 0; j < size - 1; j++)
+                {
+                    if (arr[j] > arr[j + 1])
+                    {
+                        T tmp = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = tmp;
+                    }
+                }
+            }
+        }
+
+        template<typename T>
+        void SelectionSort(T* arr, uint size)
+        {
+            for (int i = 0; i < size - 1; i++)
+            {
+                int minI = MinIndex(arr, i, size);
+                T tmp = arr[i];
+                arr[i] = arr[minI];
+                arr[minI] = tmp;
+            }
         }
 
         template<typename T>
@@ -91,14 +212,29 @@ namespace Sapphire
                 if (m_arr != nullptr) delete[] m_arr;
             }
 
-            int find(T elem)
+            int linearSearch(T elem)
             {
-                return Find(m_arr, m_size, elem);
+                return LinearSearch(m_arr, m_size, elem);
+            }
+
+            int binarySearch(T elem)
+            {
+                return BinarySearch(m_arr, m_size, elem);
             }
 
             bool contains(T elem)
             {
-                return find(elem) != -1;
+                return linearSearch(elem) != -1;
+            }
+
+            void bubbleSort()
+            {
+                BubbleSort(m_arr);
+            }
+
+            void selectionSort()
+            {
+                SelectionSort(m_arr);
             }
 
             uint size()
@@ -113,7 +249,11 @@ namespace Sapphire
 
             T& operator[](int index)
             {
-                if (index < 0 || index >= m_size) throw std::runtime_error("Sapphire: Array - index " + std::to_string(index) + " is out of bounds (size: " + std::to_string(m_size) + ")");
+                if (index < 0 || index >= m_size)
+                {
+                    Sapphire::Err("DSA::Array --> array index " + std::to_string(index) + " is out of bounds (size: " + std::to_string(m_size) + ")");
+                    throw std::runtime_error("Sapphire: DSA::Array --> array index " + std::to_string(index) + " is out of bounds (size: " + std::to_string(m_size) + ")");
+                }
                 return m_arr[index];
             }
 
@@ -262,14 +402,29 @@ namespace Sapphire
                 if (m_arr != nullptr) delete[] m_arr;
             }
 
-            int find(T elem)
+            int linearSearch(T elem)
             {
-                return Find(m_arr, m_size, elem);
+                return LinearSearch(m_arr, m_size, elem);
+            }
+
+            int binarySearch(T elem)
+            {
+                return BinarySearch(m_arr, m_size, elem);
             }
 
             int contains(T elem)
             {
-                return find(elem) != -1;
+                return linearSearch(elem) != -1;
+            }
+
+            void bubbleSort()
+            {
+                BubbleSort(m_arr);
+            }
+
+            void selectionSort()
+            {
+                SelectionSort(m_arr);
             }
 
             uint size()
@@ -388,7 +543,11 @@ namespace Sapphire
 
             T& operator[](int index)
             {
-                if (index < 0 || index >= m_size) throw std::runtime_error("Sapphire: ArrayList - index " + std::to_string(index) + " is out of bounds (size: " + std::to_string(m_size) + ")");
+                if (index < 0 || index >= m_size) 
+                {
+                    Sapphire::Err("DSA::ArrayList --> array index " + std::to_string(index) + " is out of bounds (size: " + std::to_string(m_size) + ")");
+                    throw std::runtime_error("Sapphire: DSA::ArrayList --> array index " + std::to_string(index) + " is out of bounds (size: " + std::to_string(m_size) + ")");
+                }
                 return m_arr[index];
             }
 
@@ -481,24 +640,6 @@ namespace Sapphire
             uint m_size;
         };
 
-        template<typename T>
-        class LinkedList
-        {
-
-        };
-
-        template<typename T>
-        class Stack
-        {
-
-        };
-
-        template<typename T>
-        class Queue
-        {
-
-        };
-
         template<typename T1, typename T2>
         struct Pair
         {
@@ -552,7 +693,8 @@ namespace Sapphire
                 {
                     if (list[i].first == key) return list[i].second;
                 }
-                throw std::runtime_error("Sapphire: HashMap - key not found");
+                Sapphire::Err("DSA::HashMap --> key " + std::to_string(key) + " not found");
+                throw std::runtime_error("Sapphire: DSA::HashMap --> key " + std::to_string(key) + " not found");
             }
 
             HashMap<K, V>& operator=(const HashMap<K, V>& other)

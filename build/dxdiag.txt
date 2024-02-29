@@ -1,7 +1,7 @@
 ------------------
 System Information
 ------------------
-      Time of this report: 2/23/2024, 08:07:03
+      Time of this report: 2/27/2024, 09:41:26
              Machine name: JOSH-LAPTOP
                Machine Id: {1B736A85-E2B7-44BD-8D96-A80812E8AFFC}
          Operating System: Windows 11 Home 64-bit (10.0, Build 22631) (22621.ni_release.220506-1250)
@@ -12,7 +12,7 @@ System Information
                 Processor: AMD Ryzen 9 5900HS with Radeon Graphics         (16 CPUs), ~3.3GHz
                    Memory: 16384MB RAM
       Available OS Memory: 15776MB RAM
-                Page File: 10330MB used, 6469MB available
+                Page File: 8048MB used, 8751MB available
               Windows Dir: C:\WINDOWS
           DirectX Version: DirectX 12
       DX Setup Parameters: Not found
@@ -403,7 +403,7 @@ PS/2 Devices
 Disk & DVD/CD-ROM Drives
 ------------------------
       Drive: C:
- Free Space: 612.3 GB
+ Free Space: 608.9 GB
 Total Space: 953.1 GB
 File System: NTFS
       Model: WDC PC SN530 SDBPTPZ-1T00-1002
@@ -959,10 +959,10 @@ Video Decoders:
   Mpeg43 Decoder MFT, CLSID_CMpeg43DecMediaObject, 0x1, mp43decd.dll, 10.00.22621.0001
   Mpeg4 Decoder MFT, CLSID_CMpeg4DecMediaObject, 0x1, mpg4decd.dll, 10.00.22621.0001
   HEIFImageExtension
+  HEVCVideoExtension
   VP9VideoExtensionDecoder
   RawImageExtension
   WebpImageExtension
-  HEVCVideoExtension
 Video Encoders:
   AMDh265Encoder, {5FD65104-A924-4835-AB71-09A223E3E37B}, 0x4, 8, amdh265enc64.dll, 30.00.14018.15002
   AMDh264Encoder, {ADC9BC80-0F41-46C6-AB75-D693D793597D}, 0x4, 8, amdh264enc64.dll, 30.00.14018.15002
@@ -974,8 +974,8 @@ Video Encoders:
   WMVideo9 Encoder MFT, CLSID_CWMV9EncMediaObject, 0x1, wmvencod.dll, 10.00.22621.0001
   Microsoft MPEG-2 Video Encoder MFT, {E6335F02-80B7-4DC4-ADFA-DFE7210D20D5}, 0x2, msmpeg2enc.dll, 10.00.22621.2506
   HEIFImageExtension
-  VP9VideoExtensionEncoder
   HEVCVideoExtensionEncoder
+  VP9VideoExtensionEncoder
 Video Effects:
   Frame Rate Converter, CLSID_CFrameRateConvertDmo, 0x1, mfvdsp.dll, 10.00.22621.0001
   Resizer MFT, CLSID_CResizerDMO, 0x1, vidreszr.dll, 10.00.22621.2506
@@ -1288,64 +1288,45 @@ Diagnostics
 
 Windows Error Reporting:
 +++ WER0 +++:
-Fault bucket 1170882942672734120, type 4
+Fault bucket 1289537198673003135, type 1
 Event Name: APPCRASH
 Response: Not available
 Cab Id: 0
 
 Problem signature:
-P1: RtkAudUService64.exe
-P2: 1.0.334.1
-P3: 5fc482b1
-P4: combase.dll
-P5: 10.0.22621.3085
-P6: 9c05761b
-P7: c0000005
-P8: 00000000000cf7bb
+P1: AcPowerNotification.exe
+P2: 1.0.5.25
+P3: 84264f7e
+P4: KERNELBASE.dll
+P5: 10.0.22621.3155
+P6: 587de32b
+P7: c000041d
+P8: 00149542
 P9: 
 P10: 
 
 
 +++ WER1 +++:
-Fault bucket 1710886649276791167, type 5
-Event Name: BEX64
+Fault bucket 1801310505205127920, type 5
+Event Name: CLR20r3
 Response: Not available
 Cab Id: 0
 
 Problem signature:
-P1: RtkAudUService64.exe
-P2: 1.0.334.1
-P3: 5fc482b1
-P4: StackHash_93ca
-P5: 0.0.0.0
-P6: 00000000
-P7: PCH_FC_FROM_ntdll+0x000000000009FEC4
-P8: c0000005
-P9: 0000000000000008
+P1: AcPowerNotification.exe
+P2: 1.0.5.25
+P3: 84264f7e
+P4: mscorlib
+P5: 4.8.9181.0
+P6: 64b8580f
+P7: 10a2
+P8: 41
+P9: System.OverflowException
 P10: 
 
 
 +++ WER2 +++:
-Fault bucket , type 0
-Event Name: BEX64
-Response: Not available
-Cab Id: 0
-
-Problem signature:
-P1: RtkAudUService64.exe
-P2: 1.0.334.1
-P3: 5fc482b1
-P4: StackHash_93ca
-P5: 0.0.0.0
-P6: 00000000
-P7: PCH_FC_FROM_ntdll+0x000000000009FEC4
-P8: c0000005
-P9: 0000000000000008
-P10: 
-
-
-+++ WER3 +++:
-Fault bucket 1615178682929024728, type 5
+Fault bucket 1846077036918960765, type 5
 Event Name: StoreAgentInstallFailure1
 Response: Not available
 Cab Id: 0
@@ -1356,7 +1337,26 @@ P2: 80073d02
 P3: 22631
 P4: 3155
 P5: Windows.Desktop
-P6: V
+P6: P
+P7: 
+P8: 
+P9: 
+P10: 
+
+
++++ WER3 +++:
+Fault bucket , type 0
+Event Name: StoreAgentInstallFailure1
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: Update;ScanForUpdatesForUser
+P2: 80073d02
+P3: 22631
+P4: 3155
+P5: Windows.Desktop
+P6: P
 P7: 
 P8: 
 P9: 
@@ -1364,18 +1364,18 @@ P10:
 
 
 +++ WER4 +++:
-Fault bucket , type 0
-Event Name: StoreAgentInstallFailure1
+Fault bucket 2148527778989965110, type 5
+Event Name: MoAppHang
 Response: Not available
 Cab Id: 0
 
 Problem signature:
-P1: Update;ScanForUpdatesForUser
-P2: 80073d02
-P3: 22631
-P4: 3155
-P5: Windows.Desktop
-P6: V
+P1: Microsoft.YourPhone_1.24012.86.0_x64__8wekyb3d8bbwe
+P2: praid:App
+P3: 1.24012.86.0
+P4: 65680000
+P5: 4fda
+P6: 2097152
 P7: 
 P8: 
 P9: 
@@ -1383,18 +1383,18 @@ P10:
 
 
 +++ WER5 +++:
-Fault bucket 1615178682929024728, type 5
-Event Name: StoreAgentInstallFailure1
+Fault bucket 1434667477457932264, type 5
+Event Name: StoreAgentScanForUpdatesFailure0
 Response: Not available
 Cab Id: 0
 
 Problem signature:
-P1: Update;ScanForUpdatesForUser
-P2: 80073d02
+P1: Update;
+P2: 8024402c
 P3: 22631
 P4: 3155
 P5: Windows.Desktop
-P6: V
+P6: 
 P7: 
 P8: 
 P9: 
@@ -1403,17 +1403,17 @@ P10:
 
 +++ WER6 +++:
 Fault bucket , type 0
-Event Name: StoreAgentInstallFailure1
+Event Name: StoreAgentScanForUpdatesFailure0
 Response: Not available
 Cab Id: 0
 
 Problem signature:
-P1: Update;ScanForUpdatesForUser
-P2: 80073d02
+P1: Update;
+P2: 8024402c
 P3: 22631
 P4: 3155
 P5: Windows.Desktop
-P6: V
+P6: 
 P7: 
 P8: 
 P9: 
@@ -1421,14 +1421,14 @@ P10:
 
 
 +++ WER7 +++:
-Fault bucket 1781194463310951863, type 5
+Fault bucket , type 0
 Event Name: StoreAgentScanForUpdatesFailure0
 Response: Not available
 Cab Id: 0
 
 Problem signature:
 P1: Update;
-P2: 8024001e
+P2: 8024402c
 P3: 22631
 P4: 3155
 P5: Windows.Desktop
@@ -1440,40 +1440,40 @@ P10:
 
 
 +++ WER8 +++:
-Fault bucket , type 0
-Event Name: StoreAgentScanForUpdatesFailure0
-Response: Not available
-Cab Id: 0
-
-Problem signature:
-P1: Update;
-P2: 8024001e
-P3: 22631
-P4: 3155
-P5: Windows.Desktop
-P6: 
-P7: 
-P8: 
-P9: 
-P10: 
-
-
-+++ WER9 +++:
-Fault bucket 1170882942672734120, type 4
+Fault bucket 1289537198673003135, type 1
 Event Name: APPCRASH
 Response: Not available
 Cab Id: 0
 
 Problem signature:
-P1: RtkAudUService64.exe
-P2: 1.0.334.1
-P3: 5fc482b1
-P4: combase.dll
-P5: 10.0.22621.3085
-P6: 9c05761b
-P7: c0000005
-P8: 00000000000cf7bb
+P1: AcPowerNotification.exe
+P2: 1.0.5.25
+P3: 84264f7e
+P4: KERNELBASE.dll
+P5: 10.0.22621.3155
+P6: 587de32b
+P7: c000041d
+P8: 00149542
 P9: 
+P10: 
+
+
++++ WER9 +++:
+Fault bucket 1801310505205127920, type 5
+Event Name: CLR20r3
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: AcPowerNotification.exe
+P2: 1.0.5.25
+P3: 84264f7e
+P4: mscorlib
+P5: 4.8.9181.0
+P6: 64b8580f
+P7: 10a2
+P8: 41
+P9: System.OverflowException
 P10: 
 
 

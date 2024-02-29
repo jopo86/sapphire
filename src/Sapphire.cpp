@@ -336,7 +336,7 @@ void Sapphire::Init(Logger& logger, bool getSysInfo)
                 p_logger->log("dxdiag finished in " + std::to_string(std::chrono::duration_cast<std::chrono::seconds>(end - start).count()) + " seconds.");
             }
 
-            p_logger->log("Parsing dxdiag.txt...");
+            p_logger->log("parsing dxdiag.txt...");
             dxdiag = Sapphire::FileSystem::File("dxdiag.txt");
 
             std::vector<std::string> lines = dxdiag.getLines();
@@ -455,13 +455,13 @@ void Sapphire::Init(Logger& logger, bool getSysInfo)
                 }
             }
 
-            p_logger->log("Finished parsing dxdiag.txt.");
+            p_logger->log("finished parsing dxdiag.txt.");
         }
 
 
     #endif
 
-    p_logger->log("Sapphire initialized.");
+    p_logger->log("initialization complete.");
 }
 
 void Sapphire::SetLogger(Logger& logger) 
@@ -469,9 +469,24 @@ void Sapphire::SetLogger(Logger& logger)
     p_logger = &logger;
 }
 
-Sapphire::Logger& Sapphire::GetLogger() 
+Sapphire::Logger* Sapphire::GetLogger() 
 {
-    return *p_logger;
+    return p_logger;
+}
+
+void Sapphire::Log(const std::string& message)
+{
+    if (p_logger != nullptr) p_logger->log(message);
+}
+
+void Sapphire::Warn(const std::string& message)
+{
+    if (p_logger != nullptr) p_logger->warn(message);
+}
+
+void Sapphire::Err(const std::string& message)
+{
+    if (p_logger != nullptr) p_logger->err(message);
 }
 
 Sapphire::System::DisplayDevice::DisplayDevice() 

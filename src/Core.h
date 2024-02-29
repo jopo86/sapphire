@@ -83,5 +83,26 @@ namespace Sapphire {
         @brief Gets the logger being used.
         @return The logger being used.
      */
-    Logger& GetLogger();
+    Logger* GetLogger();
+
+    /*
+        @brief Logs a message using the stored logger.
+        Does not log if there is no logger, so you don't have to check this yourself.
+        @param message The message to log.
+     */
+    void Log(const std::string& message);
+
+    /*
+        @brief Logs a warning message using the stored logger.
+        Does not log if there is no logger, so you don't have to check this yourself.
+        @param message The message to log.
+     */
+    void Warn(const std::string& message);
+
+    /*
+        @brief Logs an error message using the stored logger.
+        Does not log if there is no logger, so you don't have to check this yourself.
+        @param message The message to log.
+     */
+    void Err(const std::string& message);
 }

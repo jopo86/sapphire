@@ -12,11 +12,17 @@ int main() {
     
     std::cout << "\n";
 
-    Sapphire::Logger logger(true, true, true, false);
-    Sapphire::Init(logger, false);
+    Sapphire::Logger logger(false, true, true, false);
+    Sapphire::Init(logger);
     
-    ArrayList<int> nums = { 1, 2, 3 };
-    std::cout << nums[3];
+    int nums[] = { 9, 8, 7, 6, 5, 4, 3, 2, 1 };
+    BubbleSort(nums, sizeof(nums) / sizeof(int));
+
+    for (int n : nums)
+    {
+        std::cout << n << " ";
+    }
+
 
     return 0;
 }
