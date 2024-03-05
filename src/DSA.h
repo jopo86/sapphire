@@ -160,6 +160,18 @@ namespace Sapphire
         }
 
         template<typename T>
+        void QuickSort(T* arr, uint size)
+        {
+             
+        }
+
+        template<typename T>
+        void MergeSort(T* arr, uint size)
+        {
+
+        }
+
+        template<typename T>
         class Array
         {
         public:
@@ -235,6 +247,16 @@ namespace Sapphire
             void selectionSort()
             {
                 SelectionSort(m_arr);
+            }
+
+            void quickSort()
+            {
+                QuickSort(m_arr);
+            }
+
+            void mergeSort()
+            {
+                MergeSort(m_arr);
             }
 
             uint size()
@@ -425,6 +447,16 @@ namespace Sapphire
             void selectionSort()
             {
                 SelectionSort(m_arr);
+            }
+
+            void quickSort()
+            {
+                QuickSort(m_arr);
+            }
+
+            void mergeSort()
+            {
+                MergeSort(m_arr);
             }
 
             uint size()

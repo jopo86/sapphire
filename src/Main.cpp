@@ -16,7 +16,7 @@ int main() {
     Sapphire::Init(logger);
     
     int nums[] = { 9, 8, 7, 6, 5, 4, 3, 2, 1 };
-    BubbleSort(nums, sizeof(nums) / sizeof(int));
+    SelectionSort(nums, sizeof(nums) / sizeof(int));
 
     for (int n : nums)
     {
