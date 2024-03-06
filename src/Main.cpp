@@ -15,14 +15,14 @@ int main() {
     Sapphire::Logger logger(false, true, true, false);
     Sapphire::Init(logger);
     
-    int nums[] = { 9, 8, 7, 6, 5, 4, 3, 2, 1 };
-    SelectionSort(nums, sizeof(nums) / sizeof(int));
+    int nums[] = { 8, 2, 5, 3, 4, 7, 6, 1 };
+    
+    MergeSort(nums, sizeof(nums) / sizeof(int));
 
     for (int n : nums)
     {
         std::cout << n << " ";
     }
-
 
     return 0;
 }

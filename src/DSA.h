@@ -125,6 +125,24 @@ namespace Sapphire
         }
 
         template<typename T>
+        int InterpolationSearch(T* arr, uint size, T elem)
+        {
+            int high = size - 1;
+            int low = 0;
+
+            while(elem >= arr[low] && elem <= arr[high] && low <= high)
+            {
+                int probe = low + (high - low) * (elem - arr[low]) / (arr[high] - arr[low]);
+
+                if (elem == arr[probe]) return probe;
+                else if (elem > arr[probe]) low = probe + 1;
+                else high = probe - 1;
+            }
+
+            return -1;
+        }
+
+        template<typename T>
         int Contains(T* arr, uint size, T elem)
         {
             return LinearSearch(arr, size, elem) != -1;
@@ -160,15 +178,21 @@ namespace Sapphire
         }
 
         template<typename T>
-        void QuickSort(T* arr, uint size)
+        void MergeHelper(T* leftArr, uint leftSize, T* rightArr, uint rightSize, T* arr, uint size)
         {
-             
+
         }
 
         template<typename T>
-        void MergeSort(T* arr, uint size)
+        void MergeSort(T* arr, uint _size)
         {
+            if ()
+        }
 
+        template<typename T>
+        void QuickSort(T* arr, uint size)
+        {
+             
         }
 
         template<typename T>
