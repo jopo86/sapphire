@@ -1,5 +1,5 @@
 # Sapphire
-An extensive C++ library with utilities like console colors, file system functions, system info, and more.
+An extensive C++ library with utilities like filesystem functions, system information, data structures and algorithms, console manipulation, and more.
 
 ## Download
 These links will bring you to pages where you can download a zip file containing include, lib, and source files for the library.  
