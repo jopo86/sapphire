@@ -15,10 +15,17 @@ int main() {
     Sapphire::Logger logger(false, true, true, false);
     Sapphire::Init(logger);
     
-    int nums[] = { 8, 2, 5, 3, 4, 7, 6, 1 };
-    
-    MergeSort(nums, sizeof(nums) / sizeof(int));
+    ArrayList<int> nums = { 1, 6, 3, 7, 4, 8, 9, 0, 2, 4, 5, 6, 7, 7, 8, 1, 0, 0, 9 };
+    nums.remove(4);
+    nums.add(10);
 
+    for (int n : nums)
+    {
+        std::cout << n << " ";
+    }
+    std::cout << "\n";
+
+    nums.quickSort();
     for (int n : nums)
     {
         std::cout << n << " ";

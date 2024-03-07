@@ -23,30 +23,13 @@ namespace Sapphire
         {
             return a < b ? a : b;
         }
-
-        template<typename T>
-        int MinIndex(T* arr, uint size)
-        {
-            if (size = 0)
-            {
-                Sapphire::Warn("DSA::Min(T* arr, uint size) --> size is 0, cannot find minimum value. Returning -1");
-                return -1;
-            }
-            
-            int minI = 0;
-            for (int i = 1; i < size; i++)
-            {
-                if (arr[i] < arr[minI]) minI = i;
-            }
-            return minI;
-        }
         
         template<typename T>
         int MinIndex(T* arr, uint start, uint end)
         {
             if (end - start == 0)
             {
-                Sapphire::Warn("DSA::Min(T* arr, uint start, uint end) --> range is 0, cannot find minimum value. Returning -1");
+                Sapphire::Warn("DSA::MinIndex() --> range is 0, cannot find minimum value. Returning -1");
                 return -1;
             }
 
@@ -59,26 +42,15 @@ namespace Sapphire
         }
 
         template<typename T>
-        T Max(T a, T b)
+        int MinIndex(T* arr, uint size)
         {
-            return a > b ? a : b;
+            return MinIndex(arr, 0, size);
         }
 
         template<typename T>
-        int MaxIndex(T* arr, uint size)
+        T Max(T a, T b)
         {
-            if (size = 0)
-            {
-                Sapphire::Warn("DSA::Min(T* arr, uint size) --> size is 0, cannot find minimum value. Returning -1");
-                return -1;
-            }
-            
-            int maxI = 0;
-            for (int i = 1; i < size; i++)
-            {
-                if (arr[i] > arr[maxI]) maxI = i;
-            }
-            return maxI;
+            return a > b ? a : b;
         }
         
         template<typename T>
@@ -86,7 +58,7 @@ namespace Sapphire
         {
             if (end - start == 0)
             {
-                Sapphire::Warn("DSA::Min(T* arr, uint start, uint end) --> range is 0, cannot find minimum value. Returning -1");
+                Sapphire::Warn("DSA::MaxIndex() --> range is 0, cannot find maximum value. Returning -1");
                 return -1;
             }
 
@@ -96,6 +68,20 @@ namespace Sapphire
                 if (arr[i] > arr[maxI]) maxI = i;
             }
             return maxI;
+        }
+
+        template<typename T>
+        int MaxIndex(T* arr, uint size)
+        {
+            return MaxIndex(arr, 0, size);
+        }
+
+        template<typename T>
+        void Swap(T* p_a, T* p_b)
+        {
+            T tmp = *p_a;
+            *p_a = *p_b;
+            *p_b = tmp;
         }
 
         template<typename T>
@@ -157,9 +143,7 @@ namespace Sapphire
                 {
                     if (arr[j] > arr[j + 1])
                     {
-                        T tmp = arr[j];
-                        arr[j] = arr[j + 1];
-                        arr[j + 1] = tmp;
+                        Swap(&arr[j], &arr[j + 1]);
                     }
                 }
             }
@@ -171,28 +155,111 @@ namespace Sapphire
             for (int i = 0; i < size - 1; i++)
             {
                 int minI = MinIndex(arr, i, size);
-                T tmp = arr[i];
-                arr[i] = arr[minI];
-                arr[minI] = tmp;
+                Swap(&arr[i], &arr[minI]);
             }
         }
 
         template<typename T>
-        void MergeHelper(T* leftArr, uint leftSize, T* rightArr, uint rightSize, T* arr, uint size)
+        void Merge(T* leftArr, T* rightArr, T* arr, uint size)
         {
+            int leftSize = size / 2;
+            int rightSize = size - leftSize;
+            int i = 0, l = 0, r = 0;
 
+            while (l < leftSize && r < rightSize)
+            {
+                if (leftArr[l] < rightArr[r])
+                {
+                    arr[i] = leftArr[l];
+                    i++;
+                    l++;
+                }
+                else
+                {
+                    arr[i] = rightArr[r];
+                    i++;
+                    r++;
+                }
+            }
+
+            while (l < leftSize)
+            {
+                arr[i] = leftArr[l];
+                i++;
+                l++;
+            }
+
+            while (r < rightSize)
+            {
+                arr[i] = rightArr[r];
+                i++;
+                r++;
+            }
         }
 
         template<typename T>
-        void MergeSort(T* arr, uint _size)
+        void MergeSort(T* arr, uint size)
         {
-            if ()
+            if (size <= 1) return;
+
+            int mid = size / 2;
+            int* leftArr = new int[mid];
+            int* rightArr = new int[size - mid];
+
+            int i = 0, j = 0;
+
+            for (; i < size; i++)
+            {
+                if (i < mid) leftArr[i] = arr[i];
+                else 
+                {
+                    rightArr[j] = arr[i];
+                    j++;
+                }
+            }
+
+            MergeSort(leftArr, mid);
+            MergeSort(rightArr, size - mid);
+            Merge(leftArr, rightArr, arr, size);
+
+            delete[] leftArr;
+            delete[] rightArr;
+        }
+
+        template<typename T>
+        int Partition(T* arr, int start, int end) 
+        {
+            T pivot = arr[end];
+
+            int i = start - 1;
+            for (int j = start; j < end; j++) 
+            {
+                if (arr[j] <= pivot) 
+                {
+                    i++;
+                    Swap(&arr[i], &arr[j]);
+                }
+            }
+            
+            Swap(&arr[i + 1], &arr[end]);
+            return i + 1;
+        }
+
+        template<typename T>
+        void QuickSort(T* arr, int start, int end) 
+        {
+            if (start < end) 
+            {
+                int pivot = Partition(arr, start, end);
+                QuickSort(arr, start, pivot - 1);
+                QuickSort(arr, pivot + 1, end);
+            }
         }
 
         template<typename T>
         void QuickSort(T* arr, uint size)
         {
-             
+             QuickSort(arr, 0, size - 1);
         }
 
         template<typename T>
@@ -258,6 +325,11 @@ namespace Sapphire
                 return BinarySearch(m_arr, m_size, elem);
             }
 
+            int interpolationSearch(T elem)
+            {
+                return InterpolationSearch(m_arr, m_size, elem);
+            }
+
             bool contains(T elem)
             {
                 return linearSearch(elem) != -1;
@@ -265,22 +337,22 @@ namespace Sapphire
 
             void bubbleSort()
             {
-                BubbleSort(m_arr);
+                BubbleSort(m_arr, m_size);
             }
 
             void selectionSort()
             {
-                SelectionSort(m_arr);
-            }
-
-            void quickSort()
-            {
-                QuickSort(m_arr);
+                SelectionSort(m_arr, m_size);
             }
 
             void mergeSort()
             {
-                MergeSort(m_arr);
+                MergeSort(m_arr, m_size);
+            }
+
+            void quickSort()
+            {
+                QuickSort(m_arr, m_size);
             }
 
             uint size()
@@ -458,6 +530,11 @@ namespace Sapphire
                 return BinarySearch(m_arr, m_size, elem);
             }
 
+            int interpolationSearch(T elem)
+            {
+                return InterpolationSearch(m_arr, m_size, elem);
+            }
+
             int contains(T elem)
             {
                 return linearSearch(elem) != -1;
@@ -465,22 +542,22 @@ namespace Sapphire
 
             void bubbleSort()
             {
-                BubbleSort(m_arr);
+                BubbleSort(m_arr, m_size);
             }
 
             void selectionSort()
             {
-                SelectionSort(m_arr);
-            }
-
-            void quickSort()
-            {
-                QuickSort(m_arr);
+                SelectionSort(m_arr, m_size);
             }
 
             void mergeSort()
             {
-                MergeSort(m_arr);
+                MergeSort(m_arr, m_size);
+            }
+
+            void quickSort()
+            {
+                QuickSort(m_arr, m_size);
             }
 
             uint size()
