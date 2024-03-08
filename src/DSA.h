@@ -155,6 +155,7 @@ namespace Sapphire
         /*
             @brief Searches an array for a given element using binary search.
             Only works for sorted arrays.
+         !  Will throw an error if the value type in the array is not comparable.
             Runtime complexity: O(log n)
             @param arr The array to search.
             @param size The size of the array.
@@ -180,6 +181,8 @@ namespace Sapphire
         /*
             @brief Searches an array for a given element using interpolation search.
             Only works for sorted arrays, ideal for uniformly distributed arrays.
+         !  Will throw an error if the value type in the array is not comparable.
+         !  Will throw an error if the value type in the array is not comparable.
             Runtime complexity: O(log log n), worst case O(n)
             @param arr The array to search.
             @param size The size of the array.
@@ -220,6 +223,7 @@ namespace Sapphire
 
         /*
             @brief Sorts an array using the bubble sort algorithm.
+         !  Will throw an error if the value type in the array is not comparable.
             Runtime complexity: O(n^2)
             @param arr The array to sort.
             @param size The size of the array.
@@ -241,6 +245,7 @@ namespace Sapphire
 
         /*
             @brief Sorts an array using the selection sort algorithm.
+         !  Will throw an error if the value type in the array is not comparable.
             Runtime complexity: O(n^2)
             @param arr The array to sort.
             @param size The size of the array.
@@ -257,6 +262,7 @@ namespace Sapphire
 
         /*
             @brief Merges two sorted arrays into one sorted array.
+         !  Will throw an error if the value type in the array is not comparable.
             Used as a helper function for MergeSort.
             @param leftArr The left array to merge.
             @param rightArr The right array to merge.
@@ -304,6 +310,7 @@ namespace Sapphire
         /*
             @brief Sorts an array using the merge sort algorithm.
             Ideal for larger arrays.
+         !  Will throw an error if the value type in the array is not comparable.
             Runtime complexity: O(n log n)
             Space complexity: O(n)
             @param arr The array to sort.
@@ -341,6 +348,7 @@ namespace Sapphire
         /*
             @brief Partitions an array and generates a pivot.
             Used as a helper function for QuickSort.
+         !  Will throw an error if the value type in the array is not comparable.
             @param arr The array to partition.
             @param start The start index of the partition.
             @param end The end index of the partition.
@@ -368,6 +376,7 @@ namespace Sapphire
         /*
             @brief Sorts an array using the quick sort algorithm.
             Ideal for smaller arrays.
+         !  Will throw an error if the value type in the array is not comparable.
             Runtime complexity: O(n log n)
             Space complexity: O(log n)
             @param arr The array to sort.
@@ -388,6 +397,7 @@ namespace Sapphire
         /*
             @brief Sorts an array using the quick sort algorithm.
             Ideal for smaller arrays.
+         !  Will throw an error if the value type in the array is not comparable.
             Runtime complexity: O(n log n)
             Space complexity: O(log n)
             @param arr The array to sort.
@@ -471,56 +481,121 @@ namespace Sapphire
                 }
             }
 
+            /*
+                @brief Destroys the array object and frees the memory.
+             */
             ~Array()
             {
                 if (m_arr != nullptr) delete[] m_arr;
             }
 
+            /*
+                @brief Searches an array for a given element using linear search.
+                Works for all arrays, ideal for unsorted arrays.
+                Runtime complexity: O(n)
+                @param elem The element to search for.
+                @return The index of the element in the array, or -1 if the element is not found.
+             */
             int linearSearch(T elem)
             {
                 return LinearSearch(m_arr, m_size, elem);
             }
 
+            /*
+                @brief Searches an array for a given element using binary search.
+                Only works for sorted arrays.
+             !  Will throw an error if the value type in the array is not comparable.
+                Runtime complexity: O(log n)
+                @param elem The element to search for.
+                @return The index of the element in the array, or -1 if the element is not found.
+             */
             int binarySearch(T elem)
             {
                 return BinarySearch(m_arr, m_size, elem);
             }
 
+            /*
+                @brief Searches an array for a given element using interpolation search.
+                Only works for sorted arrays, ideal for uniformly distributed arrays.
+             !  Will throw an error if the value type in the array is not comparable.
+                Runtime complexity: O(log log n), worst case O(n)
+                @param elem The element to search for.
+                @return The index of the element in the array, or -1 if the element is not found.
+             */
             int interpolationSearch(T elem)
             {
                 return InterpolationSearch(m_arr, m_size, elem);
             }
 
+            /*
+                @brief Checks if an array contains a given element.
+                Uses linear search.
+                @param elem The element to search for.
+                @return True if the element is found, false otherwise.
+             */
             bool contains(T elem)
             {
                 return linearSearch(elem) != -1;
             }
 
+            /*
+                @brief Sorts an array using the bubble sort algorithm.
+             
+             !  Will throw an error if the value type in the array is not comparable.!  Will throw an error if the value type in the array is not comparable.
+                Runtime complexity: O(n^2)
+             */
             void bubbleSort()
             {
                 BubbleSort(m_arr, m_size);
             }
 
+            /*
+                @brief Sorts an array using the selection sort algorithm.
+             !  Will throw an error if the value type in the array is not comparable.
+                Runtime complexity: O(n^2)
+             */
             void selectionSort()
             {
                 SelectionSort(m_arr, m_size);
             }
 
+            /*
+                @brief Sorts an array using the merge sort algorithm.
+                Ideal for larger arrays.
+             !  Will throw an error if the value type in the array is not comparable.
+                Runtime complexity: O(n log n)
+                Space complexity: O(n)
+             */
             void mergeSort()
             {
                 MergeSort(m_arr, m_size);
             }
 
+            /*
+                @brief Sorts an array using the quick sort algorithm.
+                Ideal for smaller arrays.
+             !  Will throw an error if the value type in the array is not comparable.
+                Runtime complexity: O(n log n)
+                Space complexity: O(log n)
+             */
             void quickSort()
             {
                 QuickSort(m_arr, m_size);
             }
 
+            /*
+                @brief Returns the size of the array.
+                @return The number of elements in the array.
+             */
             uint size()
             {
                 return m_size;
             }
 
+            /*
+                @brief Returns the underlying array/pointer.
+                @return The array data.
+             */
             T* data()
             {
                 return m_arr;
@@ -623,10 +698,16 @@ namespace Sapphire
             uint m_size;
         };
 
+        /*
+            @brief A class to represent a dynamic array, known as std::vector in C++ and ArrayList in Java and some other languages.
+         */
         template<typename T>
         class ArrayList
         {
         public:
+            /*
+                @brief Creates an empty array list.
+             */
             ArrayList()
             {
                 m_cap = 10;
@@ -634,6 +715,10 @@ namespace Sapphire
                 m_size = 0;
             }
 
+            /*
+                @brief Creates an array list of a given size.
+                @param size The size of the array list.
+             */
             ArrayList(uint size)
             {
                 m_cap = Max((uint)(size * 1.5), (uint)10);
@@ -641,7 +726,12 @@ namespace Sapphire
                 m_size = size;
             }
 
-            ArrayList(uint size, T* arr)
+            /*
+                @brief Creates an array list from a given array.
+                @param size The size of the array list.
+                @param arr The array to copy.
+             */
+            ArrayList(T* arr, uint size)
             {
                 m_cap = Max((uint)(size * 1.5), (uint)10);
                 m_arr = new T[m_cap];
@@ -652,6 +742,10 @@ namespace Sapphire
                 }
             }
 
+            /*
+                @brief Creates an array list from a given array list object.
+                @param arr The array list to copy.
+             */
             ArrayList(const ArrayList<T>& arr)
             {
                 m_cap = arr.m_cap;
@@ -663,6 +757,10 @@ namespace Sapphire
                 }
             }
 
+            /*
+                @brief Creates an array list from a given initializer list.
+                @param list The initializer list to copy.
+             */
             ArrayList(std::initializer_list<T> list)
             {
                 m_cap = Max((uint)(list.size() * 1.5), (uint)10);
@@ -676,56 +774,123 @@ namespace Sapphire
                 }
             }
 
+            /*
+                @brief Destroys the array list object and frees the memory.
+             */
             ~ArrayList()
             {
                 if (m_arr != nullptr) delete[] m_arr;
             }
 
+            /*
+                @brief Searches an array list for a given element using linear search.
+                Works for all arrays, ideal for unsorted arrays.
+                Runtime complexity: O(n)
+                @param elem The element to search for.
+                @return The index of the element in the array list, or -1 if the element is not found.
+             */
             int linearSearch(T elem)
             {
                 return LinearSearch(m_arr, m_size, elem);
             }
 
+            /*
+                @brief Searches an array list for a given element using binary search.
+                Only works for sorted arrays.
+             !  Will throw an error if the value type in the array is not comparable.
+                Runtime complexity: O(log n)
+                @param elem The element to search for.
+                @return The index of the element in the array list, or -1 if the element is not found.
+             */
             int binarySearch(T elem)
             {
                 return BinarySearch(m_arr, m_size, elem);
             }
 
+
+            /*
+                @brief Searches an array list for a given element using interpolation search.
+                Only works for sorted arrays, ideal for uniformly distributed arrays.
+             !  Will throw an error if the value type in the array is not comparable.
+                Runtime complexity: O(log log n), worst case O(n)
+                @param elem The element to search for.
+                @return The index of the element in the array list, or -1 if the element is not found.
+             */
             int interpolationSearch(T elem)
             {
                 return InterpolationSearch(m_arr, m_size, elem);
             }
 
+
+            /*
+                @brief Checks if an array list contains a given element.
+                Uses linear search.
+                @param elem The element to search for.
+                @return True if the element is found, false otherwise.
+             */
             int contains(T elem)
+             !  Will throw an error if the value type in the array is not comparable.
             {
                 return linearSearch(elem) != -1;
             }
 
+            /*
+                @brief Sorts an array list using the bubble sort algorithm.
+             !  Will throw an error if the value type in the array is not comparable.
+                Runtime complexity: O(n^2)
+             */
             void bubbleSort()
             {
                 BubbleSort(m_arr, m_size);
             }
 
+            /*
+                @brief Sorts an array list using the selection sort algorithm.
+             !  Will throw an error if the value type in the array is not comparable.
+                Runtime complexity: O(n^2)
+             */
             void selectionSort()
             {
                 SelectionSort(m_arr, m_size);
             }
 
+            /*
+                @brief Sorts an array list using the merge sort algorithm.
+                Ideal for larger arrays.
+             !  Will throw an error if the value type in the array is not comparable.
+                Runtime complexity: O(n log n)
+                Space complexity: O(n)
+             */
             void mergeSort()
             {
                 MergeSort(m_arr, m_size);
             }
 
+            /*
+                @brief Sorts an array list using the quick sort algorithm.
+                Ideal for smaller arrays.
+             !  Will throw an error if the value type in the array is not comparable.
+                Runtime complexity: O(n log n)
+                Space complexity: O(log n)
+             */
             void quickSort()
             {
                 QuickSort(m_arr, m_size);
             }
 
+            /*
+                @brief Returns the size of the array list.
+                @return The number of elements in the array list.
+             */
             uint size()
             {
                 return m_size;
             }
 
+            /*
+                @brief Adds an element to the end of the array list.
+                @param elem The element to add.
+             */
             void add(T elem)
             {
                 if (m_size + 1 > m_cap)
@@ -752,6 +917,11 @@ namespace Sapphire
                 m_arr[m_size - 1] = elem;
             }
 
+            /*
+                @brief Inserts an element at a given index in the array list.
+                @param elem The element to insert.
+                @param index The index to insert the element at.
+             */
             void insert(T elem, int index)
             {
                 T* tmp = new T[m_size];
@@ -776,6 +946,10 @@ namespace Sapphire
                 delete[] tmp;
             }
 
+            /*
+                @brief Removes an element at a given index in the array list.
+                @param index The index to remove the element at.
+             */
             void remove(int index)
             {
                 T* tmp = new T[m_size];
@@ -798,11 +972,22 @@ namespace Sapphire
                 delete[] tmp;
             }
 
-            void pop()
+            /*
+                @brief Removes the last element in the array list.
+                @return The removed element.
+             */
+            T pop()
             {
+                T elem = m_arr[m_size - 1];
                 remove(m_size - 1);
+                return elem;
             }
 
+            /*
+                @brief Removes all occurrences of a given element in the array list.
+                @param elem The element to remove.
+             */
+            
             void removeAll(T elem)
             {
                 T* tmp = new T[m_size];
@@ -830,6 +1015,10 @@ namespace Sapphire
                 delete[] tmp;
             }
 
+            /*
+                @brief Returns the underlying array/pointer.
+                @return The array list data.
+             */
             T* data()
             {
                 return m_arr;
@@ -934,13 +1123,25 @@ namespace Sapphire
             uint m_size;
         };
 
+        /*
+            @brief A class to represent a pair of values.
+         */
         template<typename T1, typename T2>
         struct Pair
         {
             T1 first;
             T2 second;
 
+            /*
+                @brief Creates an empty pair (with garbage values).
+             */
             Pair() {}
+
+            /*
+                @brief Creates a pair from two given values.
+                @param first The first value.
+                @param second The second value.
+             */
             Pair(T1 first, T2 second)
             {
                 this->first = first;
@@ -965,6 +1166,9 @@ namespace Sapphire
             }
         };
 
+        /*
+            @brief A class to represent a hash map, known as std::map in C++ and a HashMap in Java and some other languages.
+         */
         template<typename K, typename V>
         class HashMap
         {
