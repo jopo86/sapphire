@@ -18,12 +18,27 @@ namespace Sapphire
      */
     namespace DSA
     {
+        /*
+            @brief Returns the minimum of two values.
+         !  Will throw an error if the value type is not comparable.
+            @param a The first value.
+            @param b The second value.
+            @return The minimum of the two values.
+         */
         template<typename T>
         T Min(T a, T b)
         {
             return a < b ? a : b;
         }
         
+        /*
+            @brief Returns the index of the minimum value in an array in the given range.
+         !  Will throw an error if the value type in the array is not comparable.
+            @param arr The array to search.
+            @param start The start index of the range, inclusive.
+            @param end The end index of the range, exclusive.
+            @return The index of the minimum value in the given range.
+         */
         template<typename T>
         int MinIndex(T* arr, uint start, uint end)
         {
@@ -41,18 +56,40 @@ namespace Sapphire
             return minI;
         }
 
+        /*
+            @brief Returns the index of the minimum value in an array.
+         !  Will throw an error if the value type in the array is not comparable.
+            @param arr The array to search.
+            @param size The size of the array.
+            @return The index of the minimum value in the array.
+         */
         template<typename T>
         int MinIndex(T* arr, uint size)
         {
             return MinIndex(arr, 0, size);
         }
 
+        /*
+            @brief Returns the maximum of two values.
+         !  Will throw an error if the value type is not comparable.
+            @param a The first value.
+            @param b The second value.
+            @return The maximum of the two values.
+         */
         template<typename T>
         T Max(T a, T b)
         {
             return a > b ? a : b;
         }
         
+        /*
+            @brief Returns the index of the maximum value in an array in the given range.
+         !  Will throw an error if the value type in the array is not comparable.
+            @param arr The array to search.
+            @param start The start index of the range, inclusive.
+            @param end The end index of the range, exclusive.
+            @return The index of the maximum value in the given range.
+         */
         template<typename T>
         int MaxIndex(T* arr, uint start, uint end)
         {
@@ -70,12 +107,24 @@ namespace Sapphire
             return maxI;
         }
 
+        /*
+            @brief Returns the index of the maximum value in an array.
+         !  Will throw an error if the value type in the array is not comparable.
+            @param arr The array to search.
+            @param size The size of the array.
+            @return The index of the maximum value in the array.
+         */
         template<typename T>
         int MaxIndex(T* arr, uint size)
         {
             return MaxIndex(arr, 0, size);
         }
 
+        /*
+            @brief Swaps the values of two pointers.
+            @param p_a The first pointer.
+            @param p_b The second pointer.
+         */
         template<typename T>
         void Swap(T* p_a, T* p_b)
         {
@@ -84,6 +133,15 @@ namespace Sapphire
             *p_b = tmp;
         }
 
+        /*
+            @brief Searches an array for a given element using linear search.
+            Works for all arrays, ideal for unsorted arrays.
+            Runtime complexity: O(n)
+            @param arr The array to search.
+            @param size The size of the array.
+            @param elem The element to search for.
+            @return The index of the element in the array, or -1 if the element is not found.
+         */
         template<typename T>
         int LinearSearch(T* arr, uint size, T elem)
         {
@@ -94,6 +152,15 @@ namespace Sapphire
             return -1;
         }
 
+        /*
+            @brief Searches an array for a given element using binary search.
+            Only works for sorted arrays.
+            Runtime complexity: O(log n)
+            @param arr The array to search.
+            @param size The size of the array.
+            @param elem The element to search for.
+            @return The index of the element in the array, or -1 if the element is not found.
+         */
         template<typename T>
         int BinarySearch(T* arr, uint size, T elem)
         {
@@ -110,6 +177,15 @@ namespace Sapphire
             return -1;
         }
 
+        /*
+            @brief Searches an array for a given element using interpolation search.
+            Only works for sorted arrays, ideal for uniformly distributed arrays.
+            Runtime complexity: O(log log n), worst case O(n)
+            @param arr The array to search.
+            @param size The size of the array.
+            @param elem The element to search for.
+            @return The index of the element in the array, or -1 if the element is not found.
+         */
         template<typename T>
         int InterpolationSearch(T* arr, uint size, T elem)
         {
@@ -128,12 +204,26 @@ namespace Sapphire
             return -1;
         }
 
+        /*
+            @brief Checks if an array contains a given element.
+            Uses linear search.
+            @param arr The array to search.
+            @param size The size of the array.
+            @param elem The element to search for.
+            @return True if the element is found, false otherwise.
+         */
         template<typename T>
         int Contains(T* arr, uint size, T elem)
         {
             return LinearSearch(arr, size, elem) != -1;
         }
 
+        /*
+            @brief Sorts an array using the bubble sort algorithm.
+            Runtime complexity: O(n^2)
+            @param arr The array to sort.
+            @param size The size of the array.
+         */
         template<typename T>
         void BubbleSort(T* arr, uint size)
         {
@@ -149,6 +239,12 @@ namespace Sapphire
             }
         }
 
+        /*
+            @brief Sorts an array using the selection sort algorithm.
+            Runtime complexity: O(n^2)
+            @param arr The array to sort.
+            @param size The size of the array.
+         */
         template<typename T>
         void SelectionSort(T* arr, uint size)
         {
@@ -159,6 +255,14 @@ namespace Sapphire
             }
         }
 
+        /*
+            @brief Merges two sorted arrays into one sorted array.
+            Used as a helper function for MergeSort.
+            @param leftArr The left array to merge.
+            @param rightArr The right array to merge.
+            @param arr The array to merge into.
+            @param size The size of the arrays.
+         */
         template<typename T>
         void Merge(T* leftArr, T* rightArr, T* arr, uint size)
         {
@@ -197,6 +301,14 @@ namespace Sapphire
             }
         }
 
+        /*
+            @brief Sorts an array using the merge sort algorithm.
+            Ideal for larger arrays.
+            Runtime complexity: O(n log n)
+            Space complexity: O(n)
+            @param arr The array to sort.
+            @param size The size of the array.
+         */
         template<typename T>
         void MergeSort(T* arr, uint size)
         {
@@ -226,6 +338,14 @@ namespace Sapphire
             delete[] rightArr;
         }
 
+        /*
+            @brief Partitions an array and generates a pivot.
+            Used as a helper function for QuickSort.
+            @param arr The array to partition.
+            @param start The start index of the partition.
+            @param end The end index of the partition.
+            @return The index of the pivot.
+         */
         template<typename T>
         int Partition(T* arr, int start, int end) 
         {
@@ -245,6 +365,15 @@ namespace Sapphire
             return i + 1;
         }
 
+        /*
+            @brief Sorts an array using the quick sort algorithm.
+            Ideal for smaller arrays.
+            Runtime complexity: O(n log n)
+            Space complexity: O(log n)
+            @param arr The array to sort.
+            @param start The start index of the array.
+            @param end The end index of the array.
+         */
         template<typename T>
         void QuickSort(T* arr, int start, int end) 
         {
@@ -256,29 +385,53 @@ namespace Sapphire
             }
         }
 
+        /*
+            @brief Sorts an array using the quick sort algorithm.
+            Ideal for smaller arrays.
+            Runtime complexity: O(n log n)
+            Space complexity: O(log n)
+            @param arr The array to sort.
+            @param size The size of the array.
+         */
         template<typename T>
         void QuickSort(T* arr, uint size)
         {
              QuickSort(arr, 0, size - 1);
         }
 
+        /*
+            @brief A class to represent a fixed-size array.
+         */
         template<typename T>
         class Array
         {
         public:
+            /*
+                @brief Creates an empty array.
+             */
             Array()
             {
                 m_arr = new T[0];
                 m_size = 0;
             }
 
+            /*
+                @brief Creates an array of a given size.
+                @param size The size of the array.
+             */
             Array(uint size)
             {
                 m_arr = new T[size];
                 m_size = size;
             }
 
-            Array(uint size, T* arr)
+            
+            /*
+                @brief Creates an array from a given array.
+                @param arr The array to copy.
+                @param size The size of the array.
+             */
+            Array(T* arr, uint size)
             {
                 m_arr = new T[size];
                 m_size = size;
@@ -288,6 +441,10 @@ namespace Sapphire
                 }
             }
 
+            /*
+                @brief Creates an array from a given array object.
+                @param arr The array to copy.
+             */
             Array(const Array<T>& arr)
             {
                 m_arr = new T[arr.m_size];
@@ -298,6 +455,10 @@ namespace Sapphire
                 }
             }
             
+            /*
+                @brief Creates an array from a given initializer list.
+                @param list The initializer list to copy.
+             */
             Array(std::initializer_list<T> list)
             {
                 m_size = list.size();
