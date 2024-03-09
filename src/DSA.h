@@ -825,11 +825,11 @@ namespace Sapphire
             /*
                 @brief Checks if an array list contains a given element.
                 Uses linear search.
+             !  Will throw an error if the value type in the array is not comparable.
                 @param elem The element to search for.
                 @return True if the element is found, false otherwise.
              */
             int contains(T elem)
-             !  Will throw an error if the value type in the array is not comparable.
             {
                 return linearSearch(elem) != -1;
             }
@@ -1173,13 +1173,24 @@ namespace Sapphire
         class HashMap
         {
         public:
+            /*
+                @brief Creates an empty hash map.
+             */
             HashMap() {};
 
+            /*
+                @brief Creates a hash map from a given array list of pairs.
+                @param list The array list to copy.
+             */
             HashMap(ArrayList<Pair<K, V>> list) 
             {
                 this->list = list;
             }
 
+            /*
+                @brief Creates a hash map from a given initializer list of pairs.
+                @param list The initializer list to copy.
+             */
             HashMap(std::initializer_list<Pair<K, V>> list)
             {
                 this->list = ArrayList(list);
