@@ -1,4 +1,4 @@
-# ![Sapphire Logo](splash.png)
+# ![Sapphire Logo](logo.png)
 An extensive C++ library with utilities like filesystem functions, system information, data structures and algorithms, console manipulation, and more.
 
 ## Download
